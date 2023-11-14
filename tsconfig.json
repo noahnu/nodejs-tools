@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "node16",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node16",
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "lib": [
+            "ES2022",
+        ],
+        "composite": true,
+        "rootDir": ".",
+        "emitDeclarationOnly": true,
+        "outDir": ".tmp/tsc/root",
+    },
+    "exclude": [
+        "**/lib",
+        "./.pnp.*"
+    ],
+    "include": [
+        "./packages",
+        "./*.js",
+        "./*.cjs",
+        "./*.ts",
+        "./**/.eslintrc.js"
+    ],
+    "ts-node": {
+        "transpileOnly": true,
+        "ignore": [
+            "(?:^|/)node_modules/",
+            ".yarn/plugins/.*"
+        ],
+    }
+}

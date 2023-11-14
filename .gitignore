@@ -1,0 +1,30 @@
+# OS Specific
+.DS_STORE
+
+# IDE
+.idea/
+.vim/
+.vscode/*
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Dependency Management
+node_modules
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/versions
+!.yarn/patches
+!.yarn/sdks
+.pnp.*
+
+# Transient Files
+*.tsbuildinfo
+*.log
+*.tmp
+.tmp
+
+# Build Artifacts
+lib
+./reports
