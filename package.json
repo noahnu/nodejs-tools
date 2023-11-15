@@ -33,6 +33,7 @@
         "@typescript-eslint/eslint-plugin": "^6.11.0",
         "@typescript-eslint/parser": "^6.11.0",
         "@yarnpkg/sdks": "^3.1.0",
+        "@yarnpkg/types": "^4.0.0",
         "commitizen": "^4.3.0",
         "eslint": "^8.53.0",
         "eslint-config-prettier": "^9.0.0",
@@ -50,10 +51,11 @@
         "monodeploy": "^5.0.1",
         "prettier": "^3.1.0",
         "ts-jest": "^29.1.1",
+        "ts-node": "^10.9.1",
         "typescript": "5.2.2"
     },
     "scripts": {
-        "clean": "rm -rf ${ARTIFACT_DIR:-artifacts} && yarn workspaces foreach -vpi --worktree run clean",
+        "clean": "rm -rf reports && yarn workspaces foreach -vpi --worktree run clean",
         "build": "yarn workspaces foreach -vpi --worktree --topological-dev run prepack",
         "lint:ci": "eslint . --format junit --output-file reports/eslint.junit.xml",
         "lint:fix": "eslint . --fix",
@@ -61,6 +63,8 @@
         "test:ci": "CI=1 run test --ci --runInBand",
         "test:watch": "run test --watch",
         "test": "jest --config=jest.config.js",
-        "types:watch": "tsc --noEmit --emitDeclarationOnly false --pretty --watch"
+        "types:watch": "tsc --noEmit --emitDeclarationOnly false --pretty --watch",
+        "workspace:build": "rm -rf $0/lib $0/.tmp && tsc -p $0/tsconfig.build.json",
+        "workspace:clean": "rm -rf $0/lib $0/.tmp && find $0/src -name '*.js' -type f -delete"
     }
 }

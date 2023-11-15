@@ -1,0 +1,36 @@
+{
+    "name": "@noahnu/unused-files",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahnu/nodejs-tools.git",
+        "directory": "packages/unused-files"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "noahnu",
+        "email": "noah@noahnu.com",
+        "url": "https://noahnu.com"
+    },
+    "scripts": {
+        "clean": "run workspace:clean \"$(pwd)\"",
+        "prepack": "run workspace:build \"$(pwd)\"",
+        "run-local": "run -T ts-node --transpileOnly ./src/bin.ts"
+    },
+    "bin": "./src/bin.ts",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public",
+        "bin": "./lib/bin.js"
+    },
+    "files": [
+        "lib"
+    ],
+    "dependencies": {
+        "clipanion": "4.0.0-rc.2",
+        "typanion": "^3.14.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.0"
+    }
+}
