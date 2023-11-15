@@ -9,7 +9,7 @@ insert_final_newline = true
 end_of_line = lf
 max_line_length = off
 
-[*.yml]
+[*.{yml,yaml}]
 indent_size = 2
 
 [{CHANGELOG.md,package.json,yarn.lock}]
