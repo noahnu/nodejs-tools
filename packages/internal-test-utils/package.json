@@ -1,0 +1,20 @@
+{
+    "name": "@noahnu/internal-test-utils",
+    "private": true,
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahnu/nodejs-tools.git",
+        "directory": "packages/internal-test-utils"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "noahnu",
+        "email": "noah@noahnu.com",
+        "url": "https://noahnu.com"
+    },
+    "main": "./src/index.ts",
+    "devDependencies": {
+        "@types/node": "^20.9.0"
+    }
+}

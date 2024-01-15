@@ -1,0 +1,45 @@
+{
+    "name": "@noahnu/unused-files",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahnu/nodejs-tools.git",
+        "directory": "packages/unused-files"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "noahnu",
+        "email": "noah@noahnu.com",
+        "url": "https://noahnu.com"
+    },
+    "scripts": {
+        "clean": "run workspace:clean \"$(pwd)\"",
+        "prepack": "run workspace:build \"$(pwd)\"",
+        "run-local": "run -T ts-node --transpileOnly ./src/bin.ts"
+    },
+    "bin": "./src/bin.ts",
+    "main": "./src/api/index.ts",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public",
+        "bin": "./lib/bin.js",
+        "main": "./lib/api/index.js",
+        "types": "./lib/api/index.d.ts"
+    },
+    "files": [
+        "lib"
+    ],
+    "dependencies": {
+        "@types/debug": "^4.1.12",
+        "@typescript-eslint/typescript-estree": "^6.18.1",
+        "clipanion": "4.0.0-rc.2",
+        "debug": "^4.3.4",
+        "fast-glob": "^3.3.2",
+        "typanion": "^3.14.0"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@noahnu/internal-test-utils": "workspace:*",
+        "@types/node": "^20.9.0"
+    }
+}

@@ -8,7 +8,6 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "noImplicitAny": true,
-        "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
         "allowJs": true,
         "lib": [
