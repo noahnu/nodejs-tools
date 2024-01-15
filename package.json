@@ -69,6 +69,6 @@
         "types:watch": "tsc --noEmit --emitDeclarationOnly false --pretty --watch",
         "workspace:build": "rm -rf $0/lib $0/.tmp && tsc -p $0/tsconfig.build.json",
         "workspace:clean": "rm -rf $0/lib $0/.tmp && find $0/src -name '*.js' -type f -delete",
-        "release": "monodeploy --config-file monodeploy.config.ts --log-level 0 --plugins @monodeploy/plugin-github"
+        "release": "monodeploy --config-file monodeploy.config.js --log-level 0 --plugins @monodeploy/plugin-github"
     }
 }
