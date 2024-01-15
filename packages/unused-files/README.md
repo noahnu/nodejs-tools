@@ -3,7 +3,7 @@
 ## Usage
 
 ```sh
-DEBUG=unused-files yarn dlx @noahnu/unused-files --entry src/index.ts --ignore '**/node_modules' --ignore '**/dist' --deppth 10 ./src
+DEBUG=unused-files yarn dlx @noahnu/unused-files --entry src/index.ts --ignore '**/node_modules' --ignore '**/dist' --depth 10 ./src
 ```
 
 Or use the Node API:
