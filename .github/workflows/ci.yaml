@@ -61,7 +61,5 @@ jobs:
     steps:
       - uses: noahnu/.github/.github/actions/setup-node@main
 
-      - name: Post Monodeploy Preview
-        uses: noahnu/.github/.github/actions/post-monodeploy-preview@main
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Post Preview
+        uses: monoweave/github-action-preview@95e30cfa4b8dfb69cb8d18050ef05a207c6f8551 # v1.1.0
