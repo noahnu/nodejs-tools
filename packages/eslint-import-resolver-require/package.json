@@ -1,0 +1,40 @@
+{
+    "name": "@noahnu/eslint-import-resolver-require",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahnu/nodejs-tools.git",
+        "directory": "packages/eslint-import-resolver-require"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "noahnu",
+        "email": "noah@noahnu.com",
+        "url": "https://noahnu.com"
+    },
+    "scripts": {
+        "clean": "run workspace:clean \"$(pwd)\"",
+        "prepack": "run workspace:build \"$(pwd)\"",
+        "run-local": "run -T ts-node --transpileOnly ./src/bin.ts"
+    },
+    "main": "./src/index.ts",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public",
+        "bin": "./lib/bin.js",
+        "main": "./lib/index.js",
+        "types": "./lib/index.d.ts"
+    },
+    "files": [
+        "lib"
+    ],
+    "devDependencies": {
+        "@types/eslint": "^8.44.3",
+        "@types/jest": "^29.5.5",
+        "@types/node": "^18.15.11",
+        "eslint": "^8.50.0"
+    },
+    "peerDependencies": {
+        "eslint-plugin-import": ">= 2.0.0"
+    }
+}
