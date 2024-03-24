@@ -63,3 +63,17 @@ jobs:
 
       - name: Post Preview
         uses: monoweave/github-action-preview@95e30cfa4b8dfb69cb8d18050ef05a207c6f8551 # v1.1.0
+
+  required_checks:
+    name: Required Checks
+    needs:
+      - prepare
+      - build
+      - lint
+      - test
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Fail on error
+        if: contains(needs.*.result, 'failure') || cancelled()
+        run: exit 1
