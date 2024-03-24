@@ -1,11 +1,22 @@
 import { builtinModules } from 'module'
 import path from 'path'
 
+import debug from 'debug'
+import { resolve as resolveNode } from 'eslint-import-resolver-node'
+
+const log = debug('eslint-import-resolver-require')
+
 const builtins = new Set(builtinModules)
 
-const resolve = (source: string, file: string) => {
+type Resolver = (
+    source: string,
+    file: string,
+    config: unknown,
+) => { found: true; path: string | null } | { found: false }
+
+const resolve: Resolver = (source: string, file: string, config: unknown) => {
     if (builtins.has(source)) {
-        return { found: true }
+        return { found: true, path: null }
     }
 
     try {
@@ -16,7 +27,9 @@ const resolve = (source: string, file: string) => {
         }
         return { found: true, path: moduleId }
     } catch (err) {
-        return { found: false }
+        log('falling back to eslint-import-resolver-node due to error', err)
+        // Fallback to eslint-import-resolver-node plugin
+        return resolveNode(source, file, config)
     }
 }
 

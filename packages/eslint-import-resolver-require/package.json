@@ -29,10 +29,16 @@
         "lib"
     ],
     "devDependencies": {
+        "@types/debug": "^4.1.12",
         "@types/eslint": "^8.44.3",
         "@types/jest": "^29.5.5",
         "@types/node": "^18.15.11",
-        "eslint": "^8.50.0"
+        "eslint": "^8.50.0",
+        "eslint-plugin-import": "^2.29.1"
+    },
+    "dependencies": {
+        "debug": "^4.3.4",
+        "eslint-import-resolver-node": "^0.3.9"
     },
     "peerDependencies": {
         "eslint-plugin-import": ">= 2.0.0"
