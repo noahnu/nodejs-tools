@@ -1,6 +1,6 @@
 {
     "name": "@noahnu/eslint-config",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/noahnu/nodejs-tools.git",
@@ -68,12 +68,12 @@
         "prettier": "^3.0.3"
     },
     "dependencies": {
-        "@noahnu/eslint-import-resolver-require": "workspace:*",
+        "@noahnu/eslint-import-resolver-require": "workspace:^0.0.5",
         "debug": "^4.3.4",
         "eslint-import-resolver-typescript": "^3.6.1"
     },
     "peerDependencies": {
-        "@noahnu/eslint-import-resolver-require": "workspace:*",
+        "@noahnu/eslint-import-resolver-require": "workspace:^0.0.5",
         "@typescript-eslint/eslint-plugin": ">=7.4.0",
         "@typescript-eslint/parser": ">=7.4.0",
         "eslint": ">=8.57.0",

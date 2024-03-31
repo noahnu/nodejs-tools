@@ -1354,7 +1354,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/eslint-config@workspace:packages/eslint-config"
   dependencies:
-    "@noahnu/eslint-import-resolver-require": "workspace:*"
+    "@noahnu/eslint-import-resolver-require": "workspace:^0.0.5"
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^8.56.6"
     "@types/jest": "npm:^29.5.12"
@@ -1372,7 +1372,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.1.3"
     prettier: "npm:^3.0.3"
   peerDependencies:
-    "@noahnu/eslint-import-resolver-require": "workspace:*"
+    "@noahnu/eslint-import-resolver-require": "workspace:^0.0.5"
     "@typescript-eslint/eslint-plugin": ">=7.4.0"
     "@typescript-eslint/parser": ">=7.4.0"
     eslint: ">=8.57.0"
@@ -1387,7 +1387,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@noahnu/eslint-import-resolver-require@workspace:*, @noahnu/eslint-import-resolver-require@workspace:packages/eslint-import-resolver-require":
+"@noahnu/eslint-import-resolver-require@workspace:^0.0.5, @noahnu/eslint-import-resolver-require@workspace:packages/eslint-import-resolver-require":
   version: 0.0.0-use.local
   resolution: "@noahnu/eslint-import-resolver-require@workspace:packages/eslint-import-resolver-require"
   dependencies:
