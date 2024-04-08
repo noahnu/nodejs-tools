@@ -40,6 +40,6 @@
     "devDependencies": {
         "@jest/globals": "^29.7.0",
         "@noahnu/internal-test-utils": "workspace:*",
-        "@types/node": "^20.11.28"
+        "@types/node": "^20.11.29"
     }
 }
