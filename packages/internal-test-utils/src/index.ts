@@ -6,7 +6,7 @@ import path from 'node:path'
 // @ts-expect-error
 Symbol.asyncDispose ??= Symbol.for('asyncDispose')
 
-export type TempDirContext = {
+export interface TempDirContext {
     dir: string
     writeFile: (name: string, contents: string) => Promise<string>
 }
