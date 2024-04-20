@@ -32,7 +32,6 @@ const config = {
     },
     modulePathIgnorePatterns: ['<rootDir>/.*/lib'],
     testTimeout: 30000,
-    resolver: require.resolve('@tophat/jest-resolver'),
 }
 
 module.exports = config

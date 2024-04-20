@@ -7,7 +7,7 @@ import { walkDependencyTree } from './walkDependencyTree'
 
 const debug = createDebug('unused-files')
 
-export type FindUnusedFilesOptions = {
+export interface FindUnusedFilesOptions {
     /**
      * Entry files into the codebase. These files are known to be used and any files that
      * are dependencies of these entry files are also considered used files.
@@ -39,7 +39,7 @@ export type FindUnusedFilesOptions = {
     cwd?: string
 }
 
-export type UnusedFilesResult = {
+export interface UnusedFilesResult {
     unusedFiles: string[]
 }
 
