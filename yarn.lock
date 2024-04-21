@@ -710,140 +710,144 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@inquirer/checkbox@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@inquirer/checkbox@npm:2.2.0"
+"@inquirer/checkbox@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@inquirer/checkbox@npm:2.3.1"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/figures": "npm:^1.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     ansi-escapes: "npm:^4.3.2"
     chalk: "npm:^4.1.2"
-    figures: "npm:^3.2.0"
-  checksum: 10c0/a7ae576433ca854a6171bff9661694503607e2a89b222f7616892e4816086c8afeab259cfd7bac226f1c35af7cf91a602e6921c12f5da558e176326f60304d06
+  checksum: 10c0/5f791ec705af72ff108bf3323207da86146505f53ace887734ccf11a9863ba7857259a6bbb28839313a7a10cea3a3c7f29aa25fc57d7bb5a9404e69d3c63436b
   languageName: node
   linkType: hard
 
-"@inquirer/confirm@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@inquirer/confirm@npm:3.1.0"
+"@inquirer/confirm@npm:^3.1.5":
+  version: 3.1.5
+  resolution: "@inquirer/confirm@npm:3.1.5"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
-  checksum: 10c0/db618a3b3df6a25b2a719c2100af383aca84e12eb4185baf21790c394e3f2c402d2aeb6246dd3b7bd3a70ad860e5b8f4e592f4272d56bdf498533bc5bdebe4b8
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/type": "npm:^1.3.0"
+  checksum: 10c0/d2f97075565fde4b634b4bd17d74e786f4ebdcc4d7cd3b1d9059f59d5b33a8eccf201266991f20cb13f816777c28a698f8c863d99218c447e2aa1adceabec66b
   languageName: node
   linkType: hard
 
-"@inquirer/core@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@inquirer/core@npm:7.1.0"
+"@inquirer/core@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@inquirer/core@npm:8.0.1"
   dependencies:
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/figures": "npm:^1.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     "@types/mute-stream": "npm:^0.0.4"
-    "@types/node": "npm:^20.11.26"
+    "@types/node": "npm:^20.12.7"
     "@types/wrap-ansi": "npm:^3.0.0"
     ansi-escapes: "npm:^4.3.2"
     chalk: "npm:^4.1.2"
     cli-spinners: "npm:^2.9.2"
     cli-width: "npm:^4.1.0"
-    figures: "npm:^3.2.0"
     mute-stream: "npm:^1.0.0"
-    run-async: "npm:^3.0.0"
     signal-exit: "npm:^4.1.0"
     strip-ansi: "npm:^6.0.1"
     wrap-ansi: "npm:^6.2.0"
-  checksum: 10c0/b20e1a995b67ce1d80f635405c13ee452198b9cbc003fc6ab6a41e78e8dca7505b02578399fc6f74e6d05ae1078d962647a96f31329fff140996ea7120d65b4c
+  checksum: 10c0/04b1c94c7ee5a075361279a73ea2ac5bd21371f8d3996052f8deb61d9d3d4b40b97aa66ba0cdf291ebaeee37edda761877c3e835552f870bf4d1006610a11b52
   languageName: node
   linkType: hard
 
-"@inquirer/editor@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@inquirer/editor@npm:2.1.0"
+"@inquirer/editor@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@inquirer/editor@npm:2.1.5"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     external-editor: "npm:^3.1.0"
-  checksum: 10c0/4706319723702928d49a27a54ceeaddf876331c4cfc90797ad2219c8b060a63be4b9abe169f8a91909582a6dd840714c5577d6752f156a979b1d018f0923b407
+  checksum: 10c0/d7ac14a4974781866c7fb80d706408557e6922e8f8226d4d4d0477214b211abf686da97be21cbdbde95b4d5f244ffce0a2f6b285ae037edf89b2307850943dac
   languageName: node
   linkType: hard
 
-"@inquirer/expand@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@inquirer/expand@npm:2.1.0"
+"@inquirer/expand@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@inquirer/expand@npm:2.1.5"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     chalk: "npm:^4.1.2"
-    figures: "npm:^3.2.0"
-  checksum: 10c0/f1b14bc24ffb527e1250c70c0e19f0a7fe83aac0c6a665bc91516b750004226ca4dccbf4c76d98da4946805f3924a1f462ff0d306da2051f1e9a00028b5a0673
+  checksum: 10c0/84888010b404080e794687fb259772bb19a9f1d97eefa2d10662acdc90c632bb0c32fa39e3c4e93463ef4b870ef9f1debe126dd37ab3142e9d532aee9eb0fcef
   languageName: node
   linkType: hard
 
-"@inquirer/input@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@inquirer/input@npm:2.1.0"
-  dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
-  checksum: 10c0/df72048e2a81ae31fbc1b8ae93a03f7330a6cf13e42c4861d60ab539e33382f7d5b6e0c5149e2ed3a670c34c2edb1102aa8b4f9855f84bd17f0fc6f381acdadc
+"@inquirer/figures@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@inquirer/figures@npm:1.0.1"
+  checksum: 10c0/a1e9d3852e0d33c416eb39d7ee0e898971681a0a5a0d2fad5ebbb63047dd7e8b7bd32872cf2ef09578ce632bd9cc339f7e851dbd4640a9af11224481bf811e14
   languageName: node
   linkType: hard
 
-"@inquirer/password@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@inquirer/password@npm:2.1.0"
+"@inquirer/input@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@inquirer/input@npm:2.1.5"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/type": "npm:^1.3.0"
+  checksum: 10c0/55063f6142b8d5c68fe86bbfe55ee0e7641610a801b9b351cc0cc481ebdd3c8a7781aa726a94a526f803d2eec8d832fe79eeaca86eb836838c3aa288cfc99e90
+  languageName: node
+  linkType: hard
+
+"@inquirer/password@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@inquirer/password@npm:2.1.5"
+  dependencies:
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     ansi-escapes: "npm:^4.3.2"
-  checksum: 10c0/4f80febf4ea517f46dc0aaad3b2b343ec1b341e5f8d9b05fae9b8d94c0d9d6ca15865542b714b3d985991fe307c384502376943cf221c772dd7212c369e0a612
+  checksum: 10c0/372d5b3b91af99fed8eaeb8a6480dc9629fa9def64076983b3e6774e37eb3f04355bffbdc44a3aa127e71488d62b99f57ab777ed4cca8ab7b4d9bb629f82f13d
   languageName: node
   linkType: hard
 
-"@inquirer/prompts@npm:^4.1.0":
-  version: 4.3.0
-  resolution: "@inquirer/prompts@npm:4.3.0"
+"@inquirer/prompts@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "@inquirer/prompts@npm:5.0.1"
   dependencies:
-    "@inquirer/checkbox": "npm:^2.2.0"
-    "@inquirer/confirm": "npm:^3.1.0"
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/editor": "npm:^2.1.0"
-    "@inquirer/expand": "npm:^2.1.0"
-    "@inquirer/input": "npm:^2.1.0"
-    "@inquirer/password": "npm:^2.1.0"
-    "@inquirer/rawlist": "npm:^2.1.0"
-    "@inquirer/select": "npm:^2.2.0"
-  checksum: 10c0/587e599678d79ea5638ba4a8da711468ccde1e04727427565bbde5509c7fcabed122e82a9c71dc9745848c8b415b7c83b34229c9124992b93729e7431d7d32ac
+    "@inquirer/checkbox": "npm:^2.3.1"
+    "@inquirer/confirm": "npm:^3.1.5"
+    "@inquirer/editor": "npm:^2.1.5"
+    "@inquirer/expand": "npm:^2.1.5"
+    "@inquirer/input": "npm:^2.1.5"
+    "@inquirer/password": "npm:^2.1.5"
+    "@inquirer/rawlist": "npm:^2.1.5"
+    "@inquirer/select": "npm:^2.3.1"
+  checksum: 10c0/2edad0348794de8d6e1fbd66efa306f6794e1378d21eb51f8f55f7b006dd1fa6534a9cb74d105e1aafd1f696242a94ec710fdb74315f912fc7b7067e7781bd23
   languageName: node
   linkType: hard
 
-"@inquirer/rawlist@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@inquirer/rawlist@npm:2.1.0"
+"@inquirer/rawlist@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@inquirer/rawlist@npm:2.1.5"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     chalk: "npm:^4.1.2"
-  checksum: 10c0/efb5b99c2c9a0cdd180f26745bddb08d4efac5656002d56bf986d8402c00405da19fd38cc580013ef3242601bd0a2ec717729c44bdcf737636c000b024a067c0
+  checksum: 10c0/0c7b7266648b9ddffb90e3f65c3ee187386ad0b110b72da6225be5fddf4092c6c903dd2fd9929ac236e474f906e93f3082b1b716a2ca2a51d32e9e6d332f5171
   languageName: node
   linkType: hard
 
-"@inquirer/select@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@inquirer/select@npm:2.2.0"
+"@inquirer/select@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@inquirer/select@npm:2.3.1"
   dependencies:
-    "@inquirer/core": "npm:^7.1.0"
-    "@inquirer/type": "npm:^1.2.1"
+    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/figures": "npm:^1.0.1"
+    "@inquirer/type": "npm:^1.3.0"
     ansi-escapes: "npm:^4.3.2"
     chalk: "npm:^4.1.2"
-    figures: "npm:^3.2.0"
-  checksum: 10c0/38ff483e4fd19f1883e55780b9d950a29df1a4e61074fa418158cd37b4c88c2b1775457dd2db52b492d5234897aa4d72007dcb2101deaabaa70cbeb2a73afe9d
+  checksum: 10c0/494f03c1da25bf335c1d73ce2ac8398428cbbf94794b650dcc922ca247b3950c52f9072cf0d65c07dca5e6c38728dda3b7e07eae12ff423328e02397cad2afb9
   languageName: node
   linkType: hard
 
-"@inquirer/type@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@inquirer/type@npm:1.2.1"
-  checksum: 10c0/d3f8a5e921795ab497c73c35c967390cfb1faf85c71ce1fae348161f910848a2ab851837a106d9425b2657d2409a9510c38e2053b7c3eabe30453b020dd6c518
+"@inquirer/type@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@inquirer/type@npm:1.3.0"
+  checksum: 10c0/7d2886ee3fd24f16266b1724393dd6ed4cf22f6aa95665db022c9f2a1cea41b1b1fa778342f4accf3f251282d8cb6cdfe076535b0c763d3f0421da72717fe37a
   languageName: node
   linkType: hard
 
@@ -1163,107 +1167,116 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/changelog@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@monoweave/changelog@npm:1.2.0"
+"@monoweave/changelog@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@monoweave/changelog@npm:1.2.5"
   dependencies:
     conventional-changelog-writer: "npm:^7.0.1"
     conventional-commits-parser: "npm:^5.0.0"
-    p-limit: "npm:^3.1.0"
+    p-limit: "npm:^5.0.0"
   peerDependencies:
-    "@monoweave/git": ^1.1.0
-    "@monoweave/io": ^1.1.0
-    "@monoweave/logging": ^0.0.4
+    "@monoweave/git": ^1.2.0
+    "@monoweave/io": ^1.2.0
+    "@monoweave/logging": ^1.2.0
     "@monoweave/types": ^1.1.0
     "@yarnpkg/core": ^4.0.3
     "@yarnpkg/fslib": ^3.0.2
-  checksum: 10c0/1af6bb2c074e6ee6293275d835f0df5db86208e53af30b81db5f5231ff6d96d41b46174bb459b425e4d1c58f573223da8ff80c5af005dfbc8587fdeeca4a8a06
+  checksum: 10c0/e69dcb0043bc14a869fbf6d5ad0a7c852b6cf10495e251aa174754e93c76588e5632edb8f414bf236d2442d0c1d661b263e992dd0ef9f9053f4975485fc49920
   languageName: node
   linkType: hard
 
-"@monoweave/cli@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@monoweave/cli@npm:1.2.0"
+"@monoweave/cli@npm:^1.2.1":
+  version: 1.3.1
+  resolution: "@monoweave/cli@npm:1.3.1"
   dependencies:
-    "@inquirer/prompts": "npm:^4.1.0"
-    "@monoweave/logging": "npm:^0.0.4"
-    "@monoweave/node": "npm:^1.2.0"
+    "@inquirer/prompts": "npm:^5.0.0"
+    "@monoweave/changelog": "npm:^1.2.5"
+    "@monoweave/dependencies": "npm:^1.2.4"
+    "@monoweave/git": "npm:^1.2.5"
+    "@monoweave/io": "npm:^1.2.4"
+    "@monoweave/logging": "npm:^1.2.4"
+    "@monoweave/node": "npm:^1.3.0"
     "@monoweave/types": "npm:^1.1.0"
+    "@monoweave/versions": "npm:^1.3.0"
+    "@yarnpkg/cli": "npm:^4.1.1"
     "@yarnpkg/core": "npm:^4.0.3"
     "@yarnpkg/fslib": "npm:^3.0.2"
+    "@yarnpkg/plugin-npm": "npm:^3.0.1"
+    "@yarnpkg/plugin-pack": "npm:^4.0.0"
+    "@yarnpkg/shell": "npm:^4.0.0"
     ajv: "npm:^8.12.0"
-    clipanion: "npm:^3.2.1"
+    clipanion: "npm:^4.0.0-rc.3"
     json5: "npm:^2.2.3"
     typanion: "npm:^3.14.0"
-    yaml: "npm:^2.4.0"
+    yaml: "npm:^2.4.1"
   bin:
     monoweave: ./lib/index.js
-  checksum: 10c0/f741a2b8739865272af0524ebf7cbd19bffb7ec6f0ad15e4e38f3d0ef977a4d296566d005e75c123d72361c151bc8f1faa3023fb902c631f665e0e122f4f81a0
+  checksum: 10c0/eb6254a6ffc88fbb98ee35e51796a002dc93007784db061e5a4d16628803f34c18741e578955b10fe954286b271693843d7ab9674ea1d60b5daf9efaffacfbcc
   languageName: node
   linkType: hard
 
-"@monoweave/dependencies@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@monoweave/dependencies@npm:1.1.0"
+"@monoweave/dependencies@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@monoweave/dependencies@npm:1.2.4"
   peerDependencies:
-    "@monoweave/logging": ^0.0.4
+    "@monoweave/logging": ^1.2.0
     "@monoweave/types": ^1.1.0
     "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/6692918b8f7d37e1007efd7cf315248ff4471587cb3739b21338f531c45323d0fe2dccfc115ac33f9ede1f13465634166bbeb021bff1e023b932054b8ff06a37
+  checksum: 10c0/6bff3084df284c4cc462f531103a69f67c90280d6d2573c37ff0f4cbb46d1e0db4f98a311527fe97d23ab3441a7b99604c043ae52f5df9bc7e09b59dd992a94b
   languageName: node
   linkType: hard
 
-"@monoweave/git@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@monoweave/git@npm:1.1.0"
+"@monoweave/git@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@monoweave/git@npm:1.2.5"
   dependencies:
     micromatch: "npm:^4.0.5"
   peerDependencies:
-    "@monoweave/io": ^1.1.0
-    "@monoweave/logging": ^0.0.4
+    "@monoweave/io": ^1.2.0
+    "@monoweave/logging": ^1.2.0
     "@monoweave/types": ^1.1.0
     "@yarnpkg/core": ^4.0.3
     "@yarnpkg/fslib": ^3.0.2
-  checksum: 10c0/c4276fef12d104c36daffd2ab6edf7cbeac40ffa0b9c05495cea2cef9f141762496eddc341003c9880e44007440169b4592d0b0c9e91b7a08c62e23850b5b6b5
+  checksum: 10c0/26ca45b4d3d2e3109e86a8892156cfea8aaa891471a18bfaa92f40d4d93ec8beec44d8e512ca871695b10e98d459d887cf82f7322610cd03ee000cf5c686e450
   languageName: node
   linkType: hard
 
-"@monoweave/io@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@monoweave/io@npm:1.1.0"
+"@monoweave/io@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@monoweave/io@npm:1.2.4"
   dependencies:
-    semver: "npm:^7.5.4"
+    semver: "npm:^7.6.0"
   peerDependencies:
-    "@monoweave/logging": ^0.0.4
+    "@monoweave/logging": ^1.2.0
     "@monoweave/types": ^1.1.0
     "@yarnpkg/core": ^4.0.3
     "@yarnpkg/fslib": ^3.0.2
     "@yarnpkg/shell": ^4.0.0
-  checksum: 10c0/76ebcdc8db180a15d7ba9fcd7b9430ea1bbc12a60fee110b588a428dcc2a63aa8fc503e182872efa454ae0cd35690571e23b656f89678ff255bb0145f22cc5d0
+  checksum: 10c0/c12024aafd52d9c6eefdc3a6a59760bbddcff70d56a15460e18876f7516cc2d196c359471c24227e4a9bd4c4fa3509b53fd1a6ba49aeed664f52c3643ba93327
   languageName: node
   linkType: hard
 
-"@monoweave/logging@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@monoweave/logging@npm:0.0.4"
+"@monoweave/logging@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@monoweave/logging@npm:1.2.4"
   peerDependencies:
     "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/76b29c6a3f6bb83339ae8d37be3c7825ad13e2b45bfda4436e9fb2390231b72e40b64d0447f5de7525a948620cef5d46af2d7aacd5725964922d1c903386c7fe
+  checksum: 10c0/2e58a08f6c5d654c590ae40371276000bc69330da532f0021b610158bb2dcf38d9593ee69b105186dd507566588dc4faf93c4fd92ff8eaeada7703df6e4080c6
   languageName: node
   linkType: hard
 
-"@monoweave/node@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@monoweave/node@npm:1.2.0"
+"@monoweave/node@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@monoweave/node@npm:1.3.0"
   dependencies:
-    "@monoweave/changelog": "npm:^1.2.0"
-    "@monoweave/dependencies": "npm:^1.1.0"
-    "@monoweave/git": "npm:^1.1.0"
-    "@monoweave/io": "npm:^1.1.0"
-    "@monoweave/logging": "npm:^0.0.4"
-    "@monoweave/publish": "npm:^1.1.0"
+    "@monoweave/changelog": "npm:^1.2.5"
+    "@monoweave/dependencies": "npm:^1.2.4"
+    "@monoweave/git": "npm:^1.2.5"
+    "@monoweave/io": "npm:^1.2.4"
+    "@monoweave/logging": "npm:^1.2.4"
+    "@monoweave/publish": "npm:^1.2.5"
     "@monoweave/types": "npm:^1.1.0"
-    "@monoweave/versions": "npm:^1.2.0"
+    "@monoweave/versions": "npm:^1.3.0"
     "@yarnpkg/cli": "npm:^4.1.1"
     "@yarnpkg/core": "npm:^4.0.3"
     "@yarnpkg/fslib": "npm:^3.0.2"
@@ -1272,44 +1285,44 @@ __metadata:
     "@yarnpkg/shell": "npm:^4.0.0"
     micromatch: "npm:^4.0.5"
     tapable: "npm:^2.2.1"
-  checksum: 10c0/bc53b1a1d7d196ea5b20ff9eb4624c0c751ca82304b831b43c96041ab62d274a1fb16cdc9ba375e3f4b8644d4d7c4fa31c5b0df1f2ddfc612c1475ad990bd8cd
+  checksum: 10c0/5e35228bf318343aa2c6b4baa7d504ee67157a4a9e15671ec80710ad1141f5028f30ef759bbce73f8b287c2b626c9df79a4f7503649c66eaea8d4a6d005f1a8d
   languageName: node
   linkType: hard
 
-"@monoweave/plugin-github@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@monoweave/plugin-github@npm:2.1.0"
+"@monoweave/plugin-github@npm:^2.1.1":
+  version: 2.1.4
+  resolution: "@monoweave/plugin-github@npm:2.1.4"
   dependencies:
-    "@monoweave/git": "npm:^1.1.0"
-    "@monoweave/io": "npm:^1.1.0"
-    "@monoweave/logging": "npm:^0.0.4"
+    "@monoweave/git": "npm:^1.2.5"
+    "@monoweave/io": "npm:^1.2.4"
+    "@monoweave/logging": "npm:^1.2.4"
     "@monoweave/types": "npm:^1.1.0"
     "@octokit/core": "npm:^6.0.1"
     "@octokit/plugin-throttling": "npm:^9.0.3"
     "@yarnpkg/core": "npm:^4.0.3"
     "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/shell": "npm:^4.0.0"
-  checksum: 10c0/785dec010cbc0301f5c36f7341bf9bbe4a676e92a67f0933f7874dc34ffc1b58c6cf52db0cbd10fb26648f90022e2005e787c6954362f2f22d48565da51d7df2
+  checksum: 10c0/fd841465536be9a4459da429bbf2eca85002bdbb820efa3142fac4159e655095cc8355b9463930b3c34ecb683d6c9b3344385f4a93e23189961c233aab10b616
   languageName: node
   linkType: hard
 
-"@monoweave/publish@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@monoweave/publish@npm:1.1.0"
+"@monoweave/publish@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@monoweave/publish@npm:1.2.5"
   dependencies:
-    p-limit: "npm:^3.1.0"
+    p-limit: "npm:^5.0.0"
   peerDependencies:
-    "@monoweave/dependencies": ^1.1.0
-    "@monoweave/git": ^1.1.0
-    "@monoweave/io": ^1.1.0
-    "@monoweave/logging": ^0.0.4
+    "@monoweave/dependencies": ^1.2.0
+    "@monoweave/git": ^1.2.0
+    "@monoweave/io": ^1.2.0
+    "@monoweave/logging": ^1.2.0
     "@monoweave/types": ^1.1.0
     "@yarnpkg/cli": ^4.1.1
     "@yarnpkg/core": ^4.0.3
     "@yarnpkg/fslib": ^3.0.2
     "@yarnpkg/plugin-npm": ^3.0.1
     "@yarnpkg/plugin-pack": ^4.0.0
-  checksum: 10c0/130646718c136d5e4e2851dbf3b3e39d675d56327a4e3497956485cf8236b2f0f9fb6e71a1e4c09e93c3f9372e972748a3ebd8c76feb9394c46168c9d03e0668
+  checksum: 10c0/82496f9d2ec3dc5d0bfa5d35be3cda533d25d3e38ba80a3dccd74444c9b1b9efa0fc9c843f529f852a90907acb6aa0a229343d23bb41c0f18c1272d415d85df4
   languageName: node
   linkType: hard
 
@@ -1325,28 +1338,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/versions@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@monoweave/versions@npm:1.2.0"
+"@monoweave/versions@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@monoweave/versions@npm:1.3.0"
   dependencies:
     conventional-commits-parser: "npm:^5.0.0"
     micromatch: "npm:^4.0.5"
-    p-limit: "npm:^3.1.0"
+    p-limit: "npm:^5.0.0"
     semver: "npm:^7.6.0"
-    yaml: "npm:^2.4.0"
+    yaml: "npm:^2.4.1"
   peerDependencies:
     "@monoweave/changelog": ^1.2.0
-    "@monoweave/dependencies": ^1.1.0
-    "@monoweave/git": ^1.1.0
-    "@monoweave/io": ^1.1.0
-    "@monoweave/logging": ^0.0.4
+    "@monoweave/dependencies": ^1.2.0
+    "@monoweave/git": ^1.2.0
+    "@monoweave/io": ^1.2.0
+    "@monoweave/logging": ^1.2.0
     "@monoweave/types": ^1.1.0
     "@yarnpkg/cli": ^4.1.1
     "@yarnpkg/core": ^4.0.3
     "@yarnpkg/fslib": ^3.0.2
     "@yarnpkg/plugin-npm": ^3.0.1
     "@yarnpkg/plugin-pack": ^4.0.0
-  checksum: 10c0/7a51b7069d548a93412b0c64c990cb379864847773f64cbcc429c5d61738877a960e8b26ab72361d48430d675fb1974eea186fa41e4e55b04a75c8243bf96bc5
+  checksum: 10c0/68accd57149292ac50f0ef934bfbd19cfb39eac7bb403fc5a10ca9fbd11a9741ae1aa6406440350c4f3e855c474013513fc8afac68cc9a4e3b60cb34b5256f3c
   languageName: node
   linkType: hard
 
@@ -1457,8 +1470,8 @@ __metadata:
   resolution: "@noahnu/nodejs-tools@workspace:."
   dependencies:
     "@jest/types": "npm:^29.6.3"
-    "@monoweave/cli": "npm:^1.2.0"
-    "@monoweave/plugin-github": "npm:^2.1.0"
+    "@monoweave/cli": "npm:^1.2.1"
+    "@monoweave/plugin-github": "npm:^2.1.1"
     "@monoweave/types": "npm:^1.1.0"
     "@noahnu/eslint-config": "npm:^1.0.0"
     "@tophat/commitizen-adapter": "npm:^1.0.2"
@@ -1984,7 +1997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.11.26, @types/node@npm:^20.12.2":
+"@types/node@npm:*, @types/node@npm:^20.12.2, @types/node@npm:^20.12.7":
   version: 20.12.7
   resolution: "@types/node@npm:20.12.7"
   dependencies:
@@ -3654,7 +3667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clipanion@npm:4.0.0-rc.3, clipanion@npm:^4.0.0-rc.2":
+"clipanion@npm:4.0.0-rc.3, clipanion@npm:^4.0.0-rc.2, clipanion@npm:^4.0.0-rc.3":
   version: 4.0.0-rc.3
   resolution: "clipanion@npm:4.0.0-rc.3"
   dependencies:
@@ -3662,17 +3675,6 @@ __metadata:
   peerDependencies:
     typanion: "*"
   checksum: 10c0/5171fd04539b39b5483bd097d5f828da165fa47b4718378cb0bc3c2f70dfa11736f01727cfa4b9566fc8eabad03473e62ae98470c4c8d15c618ee1294e07169f
-  languageName: node
-  linkType: hard
-
-"clipanion@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "clipanion@npm:3.2.1"
-  dependencies:
-    typanion: "npm:^3.8.0"
-  peerDependencies:
-    typanion: "*"
-  checksum: 10c0/6c148bd01ae645031aeb6e9a1a16f3ce07eb754cd9981c91edcab82b09e063b805ac41e4f36039d07602334b6dbba036b030d1807c12acd7f90778a696b7ac6e
   languageName: node
   linkType: hard
 
@@ -4950,7 +4952,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"figures@npm:^3.0.0, figures@npm:^3.2.0":
+"figures@npm:^3.0.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
   dependencies:
@@ -7728,6 +7730,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"p-limit@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "p-limit@npm:5.0.0"
+  dependencies:
+    yocto-queue: "npm:^1.0.0"
+  checksum: 10c0/574e93b8895a26e8485eb1df7c4b58a1a6e8d8ae41b1750cc2cc440922b3d306044fc6e9a7f74578a883d46802d9db72b30f2e612690fcef838c173261b1ed83
+  languageName: node
+  linkType: hard
+
 "p-locate@npm:^4.1.0":
   version: 4.1.0
   resolution: "p-locate@npm:4.1.0"
@@ -8359,13 +8370,6 @@ __metadata:
   version: 2.4.1
   resolution: "run-async@npm:2.4.1"
   checksum: 10c0/35a68c8f1d9664f6c7c2e153877ca1d6e4f886e5ca067c25cdd895a6891ff3a1466ee07c63d6a9be306e9619ff7d509494e6d9c129516a36b9fd82263d579ee1
-  languageName: node
-  linkType: hard
-
-"run-async@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "run-async@npm:3.0.0"
-  checksum: 10c0/b18b562ae37c3020083dcaae29642e4cc360c824fbfb6b7d50d809a9d5227bb986152d09310255842c8dce40526e82ca768f02f00806c91ba92a8dfa6159cb85
   languageName: node
   linkType: hard
 
@@ -9704,7 +9708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^2.4.0":
+"yaml@npm:^2.4.1":
   version: 2.4.1
   resolution: "yaml@npm:2.4.1"
   bin:
@@ -9753,6 +9757,13 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"yocto-queue@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "yocto-queue@npm:1.0.0"
+  checksum: 10c0/856117aa15cf5103d2a2fb173f0ab4acb12b4b4d0ed3ab249fdbbf612e55d1cadfd27a6110940e24746fb0a78cf640b522cc8bca76f30a3b00b66e90cf82abe0
   languageName: node
   linkType: hard
 
