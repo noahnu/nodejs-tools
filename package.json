@@ -21,7 +21,7 @@
     "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781",
     "devDependencies": {
         "@jest/types": "^29.6.3",
-        "@monoweave/plugin-github": "^2.1.1",
+        "@monoweave/plugin-github": "^2.1.2",
         "@noahnu/eslint-config": "^1.0.0",
         "@tophat/commitizen-adapter": "^1.0.2",
         "@tophat/commitlint-config": "^1.0.2",
@@ -66,7 +66,7 @@
         "release": "monoweave --log-level 0 --plugins @monoweave/plugin-github"
     },
     "dependencies": {
-        "@monoweave/cli": "^1.2.2",
+        "@monoweave/cli": "^1.2.3",
         "@monoweave/types": "^1.1.0"
     }
 }
