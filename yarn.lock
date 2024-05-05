@@ -710,35 +710,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@inquirer/checkbox@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "@inquirer/checkbox@npm:2.3.1"
+"@inquirer/checkbox@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "@inquirer/checkbox@npm:2.3.2"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/core": "npm:^8.1.0"
     "@inquirer/figures": "npm:^1.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/type": "npm:^1.3.1"
     ansi-escapes: "npm:^4.3.2"
     chalk: "npm:^4.1.2"
-  checksum: 10c0/5f791ec705af72ff108bf3323207da86146505f53ace887734ccf11a9863ba7857259a6bbb28839313a7a10cea3a3c7f29aa25fc57d7bb5a9404e69d3c63436b
+  checksum: 10c0/a143f87f774bd1f6e91babc68df3a978dd861a059ebe421feafd70345a5110f39815729abd7d89020e175b2c753675abf70d86f3ba7fd2807891dff0f1ad866d
   languageName: node
   linkType: hard
 
-"@inquirer/confirm@npm:^3.1.5":
-  version: 3.1.5
-  resolution: "@inquirer/confirm@npm:3.1.5"
+"@inquirer/confirm@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "@inquirer/confirm@npm:3.1.6"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
-    "@inquirer/type": "npm:^1.3.0"
-  checksum: 10c0/d2f97075565fde4b634b4bd17d74e786f4ebdcc4d7cd3b1d9059f59d5b33a8eccf201266991f20cb13f816777c28a698f8c863d99218c447e2aa1adceabec66b
+    "@inquirer/core": "npm:^8.1.0"
+    "@inquirer/type": "npm:^1.3.1"
+  checksum: 10c0/2d13daf4587d1073935edb6c24cec00f738b3c5401bdd8047b50a2bf7410bbc84ded78ff934a2266cbd022d52b0aa8611821bda198d1e54fafca4c0ed25be38a
   languageName: node
   linkType: hard
 
-"@inquirer/core@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@inquirer/core@npm:8.0.1"
+"@inquirer/core@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@inquirer/core@npm:8.1.0"
   dependencies:
     "@inquirer/figures": "npm:^1.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/type": "npm:^1.3.1"
     "@types/mute-stream": "npm:^0.0.4"
     "@types/node": "npm:^20.12.7"
     "@types/wrap-ansi": "npm:^3.0.0"
@@ -750,29 +750,29 @@ __metadata:
     signal-exit: "npm:^4.1.0"
     strip-ansi: "npm:^6.0.1"
     wrap-ansi: "npm:^6.2.0"
-  checksum: 10c0/04b1c94c7ee5a075361279a73ea2ac5bd21371f8d3996052f8deb61d9d3d4b40b97aa66ba0cdf291ebaeee37edda761877c3e835552f870bf4d1006610a11b52
+  checksum: 10c0/5746830c672f24505d7554fe43f05f97823fdf1c84aaeab1808dc09911e748f6b1887902794d95239655c0ed5f6029c2b3c018ab7c2785427ae95a4e92faa4d7
   languageName: node
   linkType: hard
 
-"@inquirer/editor@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@inquirer/editor@npm:2.1.5"
+"@inquirer/editor@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@inquirer/editor@npm:2.1.6"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/core": "npm:^8.1.0"
+    "@inquirer/type": "npm:^1.3.1"
     external-editor: "npm:^3.1.0"
-  checksum: 10c0/d7ac14a4974781866c7fb80d706408557e6922e8f8226d4d4d0477214b211abf686da97be21cbdbde95b4d5f244ffce0a2f6b285ae037edf89b2307850943dac
+  checksum: 10c0/3538ccf55834344e32b29cebea1d90690a6c1f3be4b66998604827e5643ceec0038e7d4470cad02b6e94554931661a9190be1fe662a610ad56af931a4166f377
   languageName: node
   linkType: hard
 
-"@inquirer/expand@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@inquirer/expand@npm:2.1.5"
+"@inquirer/expand@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@inquirer/expand@npm:2.1.6"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/core": "npm:^8.1.0"
+    "@inquirer/type": "npm:^1.3.1"
     chalk: "npm:^4.1.2"
-  checksum: 10c0/84888010b404080e794687fb259772bb19a9f1d97eefa2d10662acdc90c632bb0c32fa39e3c4e93463ef4b870ef9f1debe126dd37ab3142e9d532aee9eb0fcef
+  checksum: 10c0/880193c787f45c8177807306619c2593de9ef7aa738c080aeb51c93474cc223e11a55348d1009649fadcd28f8870e6a4401b71aeced1863c81a2adb0eb6f0491
   languageName: node
   linkType: hard
 
@@ -783,71 +783,71 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@inquirer/input@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@inquirer/input@npm:2.1.5"
+"@inquirer/input@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@inquirer/input@npm:2.1.6"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
-    "@inquirer/type": "npm:^1.3.0"
-  checksum: 10c0/55063f6142b8d5c68fe86bbfe55ee0e7641610a801b9b351cc0cc481ebdd3c8a7781aa726a94a526f803d2eec8d832fe79eeaca86eb836838c3aa288cfc99e90
+    "@inquirer/core": "npm:^8.1.0"
+    "@inquirer/type": "npm:^1.3.1"
+  checksum: 10c0/0184074a762c236e40b2d1c205653bf1ec7da5f16c980a59d3c9dcec89474553af17b1a3b50e54ec9e3b23fc8417b8ac51022bd562b789e8471db06bd44c946d
   languageName: node
   linkType: hard
 
-"@inquirer/password@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@inquirer/password@npm:2.1.5"
+"@inquirer/password@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@inquirer/password@npm:2.1.6"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/core": "npm:^8.1.0"
+    "@inquirer/type": "npm:^1.3.1"
     ansi-escapes: "npm:^4.3.2"
-  checksum: 10c0/372d5b3b91af99fed8eaeb8a6480dc9629fa9def64076983b3e6774e37eb3f04355bffbdc44a3aa127e71488d62b99f57ab777ed4cca8ab7b4d9bb629f82f13d
+  checksum: 10c0/e51c91e48ba5a6a9be9b65e496d74605eeb68fca57a3146285eabcea2bd08244957c05df5e7a336c252d53df87218087fde00f3587b2e9c338783826f29ca45e
   languageName: node
   linkType: hard
 
-"@inquirer/prompts@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "@inquirer/prompts@npm:5.0.1"
+"@inquirer/prompts@npm:^5.0.1":
+  version: 5.0.2
+  resolution: "@inquirer/prompts@npm:5.0.2"
   dependencies:
-    "@inquirer/checkbox": "npm:^2.3.1"
-    "@inquirer/confirm": "npm:^3.1.5"
-    "@inquirer/editor": "npm:^2.1.5"
-    "@inquirer/expand": "npm:^2.1.5"
-    "@inquirer/input": "npm:^2.1.5"
-    "@inquirer/password": "npm:^2.1.5"
-    "@inquirer/rawlist": "npm:^2.1.5"
-    "@inquirer/select": "npm:^2.3.1"
-  checksum: 10c0/2edad0348794de8d6e1fbd66efa306f6794e1378d21eb51f8f55f7b006dd1fa6534a9cb74d105e1aafd1f696242a94ec710fdb74315f912fc7b7067e7781bd23
+    "@inquirer/checkbox": "npm:^2.3.2"
+    "@inquirer/confirm": "npm:^3.1.6"
+    "@inquirer/editor": "npm:^2.1.6"
+    "@inquirer/expand": "npm:^2.1.6"
+    "@inquirer/input": "npm:^2.1.6"
+    "@inquirer/password": "npm:^2.1.6"
+    "@inquirer/rawlist": "npm:^2.1.6"
+    "@inquirer/select": "npm:^2.3.2"
+  checksum: 10c0/4d5661cf633e9b79a9b68deae0ced1e075f37a04f6ae2b2bb126770a39e6eae7db712fc2f181bda24cc644db04a33e75f9db12972f731d3bb5e84e9995c324db
   languageName: node
   linkType: hard
 
-"@inquirer/rawlist@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@inquirer/rawlist@npm:2.1.5"
+"@inquirer/rawlist@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@inquirer/rawlist@npm:2.1.6"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/core": "npm:^8.1.0"
+    "@inquirer/type": "npm:^1.3.1"
     chalk: "npm:^4.1.2"
-  checksum: 10c0/0c7b7266648b9ddffb90e3f65c3ee187386ad0b110b72da6225be5fddf4092c6c903dd2fd9929ac236e474f906e93f3082b1b716a2ca2a51d32e9e6d332f5171
+  checksum: 10c0/ab3e8c111ed87cfb88120012ee40cff6a8843d1da61eb992d70f74390026e0ed3383ae2ee4cf271833e831fdc04eb4a03d984ad300c8ee5ad3c4895dfc520930
   languageName: node
   linkType: hard
 
-"@inquirer/select@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "@inquirer/select@npm:2.3.1"
+"@inquirer/select@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "@inquirer/select@npm:2.3.2"
   dependencies:
-    "@inquirer/core": "npm:^8.0.1"
+    "@inquirer/core": "npm:^8.1.0"
     "@inquirer/figures": "npm:^1.0.1"
-    "@inquirer/type": "npm:^1.3.0"
+    "@inquirer/type": "npm:^1.3.1"
     ansi-escapes: "npm:^4.3.2"
     chalk: "npm:^4.1.2"
-  checksum: 10c0/494f03c1da25bf335c1d73ce2ac8398428cbbf94794b650dcc922ca247b3950c52f9072cf0d65c07dca5e6c38728dda3b7e07eae12ff423328e02397cad2afb9
+  checksum: 10c0/5c2badca6fd8ed27c44a89009a9c9918030095734bb0dad0826a5a5d4863e2e53facb6a28fc387cff77156a1cffe80e6c3b84e0a0e3757d34f275db39cfad0a6
   languageName: node
   linkType: hard
 
-"@inquirer/type@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@inquirer/type@npm:1.3.0"
-  checksum: 10c0/7d2886ee3fd24f16266b1724393dd6ed4cf22f6aa95665db022c9f2a1cea41b1b1fa778342f4accf3f251282d8cb6cdfe076535b0c763d3f0421da72717fe37a
+"@inquirer/type@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@inquirer/type@npm:1.3.1"
+  checksum: 10c0/7dbf7ca10f758f2b6dbc7b7302ce01e79596747692468805c340afa0bf608adecbe33cd3c3b2b806bb3987cadf233b52ead7652b479a052455bc06855849f97f
   languageName: node
   linkType: hard
 
@@ -1167,43 +1167,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/changelog@npm:^1.2.5":
-  version: 1.2.5
-  resolution: "@monoweave/changelog@npm:1.2.5"
+"@monoweave/changelog@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/changelog@npm:1.4.0"
   dependencies:
     conventional-changelog-writer: "npm:^7.0.1"
     conventional-commits-parser: "npm:^5.0.0"
     p-limit: "npm:^5.0.0"
   peerDependencies:
-    "@monoweave/git": ^1.2.0
-    "@monoweave/io": ^1.2.0
-    "@monoweave/logging": ^1.2.0
-    "@monoweave/types": ^1.1.0
-    "@yarnpkg/core": ^4.0.3
+    "@monoweave/git": ^1.4.0
+    "@monoweave/io": ^1.4.0
+    "@monoweave/logging": ^1.4.0
+    "@monoweave/types": ^1.4.0
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/fslib": ^3.0.2
-  checksum: 10c0/e69dcb0043bc14a869fbf6d5ad0a7c852b6cf10495e251aa174754e93c76588e5632edb8f414bf236d2442d0c1d661b263e992dd0ef9f9053f4975485fc49920
+  checksum: 10c0/1e1833124bd1aca8e349c0e91bd7184803b9d53f1293c5d96caf172c63ebd67ea5458612b0b691d5bc6c76a69a403ac123d1dd15a2e157fb2cdaa10c074813e8
   languageName: node
   linkType: hard
 
-"@monoweave/cli@npm:^1.2.5":
-  version: 1.3.1
-  resolution: "@monoweave/cli@npm:1.3.1"
+"@monoweave/cli@npm:^1.3.0":
+  version: 1.4.0
+  resolution: "@monoweave/cli@npm:1.4.0"
   dependencies:
-    "@inquirer/prompts": "npm:^5.0.0"
-    "@monoweave/changelog": "npm:^1.2.5"
-    "@monoweave/dependencies": "npm:^1.2.4"
-    "@monoweave/git": "npm:^1.2.5"
-    "@monoweave/io": "npm:^1.2.4"
-    "@monoweave/logging": "npm:^1.2.4"
-    "@monoweave/node": "npm:^1.3.0"
-    "@monoweave/types": "npm:^1.1.0"
-    "@monoweave/versions": "npm:^1.3.0"
-    "@yarnpkg/cli": "npm:^4.1.1"
-    "@yarnpkg/core": "npm:^4.0.3"
+    "@inquirer/prompts": "npm:^5.0.1"
+    "@monoweave/changelog": "npm:^1.4.0"
+    "@monoweave/dependencies": "npm:^1.4.0"
+    "@monoweave/git": "npm:^1.4.0"
+    "@monoweave/io": "npm:^1.4.0"
+    "@monoweave/logging": "npm:^1.4.0"
+    "@monoweave/node": "npm:^1.4.0"
+    "@monoweave/types": "npm:^1.4.0"
+    "@monoweave/versions": "npm:^1.4.0"
+    "@yarnpkg/cli": "npm:^4.2.1"
+    "@yarnpkg/core": "npm:^4.0.5"
     "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/plugin-npm": "npm:^3.0.1"
     "@yarnpkg/plugin-pack": "npm:^4.0.0"
-    "@yarnpkg/shell": "npm:^4.0.0"
+    "@yarnpkg/shell": "npm:^4.0.2"
     ajv: "npm:^8.12.0"
     clipanion: "npm:^4.0.0-rc.3"
     json5: "npm:^2.2.3"
@@ -1211,81 +1211,81 @@ __metadata:
     yaml: "npm:^2.4.1"
   bin:
     monoweave: ./lib/index.js
-  checksum: 10c0/eb6254a6ffc88fbb98ee35e51796a002dc93007784db061e5a4d16628803f34c18741e578955b10fe954286b271693843d7ab9674ea1d60b5daf9efaffacfbcc
+  checksum: 10c0/38589deb65c2128b4356739603a93ca1f5f1bac1a69488b94e13ea1131e6957175621813a5ae2101ec89d89eb0e91e5892a11374706bd131e08f8d69ab54500b
   languageName: node
   linkType: hard
 
-"@monoweave/dependencies@npm:^1.2.4":
-  version: 1.2.4
-  resolution: "@monoweave/dependencies@npm:1.2.4"
+"@monoweave/dependencies@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/dependencies@npm:1.4.0"
   peerDependencies:
-    "@monoweave/logging": ^1.2.0
-    "@monoweave/types": ^1.1.0
-    "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/6bff3084df284c4cc462f531103a69f67c90280d6d2573c37ff0f4cbb46d1e0db4f98a311527fe97d23ab3441a7b99604c043ae52f5df9bc7e09b59dd992a94b
+    "@monoweave/logging": ^1.4.0
+    "@monoweave/types": ^1.4.0
+    "@yarnpkg/core": ^4.0.5
+  checksum: 10c0/bc190a6bb4d425edec73c7458c5e8c280b2dd7fda21ea34696950e46d0c94818dd49190751cd821476d125f7bdb4031bbe8c539796d5acf8b68653c985c3432e
   languageName: node
   linkType: hard
 
-"@monoweave/git@npm:^1.2.5":
-  version: 1.2.5
-  resolution: "@monoweave/git@npm:1.2.5"
+"@monoweave/git@npm:^1.2.5, @monoweave/git@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/git@npm:1.4.0"
   dependencies:
     micromatch: "npm:^4.0.5"
   peerDependencies:
-    "@monoweave/io": ^1.2.0
-    "@monoweave/logging": ^1.2.0
-    "@monoweave/types": ^1.1.0
-    "@yarnpkg/core": ^4.0.3
+    "@monoweave/io": ^1.4.0
+    "@monoweave/logging": ^1.4.0
+    "@monoweave/types": ^1.4.0
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/fslib": ^3.0.2
-  checksum: 10c0/26ca45b4d3d2e3109e86a8892156cfea8aaa891471a18bfaa92f40d4d93ec8beec44d8e512ca871695b10e98d459d887cf82f7322610cd03ee000cf5c686e450
+  checksum: 10c0/adcf1432a8296c0bc3315d37d65b2d92f3452025ce358333d04517c681276a10b166e1bb0e1926ae5c7064cabcef6cff7d125e53d30cd45b255d15df2bc265b0
   languageName: node
   linkType: hard
 
-"@monoweave/io@npm:^1.2.4":
-  version: 1.2.4
-  resolution: "@monoweave/io@npm:1.2.4"
+"@monoweave/io@npm:^1.2.4, @monoweave/io@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/io@npm:1.4.0"
   dependencies:
     semver: "npm:^7.6.0"
   peerDependencies:
-    "@monoweave/logging": ^1.2.0
-    "@monoweave/types": ^1.1.0
-    "@yarnpkg/core": ^4.0.3
+    "@monoweave/logging": ^1.4.0
+    "@monoweave/types": ^1.4.0
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/fslib": ^3.0.2
-    "@yarnpkg/shell": ^4.0.0
-  checksum: 10c0/c12024aafd52d9c6eefdc3a6a59760bbddcff70d56a15460e18876f7516cc2d196c359471c24227e4a9bd4c4fa3509b53fd1a6ba49aeed664f52c3643ba93327
+    "@yarnpkg/shell": ^4.0.2
+  checksum: 10c0/606610ba1782afad9757a937514dc4931433c857da309bbd1dfa6a18b0619166219a8e752f9e97668bfc7d390799a4804f8936049ac6058d8a2533693fde3d33
   languageName: node
   linkType: hard
 
-"@monoweave/logging@npm:^1.2.4":
-  version: 1.2.4
-  resolution: "@monoweave/logging@npm:1.2.4"
+"@monoweave/logging@npm:^1.2.4, @monoweave/logging@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/logging@npm:1.4.0"
   peerDependencies:
-    "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/2e58a08f6c5d654c590ae40371276000bc69330da532f0021b610158bb2dcf38d9593ee69b105186dd507566588dc4faf93c4fd92ff8eaeada7703df6e4080c6
+    "@yarnpkg/core": ^4.0.5
+  checksum: 10c0/cb089becc27b4ae13e96416299fd06cf9fa0681838de979c0cb75f9c077a98c8dd9508865f6560e9678a7b22ea1d7bc293886d63d02a2d9ed12a2abbe39007d5
   languageName: node
   linkType: hard
 
-"@monoweave/node@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@monoweave/node@npm:1.3.0"
+"@monoweave/node@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/node@npm:1.4.0"
   dependencies:
-    "@monoweave/changelog": "npm:^1.2.5"
-    "@monoweave/dependencies": "npm:^1.2.4"
-    "@monoweave/git": "npm:^1.2.5"
-    "@monoweave/io": "npm:^1.2.4"
-    "@monoweave/logging": "npm:^1.2.4"
-    "@monoweave/publish": "npm:^1.2.5"
-    "@monoweave/types": "npm:^1.1.0"
-    "@monoweave/versions": "npm:^1.3.0"
-    "@yarnpkg/cli": "npm:^4.1.1"
-    "@yarnpkg/core": "npm:^4.0.3"
+    "@monoweave/changelog": "npm:^1.4.0"
+    "@monoweave/dependencies": "npm:^1.4.0"
+    "@monoweave/git": "npm:^1.4.0"
+    "@monoweave/io": "npm:^1.4.0"
+    "@monoweave/logging": "npm:^1.4.0"
+    "@monoweave/publish": "npm:^1.4.0"
+    "@monoweave/types": "npm:^1.4.0"
+    "@monoweave/versions": "npm:^1.4.0"
+    "@yarnpkg/cli": "npm:^4.2.1"
+    "@yarnpkg/core": "npm:^4.0.5"
     "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/plugin-npm": "npm:^3.0.1"
     "@yarnpkg/plugin-pack": "npm:^4.0.0"
-    "@yarnpkg/shell": "npm:^4.0.0"
+    "@yarnpkg/shell": "npm:^4.0.2"
     micromatch: "npm:^4.0.5"
     tapable: "npm:^2.2.1"
-  checksum: 10c0/5e35228bf318343aa2c6b4baa7d504ee67157a4a9e15671ec80710ad1141f5028f30ef759bbce73f8b287c2b626c9df79a4f7503649c66eaea8d4a6d005f1a8d
+  checksum: 10c0/4200b76b8798e66f3f3f00bdeaddfaf86443e236e850636a7d88ed115eebbec4505f0129ace48e024e3f42529e9f5e8a258ab7ac649d2d88ebdee3dc4b967613
   languageName: node
   linkType: hard
 
@@ -1306,41 +1306,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/publish@npm:^1.2.5":
-  version: 1.2.5
-  resolution: "@monoweave/publish@npm:1.2.5"
+"@monoweave/publish@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/publish@npm:1.4.0"
   dependencies:
     p-limit: "npm:^5.0.0"
   peerDependencies:
-    "@monoweave/dependencies": ^1.2.0
-    "@monoweave/git": ^1.2.0
-    "@monoweave/io": ^1.2.0
-    "@monoweave/logging": ^1.2.0
-    "@monoweave/types": ^1.1.0
-    "@yarnpkg/cli": ^4.1.1
-    "@yarnpkg/core": ^4.0.3
+    "@monoweave/dependencies": ^1.4.0
+    "@monoweave/git": ^1.4.0
+    "@monoweave/io": ^1.4.0
+    "@monoweave/logging": ^1.4.0
+    "@monoweave/types": ^1.4.0
+    "@yarnpkg/cli": ^4.2.1
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/fslib": ^3.0.2
     "@yarnpkg/plugin-npm": ^3.0.1
     "@yarnpkg/plugin-pack": ^4.0.0
-  checksum: 10c0/82496f9d2ec3dc5d0bfa5d35be3cda533d25d3e38ba80a3dccd74444c9b1b9efa0fc9c843f529f852a90907acb6aa0a229343d23bb41c0f18c1272d415d85df4
+  checksum: 10c0/630c57352db6ed7086d8d18e151a9af935b063e731d369c8467c93307f0c52a3f3ede2804457ae158b44a8efeb830e78fb85ac78412b1d56d070679cafee5612
   languageName: node
   linkType: hard
 
-"@monoweave/types@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@monoweave/types@npm:1.1.0"
+"@monoweave/types@npm:^1.1.0, @monoweave/types@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/types@npm:1.4.0"
   dependencies:
-    "@yarnpkg/core": "npm:^4.0.3"
+    "@yarnpkg/core": "npm:^4.0.5"
     tapable: "npm:^2.2.1"
   peerDependencies:
-    "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/51953508595c8c77900dfe4740d0b11adb334d256c09c2d71c1c9918a41dfca5e70776a83982e2358bf334e7fffabf2162cfca05cf75c918be9ff98b033f0b40
+    "@yarnpkg/core": ^4.0.5
+  checksum: 10c0/d0347c0fde5813a45a20ab210d94f84d43b924ca5a69d38e86ee640182a8d6770a77ac084c4415f92e4b88aac7c6271735838326fbf46b749d646cb53d6fcdb9
   languageName: node
   linkType: hard
 
-"@monoweave/versions@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@monoweave/versions@npm:1.3.0"
+"@monoweave/versions@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@monoweave/versions@npm:1.4.0"
   dependencies:
     conventional-commits-parser: "npm:^5.0.0"
     micromatch: "npm:^4.0.5"
@@ -1348,18 +1348,18 @@ __metadata:
     semver: "npm:^7.6.0"
     yaml: "npm:^2.4.1"
   peerDependencies:
-    "@monoweave/changelog": ^1.2.0
-    "@monoweave/dependencies": ^1.2.0
-    "@monoweave/git": ^1.2.0
-    "@monoweave/io": ^1.2.0
-    "@monoweave/logging": ^1.2.0
-    "@monoweave/types": ^1.1.0
-    "@yarnpkg/cli": ^4.1.1
-    "@yarnpkg/core": ^4.0.3
+    "@monoweave/changelog": ^1.4.0
+    "@monoweave/dependencies": ^1.4.0
+    "@monoweave/git": ^1.4.0
+    "@monoweave/io": ^1.4.0
+    "@monoweave/logging": ^1.4.0
+    "@monoweave/types": ^1.4.0
+    "@yarnpkg/cli": ^4.2.1
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/fslib": ^3.0.2
     "@yarnpkg/plugin-npm": ^3.0.1
     "@yarnpkg/plugin-pack": ^4.0.0
-  checksum: 10c0/68accd57149292ac50f0ef934bfbd19cfb39eac7bb403fc5a10ca9fbd11a9741ae1aa6406440350c4f3e855c474013513fc8afac68cc9a4e3b60cb34b5256f3c
+  checksum: 10c0/5ae5cc52098250fa09845fa1ef8dbbc07d1d51b541df0aad8e7a5dca0cac62f14338d31bd0309330f9c65c7a671b66745f27ed1b6217db91deabb0580807cb01
   languageName: node
   linkType: hard
 
@@ -1470,7 +1470,7 @@ __metadata:
   resolution: "@noahnu/nodejs-tools@workspace:."
   dependencies:
     "@jest/types": "npm:^29.6.3"
-    "@monoweave/cli": "npm:^1.2.5"
+    "@monoweave/cli": "npm:^1.3.0"
     "@monoweave/plugin-github": "npm:^2.1.4"
     "@monoweave/types": "npm:^1.1.0"
     "@noahnu/eslint-config": "npm:^1.0.0"
@@ -2275,15 +2275,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "@yarnpkg/cli@npm:4.1.1"
+"@yarnpkg/cli@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@yarnpkg/cli@npm:4.2.1"
   dependencies:
-    "@yarnpkg/core": "npm:^4.0.3"
+    "@yarnpkg/core": "npm:^4.0.5"
     "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/libzip": "npm:^3.0.1"
-    "@yarnpkg/parsers": "npm:^3.0.0"
-    "@yarnpkg/plugin-compat": "npm:^4.0.3"
+    "@yarnpkg/parsers": "npm:^3.0.2"
+    "@yarnpkg/plugin-compat": "npm:^4.0.5"
     "@yarnpkg/plugin-constraints": "npm:^4.0.2"
     "@yarnpkg/plugin-dlx": "npm:^4.0.0"
     "@yarnpkg/plugin-essentials": "npm:^4.1.1"
@@ -2297,38 +2297,38 @@ __metadata:
     "@yarnpkg/plugin-link": "npm:^3.0.0"
     "@yarnpkg/plugin-nm": "npm:^4.0.2"
     "@yarnpkg/plugin-npm": "npm:^3.0.1"
-    "@yarnpkg/plugin-npm-cli": "npm:^4.0.2"
+    "@yarnpkg/plugin-npm-cli": "npm:^4.0.4"
     "@yarnpkg/plugin-pack": "npm:^4.0.0"
     "@yarnpkg/plugin-patch": "npm:^4.0.1"
-    "@yarnpkg/plugin-pnp": "npm:^4.0.2"
+    "@yarnpkg/plugin-pnp": "npm:^4.0.4"
     "@yarnpkg/plugin-pnpm": "npm:^2.0.0"
     "@yarnpkg/plugin-stage": "npm:^4.0.0"
-    "@yarnpkg/plugin-typescript": "npm:^4.0.0"
-    "@yarnpkg/plugin-version": "npm:^4.0.1"
+    "@yarnpkg/plugin-typescript": "npm:^4.1.1"
+    "@yarnpkg/plugin-version": "npm:^4.0.3"
     "@yarnpkg/plugin-workspace-tools": "npm:^4.1.0"
-    "@yarnpkg/shell": "npm:^4.0.0"
+    "@yarnpkg/shell": "npm:^4.0.2"
     ci-info: "npm:^3.2.0"
     clipanion: "npm:^4.0.0-rc.2"
     semver: "npm:^7.1.2"
     tslib: "npm:^2.4.0"
     typanion: "npm:^3.14.0"
   peerDependencies:
-    "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/eda35760ee29756cd9fa571e08d66bdbd36c00ab10220791a8b80e599b54f0cad6a17475b81be17295be24b157b350153f5df4b5243478fb6bf956fbea1eb56c
+    "@yarnpkg/core": ^4.0.5
+  checksum: 10c0/93471cba3bd61023ee73d3c6f841236f6662e323026052f789b4ae9730edb9c7e9280bc8fa742291b69fe28705d9e981fb1928a12d8623ab99b2cbdec9107c19
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^4.0.2, @yarnpkg/core@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@yarnpkg/core@npm:4.0.3"
+"@yarnpkg/core@npm:^4.0.2, @yarnpkg/core@npm:^4.0.3, @yarnpkg/core@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "@yarnpkg/core@npm:4.0.5"
   dependencies:
     "@arcanis/slice-ansi": "npm:^1.1.1"
     "@types/semver": "npm:^7.1.0"
     "@types/treeify": "npm:^1.0.0"
     "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/libzip": "npm:^3.0.1"
-    "@yarnpkg/parsers": "npm:^3.0.0"
-    "@yarnpkg/shell": "npm:^4.0.0"
+    "@yarnpkg/parsers": "npm:^3.0.2"
+    "@yarnpkg/shell": "npm:^4.0.2"
     camelcase: "npm:^5.3.1"
     chalk: "npm:^3.0.0"
     ci-info: "npm:^3.2.0"
@@ -2348,16 +2348,16 @@ __metadata:
     treeify: "npm:^1.1.0"
     tslib: "npm:^2.4.0"
     tunnel: "npm:^0.0.6"
-  checksum: 10c0/850e0af59f56cea81ea2d3e81663a9326262df13322c21cecbb49d667abfbe32480a22f15f933086db4dfdc49745eec3414b8497627d4b7584b3c8a843f9ed9b
+  checksum: 10c0/c72836619f59a4ab1c6da4fd1ab793d2f491b6815c88a6019fa6c1c9c4391e7bbd112f3a2474ae8ae5da2a7cb895173abff37dc6fdfb5799bb2fbedc445adb58
   languageName: node
   linkType: hard
 
-"@yarnpkg/extensions@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@yarnpkg/extensions@npm:2.0.1"
+"@yarnpkg/extensions@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@yarnpkg/extensions@npm:2.0.3"
   peerDependencies:
-    "@yarnpkg/core": ^4.0.3
-  checksum: 10c0/ca5352cfa40d6af610aafba58e21b291dbfca5fadd1872a109dd15eaa707c138b4861a1f66e934bc374df48925732113bc7f9f5de3ea20034e8a946b60fa971a
+    "@yarnpkg/core": ^4.0.5
+  checksum: 10c0/60dd5545c7a49809ea4ecadbb83db3fbd97a1022b30ff259b5c518deef9a0f9a45e6377f2eb66f20547c70496661b2007ac6aa34b5f969d7685e09afdaf10ead
   languageName: node
   linkType: hard
 
@@ -2406,25 +2406,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/parsers@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@yarnpkg/parsers@npm:3.0.0"
+"@yarnpkg/parsers@npm:^3.0.0, @yarnpkg/parsers@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@yarnpkg/parsers@npm:3.0.2"
   dependencies:
     js-yaml: "npm:^3.10.0"
     tslib: "npm:^2.4.0"
-  checksum: 10c0/cec2c6dd6e7f926e9f7de6c2d8551261fece40295f2bb2b333f47c88559094aead266750f4963809f7fded3bd9f642f194b4e0bb87a847e191761004a790533a
+  checksum: 10c0/a0c340e13129643162423d7e666061c0b39b143bfad3fc5a74c7d92a30fd740f6665d41cd4e61832c20375889d793eea1d1d103cacb39ed68f7acd168add8c53
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-compat@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@yarnpkg/plugin-compat@npm:4.0.3"
+"@yarnpkg/plugin-compat@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "@yarnpkg/plugin-compat@npm:4.0.5"
   dependencies:
-    "@yarnpkg/extensions": "npm:^2.0.1"
+    "@yarnpkg/extensions": "npm:^2.0.3"
   peerDependencies:
-    "@yarnpkg/core": ^4.0.3
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/plugin-patch": ^4.0.1
-  checksum: 10c0/f0ae0fd7039471f61821134e5435dff19f06d331a37fe3c38b103fbf4654bfee1e66c9f9bdfa015ec58f16af44c5842688092405979c2794ff34de7e761b7f35
+  checksum: 10c0/7bd5ff3bd6f060313533d124972eb54a4de8f1ba4aacfcb0b8626118086e37acd303ee6bad031074dd1de5e88c34594d94c2e74ac975a1abad9aac0148146450
   languageName: node
   linkType: hard
 
@@ -2613,9 +2613,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-npm-cli@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@yarnpkg/plugin-npm-cli@npm:4.0.2"
+"@yarnpkg/plugin-npm-cli@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "@yarnpkg/plugin-npm-cli@npm:4.0.4"
   dependencies:
     "@yarnpkg/fslib": "npm:^3.0.2"
     clipanion: "npm:^4.0.0-rc.2"
@@ -2625,11 +2625,11 @@ __metadata:
     tslib: "npm:^2.4.0"
     typanion: "npm:^3.14.0"
   peerDependencies:
-    "@yarnpkg/cli": ^4.1.0
-    "@yarnpkg/core": ^4.0.3
+    "@yarnpkg/cli": ^4.2.1
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/plugin-npm": ^3.0.1
     "@yarnpkg/plugin-pack": ^4.0.0
-  checksum: 10c0/94508a3d4d959f3508755ab60557e5a1a9e727d83cb8e9becaa5092ed9baa251e91db0588b5ec328540df2918facc91963470a5ff15c5b163ea64f3aca87e261
+  checksum: 10c0/adb919c181d2508c67a84c8fa30ff36beaa5340be3ea90d9fc105234e291418f11ec3435b7448a8e7728e8868d04aaef9f5a4c679e0dcd3c616062532af46b7e
   languageName: node
   linkType: hard
 
@@ -2681,20 +2681,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-pnp@npm:^4.0.0, @yarnpkg/plugin-pnp@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@yarnpkg/plugin-pnp@npm:4.0.2"
+"@yarnpkg/plugin-pnp@npm:^4.0.0, @yarnpkg/plugin-pnp@npm:^4.0.2, @yarnpkg/plugin-pnp@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "@yarnpkg/plugin-pnp@npm:4.0.4"
   dependencies:
-    "@yarnpkg/fslib": "npm:^3.0.1"
+    "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/plugin-stage": "npm:^4.0.0"
-    "@yarnpkg/pnp": "npm:^4.0.1"
+    "@yarnpkg/pnp": "npm:^4.0.4"
     clipanion: "npm:^4.0.0-rc.2"
     micromatch: "npm:^4.0.2"
     tslib: "npm:^2.4.0"
   peerDependencies:
-    "@yarnpkg/cli": ^4.0.2
-    "@yarnpkg/core": ^4.0.2
-  checksum: 10c0/5052286dd20b1ab926a35bb3b142d8edcad1a2af773d88475a0f02bcb74b3ea283ba020fa66cd02093a359421ff01165a55ca7b95a0d5713731fac97827bbc3d
+    "@yarnpkg/cli": ^4.2.1
+    "@yarnpkg/core": ^4.0.5
+  checksum: 10c0/a0d7371478abf8aca797e9ed5f49e25e58c4794d71938b7e1d8d6f825ff885cc4d5d9f22bf2c917aa639ede3d48c518cdbc07dbdd11a794b78ca3350df0c594b
   languageName: node
   linkType: hard
 
@@ -2729,30 +2729,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-typescript@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@yarnpkg/plugin-typescript@npm:4.0.0"
+"@yarnpkg/plugin-typescript@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@yarnpkg/plugin-typescript@npm:4.1.1"
   dependencies:
-    "@yarnpkg/fslib": "npm:^3.0.0"
+    "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/plugin-pack": "npm:^4.0.0"
     algoliasearch: "npm:^4.2.0"
     semver: "npm:^7.1.2"
     tslib: "npm:^2.4.0"
   peerDependencies:
-    "@yarnpkg/cli": ^4.0.0
-    "@yarnpkg/core": ^4.0.0
-    "@yarnpkg/plugin-essentials": ^4.0.0
-  checksum: 10c0/a29ff7ab0578aff6bd5acd8c3317a956dca47946c14a5eef46058011303799465064e9225e3083e4f640d40e38518ab4c078d46e670498bdc5dd2b46d46adf22
+    "@yarnpkg/cli": ^4.2.1
+    "@yarnpkg/core": ^4.0.5
+    "@yarnpkg/plugin-essentials": ^4.1.1
+  checksum: 10c0/f02cc422147c8c21259de3a790208020fee083b05cb51b0ca67f4127987a4476a301ad5755bef6d03db30b304ccbc46563e05879d07181bbca98da58ecc00723
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-version@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@yarnpkg/plugin-version@npm:4.0.1"
+"@yarnpkg/plugin-version@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "@yarnpkg/plugin-version@npm:4.0.3"
   dependencies:
     "@yarnpkg/fslib": "npm:^3.0.2"
     "@yarnpkg/libui": "npm:^3.0.0"
-    "@yarnpkg/parsers": "npm:^3.0.0"
+    "@yarnpkg/parsers": "npm:^3.0.2"
     clipanion: "npm:^4.0.0-rc.2"
     ink: "npm:^3.0.8"
     lodash: "npm:^4.17.15"
@@ -2760,10 +2760,10 @@ __metadata:
     semver: "npm:^7.1.2"
     tslib: "npm:^2.4.0"
   peerDependencies:
-    "@yarnpkg/cli": ^4.1.0
-    "@yarnpkg/core": ^4.0.3
+    "@yarnpkg/cli": ^4.2.1
+    "@yarnpkg/core": ^4.0.5
     "@yarnpkg/plugin-git": ^3.0.0
-  checksum: 10c0/7171a1912901eee28135fb8d804f49c651b9eb6509d42395be73ff6c1d848953027886b81e047159fbf31ee7b950a1ecf939d5076ea6d6131e1c1c9956a44f0c
+  checksum: 10c0/7068382a0ced163d9186beca69c406f509346bdc20d82c76160bf9d9b2d8caf625d38929987d65ed36df5cc0d8f8d5d21584b7b73dd5dc260315dfcd1b97f440
   languageName: node
   linkType: hard
 
@@ -2785,13 +2785,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^4.0.1, @yarnpkg/pnp@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@yarnpkg/pnp@npm:4.0.2"
+"@yarnpkg/pnp@npm:^4.0.2, @yarnpkg/pnp@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "@yarnpkg/pnp@npm:4.0.4"
   dependencies:
     "@types/node": "npm:^18.17.15"
     "@yarnpkg/fslib": "npm:^3.0.2"
-  checksum: 10c0/3b9c10168b86850cdf5a5ae6cb7914ea83f7a5f47fac43c3de8a27b8d5659dcf5cf579033e52654b501013f741431a4f66fb295ffbc22ece5f422e6dc9db6eb1
+  checksum: 10c0/9e188a0bf18516fb15ecaca0d53a47b8d77a8bd3b10f5fe62a535dc893a07415a922fb7ae1db9bbc513212a83d31c4ce5580d416906d3df6c1efe43edabad3df
   languageName: node
   linkType: hard
 
@@ -2813,12 +2813,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/shell@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@yarnpkg/shell@npm:4.0.0"
+"@yarnpkg/shell@npm:^4.0.0, @yarnpkg/shell@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "@yarnpkg/shell@npm:4.0.2"
   dependencies:
-    "@yarnpkg/fslib": "npm:^3.0.0"
-    "@yarnpkg/parsers": "npm:^3.0.0"
+    "@yarnpkg/fslib": "npm:^3.0.2"
+    "@yarnpkg/parsers": "npm:^3.0.2"
     chalk: "npm:^3.0.0"
     clipanion: "npm:^4.0.0-rc.2"
     cross-spawn: "npm:7.0.3"
@@ -2827,7 +2827,7 @@ __metadata:
     tslib: "npm:^2.4.0"
   bin:
     shell: ./lib/cli.js
-  checksum: 10c0/040728146cc2d0ec0b25896f4286f2c586965384c7440023ac75db73fcadfc4938c260c3fc862fc892b5cf547b61526b6524fa24cf311f8eac40f7f7568183f4
+  checksum: 10c0/b78b6a00a68173052429bf19c625490d9d48c1f876acb25c56da2b75ad50acfe8f7fe14466be40b061698015d6aacdef5b217c6dece0dc2cc01e3bb4b4cefa23
   languageName: node
   linkType: hard
 
