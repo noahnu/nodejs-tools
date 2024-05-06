@@ -1398,9 +1398,9 @@ __metadata:
     "@types/eslint": "npm:^8.56.9"
     "@types/jest": "npm:^29.5.12"
     "@types/node": "npm:^20.12.7"
-    "@typescript-eslint/eslint-plugin": "npm:^7.6.0"
-    "@typescript-eslint/parser": "npm:^7.6.0"
-    "@typescript-eslint/utils": "npm:^7.6.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.7.0"
+    "@typescript-eslint/parser": "npm:^7.7.0"
+    "@typescript-eslint/utils": "npm:^7.7.0"
     debug: "npm:^4.3.4"
     eslint: "npm:^8.57.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -1412,8 +1412,8 @@ __metadata:
     prettier: "npm:^3.2.5"
   peerDependencies:
     "@noahnu/eslint-import-resolver-require": "workspace:^0.0.5"
-    "@typescript-eslint/eslint-plugin": ">=7.6.0"
-    "@typescript-eslint/parser": ">=7.6.0"
+    "@typescript-eslint/eslint-plugin": ">=7.7.0"
+    "@typescript-eslint/parser": ">=7.7.0"
     eslint: ">=8.57.0"
     eslint-config-prettier: ">=9.1.0"
     eslint-import-resolver-node: ">=0.3.9"
@@ -1479,8 +1479,8 @@ __metadata:
     "@tophat/conventional-changelog-config": "npm:^1.0.1"
     "@types/jest": "npm:^29.5.12"
     "@types/node": "npm:^20.12.7"
-    "@typescript-eslint/eslint-plugin": "npm:^7.6.0"
-    "@typescript-eslint/parser": "npm:^7.6.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.7.0"
+    "@typescript-eslint/parser": "npm:^7.7.0"
     "@yarnpkg/core": "npm:^4.0.3"
     "@yarnpkg/sdks": "npm:^3.1.0"
     "@yarnpkg/types": "npm:^4.0.0"
@@ -1512,7 +1512,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/node": "npm:^20.12.7"
-    "@typescript-eslint/typescript-estree": "npm:^7.6.0"
+    "@typescript-eslint/typescript-estree": "npm:^7.7.0"
     clipanion: "npm:4.0.0-rc.3"
     debug: "npm:^4.3.4"
     fast-glob: "npm:^3.3.2"
@@ -2082,7 +2082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^7.6.0":
+"@typescript-eslint/eslint-plugin@npm:^7.7.0":
   version: 7.8.0
   resolution: "@typescript-eslint/eslint-plugin@npm:7.8.0"
   dependencies:
@@ -2107,7 +2107,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^7.6.0":
+"@typescript-eslint/parser@npm:^7.7.0":
   version: 7.8.0
   resolution: "@typescript-eslint/parser@npm:7.8.0"
   dependencies:
@@ -2195,7 +2195,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:7.8.0, @typescript-eslint/typescript-estree@npm:^7.6.0":
+"@typescript-eslint/typescript-estree@npm:7.8.0, @typescript-eslint/typescript-estree@npm:^7.7.0":
   version: 7.8.0
   resolution: "@typescript-eslint/typescript-estree@npm:7.8.0"
   dependencies:
@@ -2214,7 +2214,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:7.8.0, @typescript-eslint/utils@npm:^7.6.0":
+"@typescript-eslint/utils@npm:7.8.0, @typescript-eslint/utils@npm:^7.7.0":
   version: 7.8.0
   resolution: "@typescript-eslint/utils@npm:7.8.0"
   dependencies:
