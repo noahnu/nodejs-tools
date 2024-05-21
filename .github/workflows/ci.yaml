@@ -62,7 +62,7 @@ jobs:
       - uses: noahnu/.github/.github/actions/setup-node@main
 
       - name: Post Preview
-        uses: monoweave/github-action-preview@95e30cfa4b8dfb69cb8d18050ef05a207c6f8551 # v1.1.0
+        uses: monoweave/github-action-preview@ba0d968e9a4a7a783dddcff1a0e1952b29fe49a9 # v1.1.1
 
   required_checks:
     name: Required Checks
