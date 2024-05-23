@@ -34,7 +34,7 @@
         "@yarnpkg/sdks": "^3.1.0",
         "@yarnpkg/types": "^4.0.0",
         "commitizen": "^4.3.0",
-        "eslint": "^8.57.0",
+        "eslint": "^9.1.1",
         "eslint-config-prettier": "^9.1.0",
         "eslint-import-resolver-node": "^0.3.9",
         "eslint-import-resolver-typescript": "^3.6.1",
