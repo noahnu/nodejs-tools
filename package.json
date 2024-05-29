@@ -18,7 +18,7 @@
     "workspaces": [
         "packages/*"
     ],
-    "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781",
+    "packageManager": "yarn@4.2.2",
     "devDependencies": {
         "@jest/types": "^29.6.3",
         "@monoweave/plugin-github": "^2.1.4",
