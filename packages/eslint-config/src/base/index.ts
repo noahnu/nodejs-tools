@@ -77,17 +77,14 @@ const rules: ESLint.ConfigData['rules'] = {
             ignoreDeclarationSort: true,
         },
     ],
-    'import/default': 'error',
-    'import/export': 'error',
-    'import/named': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-absolute-path': 'error',
-    'import/no-duplicates': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/no-self-import': 'error',
-    'import/no-useless-path-segments': 'error',
-    'import/no-unresolved': 'error',
-    'import/order': [
+    'import-x/newline-after-import': 'error',
+    'import-x/no-absolute-path': 'error',
+    'import-x/no-duplicates': 'error',
+    'import-x/no-mutable-exports': 'error',
+    'import-x/no-self-import': 'error',
+    'import-x/no-useless-path-segments': 'error',
+    'import-x/no-unresolved': 'error',
+    'import-x/order': [
         'error',
         {
             alphabetize: { order: 'asc' },
@@ -134,11 +131,13 @@ const config: ESLint.ConfigData = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['import', 'prettier', '@typescript-eslint'],
+    plugins: ['import-x', 'prettier', '@typescript-eslint'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/stylistic',
+        'plugin:import-x/recommended',
+        'plugin:import-x/typescript',
         // prettier must be the last item in this list to prevent conflicts
         'prettier',
     ],
@@ -154,20 +153,8 @@ const config: ESLint.ConfigData = {
         },
     ],
     settings: {
-        'import/external-module-folders': ['node_modules', '.yarn'],
-        'import/parsers': {
-            '@typescript-eslint/parser': [
-                '.ts',
-                '.tsx',
-                '.mts',
-                '.cts',
-                '.js',
-                '.mjs',
-                '.cjs',
-                '.jsx',
-            ],
-        },
-        'import/resolver': [
+        'import-x/external-module-folders': ['node_modules', '.yarn'],
+        'import-x/resolver': [
             {
                 [require.resolve('eslint-import-resolver-typescript')]: {
                     alwaysTryTypes: true,
