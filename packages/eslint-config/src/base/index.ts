@@ -84,6 +84,8 @@ const rules: ESLint.ConfigData['rules'] = {
     'import-x/no-self-import': 'error',
     'import-x/no-useless-path-segments': 'error',
     'import-x/no-unresolved': 'error',
+    'import-x/no-named-as-default': 'off',
+    'import-x/no-named-as-default-member': 'off',
     'import-x/order': [
         'error',
         {
