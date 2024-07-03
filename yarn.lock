@@ -1481,7 +1481,7 @@ __metadata:
     "@types/node": "npm:^20.14.2"
     "@typescript-eslint/eslint-plugin": "npm:^7.12.0"
     "@typescript-eslint/parser": "npm:^7.12.0"
-    "@yarnpkg/core": "npm:^4.0.5"
+    "@yarnpkg/core": "npm:^4.1.0"
     "@yarnpkg/sdks": "npm:^3.1.2"
     "@yarnpkg/types": "npm:^4.0.0"
     commitizen: "npm:^4.3.0"
