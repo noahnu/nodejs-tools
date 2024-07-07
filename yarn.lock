@@ -1515,7 +1515,7 @@ __metadata:
     jest-junit: "npm:^16.0.0"
     lint-staged: "npm:^15.2.7"
     prettier: "npm:^3.3.2"
-    ts-jest: "npm:^29.1.4"
+    ts-jest: "npm:^29.1.5"
     ts-node: "npm:^10.9.2"
     typescript: "npm:5.4.5"
   languageName: unknown
@@ -9044,7 +9044,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.1.4":
+"ts-jest@npm:^29.1.5":
   version: 29.1.5
   resolution: "ts-jest@npm:29.1.5"
   dependencies:
