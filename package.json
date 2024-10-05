@@ -18,7 +18,7 @@
     "workspaces": [
         "packages/*"
     ],
-    "packageManager": "yarn@4.3.0",
+    "packageManager": "yarn@4.5.0",
     "devDependencies": {
         "@jest/types": "^29.6.3",
         "@monoweave/plugin-github": "^2.3.0",
