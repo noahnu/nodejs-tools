@@ -30,17 +30,17 @@
     ],
     "devDependencies": {
         "@types/debug": "^4.1.12",
-        "@types/eslint": "^8.56.10",
-        "@types/jest": "^29.5.12",
-        "@types/node": "^20.14.6",
-        "eslint": "^8.57.0",
-        "eslint-plugin-import": "^2.29.1"
+        "@types/eslint": "^8.56.12",
+        "@types/jest": "^29.5.13",
+        "@types/node": "^20.16.9",
+        "eslint": "^8.57.1",
+        "eslint-plugin-import": "^2.30.0"
     },
     "dependencies": {
-        "debug": "^4.3.5",
+        "debug": "^4.3.7",
         "eslint-import-resolver-node": "^0.3.9"
     },
     "peerDependencies": {
-        "eslint-plugin-import": ">= 2.29.1"
+        "eslint-plugin-import": ">= 2.30.0"
     }
 }
