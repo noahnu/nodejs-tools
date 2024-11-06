@@ -2,6 +2,14 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.0.2) <a name="0.0.2"></a>
+
+Update ESLint config and plugins to ESLint v9.
+
+Update misc. dependencies.
+
+
+
 ## [0.0.1](https://github.com/noahnu/nodejs-tools/compare/@noahnu/unused-files@0.0.0...@noahnu/unused-files@0.0.1) "@noahnu/unused-files" (2024-01-15)<a name="0.0.1"></a>
 
 ### Bug Fixes

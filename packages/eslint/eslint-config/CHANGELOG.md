@@ -2,6 +2,14 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/eslint-config (v3.0.0) <a name="3.0.0"></a>
+
+Update ESLint config and plugins to ESLint v9.
+
+Update misc. dependencies.
+
+
+
 ## @noahnu/eslint-config (v2.0.0) <a name="2.0.0"></a>
 
 Migrate from eslint-plugin-import to eslint-plugin-import-x

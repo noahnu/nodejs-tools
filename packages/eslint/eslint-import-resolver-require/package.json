@@ -1,6 +1,6 @@
 {
     "name": "@noahnu/eslint-import-resolver-require",
-    "version": "0.0.5",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/noahnu/nodejs-tools.git",
