@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import path from 'node:path'
 
 import createDebug from 'debug'
@@ -51,13 +52,23 @@ export async function findUnusedFiles({
     depth,
     cwd = process.cwd(),
 }: FindUnusedFilesOptions): Promise<UnusedFilesResult> {
-    const globFromSource = (source: string): Promise<string[]> =>
-        fg.glob(fg.isDynamicPattern(source) ? source : path.join(source, '**'), {
-            dot: false,
-            ignore: ignorePatterns,
-            absolute: true,
-            cwd,
-        })
+    cwd = await fs.promises.realpath(cwd)
+
+    const globFromSource = async (source: string): Promise<string[]> => {
+        const files = await fg.glob(
+            fg.isDynamicPattern(source) ? source : path.join(source, '**'),
+            {
+                dot: false,
+                ignore: ignorePatterns,
+                absolute: true,
+                cwd,
+            },
+        )
+
+        return Promise.all(
+            files.map(async (file) => await fs.promises.realpath(file).catch(() => file)),
+        )
+    }
 
     const sourceDirs = sourceDirectories.length > 0 ? sourceDirectories : [cwd]
 
@@ -70,7 +81,7 @@ export async function findUnusedFiles({
     const unvisitedFiles = new Set<string>(files)
 
     for (const entryFile of entryFiles) {
-        const entry = path.resolve(cwd, entryFile)
+        const entry = await fs.promises.realpath(path.resolve(cwd, entryFile))
 
         unvisitedFiles.delete(entry)
 
@@ -78,13 +89,20 @@ export async function findUnusedFiles({
             aliases,
             depth,
         })) {
+            let resolvedDependency = dependency
+
             if (files.has(dependency)) {
                 debug(`${source}: ${dependency} [dependency]`)
             } else {
-                debug(`${source}: ${dependency} [unknown dependency]`)
+                const realpath = await fs.promises.realpath(dependency)
+                if (files.has(realpath)) {
+                    resolvedDependency = realpath
+                } else {
+                    debug(`${source}: ${dependency} [unknown dependency]`)
+                }
             }
 
-            unvisitedFiles.delete(dependency)
+            unvisitedFiles.delete(resolvedDependency)
         }
     }
 

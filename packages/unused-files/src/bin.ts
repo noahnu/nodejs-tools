@@ -5,7 +5,8 @@ import { BaseCommand } from './command'
 const cli = new Cli({
     binaryLabel: '@noahnu/unused-files',
     binaryName: 'yarn @noahnu/unused-files',
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     binaryVersion: require('../package.json').version,
     enableCapture: true,
 })

@@ -10,30 +10,16 @@
         "noImplicitAny": true,
         "resolveJsonModule": true,
         "allowJs": true,
-        "lib": [
-            "ES2022",
-        ],
+        "lib": ["ES2022"],
         "composite": true,
         "rootDir": ".",
         "emitDeclarationOnly": true,
-        "outDir": ".tmp/tsc/root",
+        "outDir": ".tmp/tsc/root"
     },
-    "exclude": [
-        "**/lib",
-        "./.pnp.*"
-    ],
-    "include": [
-        "./packages",
-        "./*.js",
-        "./*.cjs",
-        "./*.ts",
-        "./**/.eslintrc.js"
-    ],
+    "exclude": ["**/lib", "./.pnp.*"],
+    "include": ["./packages", "./*.js", "./*.cjs", "./*.ts", "./**/eslint.config.cjs"],
     "ts-node": {
         "transpileOnly": true,
-        "ignore": [
-            "(?:^|/)node_modules/",
-            ".yarn/plugins/.*"
-        ],
+        "ignore": ["(?:^|/)node_modules/", ".yarn/plugins/.*"]
     }
 }
