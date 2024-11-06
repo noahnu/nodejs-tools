@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # shellcheck disable=SC1091
-command -v nvm >/dev/null || . "${NVM_DIR:-"$HOME/.nvm"}"/nvm.sh;
-nvm use --silent;
+command -v nvm >/dev/null || . "${NVM_DIR:-"$HOME/.nvm"}"/nvm.sh
+nvm use --silent
 
-yarn;
+yarn
+
+yarn workspace @noahnu/eslint-import-resolver-require prepack

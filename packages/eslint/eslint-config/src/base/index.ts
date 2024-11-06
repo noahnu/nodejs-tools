@@ -1,4 +1,9 @@
+import eslint from '@eslint/js'
 import { type ESLint } from 'eslint'
+import eslintPluginImportX from 'eslint-plugin-import-x'
+import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 const rules: ESLint.ConfigData['rules'] = {
     /* Prettier Overrides */
@@ -100,7 +105,7 @@ const rules: ESLint.ConfigData['rules'] = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/ban-ts-comment': 'warn', // Discourage disabling static analysis.
-    '@typescript-eslint/ban-types': 'warn', // Discourage disabling static analysis.
+    '@typescript-eslint/no-restricted-types': 'warn', // Discourage disabling static analysis.
     '@typescript-eslint/consistent-type-imports': [
         'error',
         { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
@@ -125,46 +130,45 @@ const jsIncompatibleRules: ESLint.ConfigData['rules'] = {
      * Reason Disabled: We don't know if JS files are transpiled, so don't bother enforcing TS import syntax.
      */
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
 }
 
-const config: ESLint.ConfigData = {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-    },
-    plugins: ['import-x', 'prettier', '@typescript-eslint'],
-    extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/stylistic',
-        'plugin:import-x/recommended',
-        'plugin:import-x/typescript',
-        // prettier must be the last item in this list to prevent conflicts
-        'prettier',
-    ],
-    env: {
-        node: true,
-        es2024: true,
-    },
-    rules,
-    overrides: [
-        {
-            files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
-            rules: jsIncompatibleRules,
-        },
-    ],
-    settings: {
-        'import-x/external-module-folders': ['node_modules', '.yarn'],
-        'import-x/resolver': [
-            {
-                [require.resolve('eslint-import-resolver-typescript')]: {
-                    alwaysTryTypes: true,
-                },
+const config = tseslint.config(
+    eslint.configs.recommended,
+    ...tseslint.configs.recommended,
+    ...tseslint.configs.stylistic,
+    eslintPluginImportX.flatConfigs.recommended,
+    eslintPluginImportX.flatConfigs.typescript,
+    eslintPluginPrettier,
+    {
+        languageOptions: {
+            globals: {
+                ...globals.node,
+                ...globals.es2024,
             },
-            { [require.resolve('@noahnu/eslint-import-resolver-require')]: {} },
-        ],
+        },
     },
-}
+    { rules },
+    {
+        ignores: ['**/node_modules', '**/.vscode', '**/.yarn', '**/lib'],
+    },
+    {
+        files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
+        rules: jsIncompatibleRules,
+    },
+    {
+        settings: {
+            'import-x/external-module-folders': ['node_modules', '.yarn'],
+            'import-x/resolver': [
+                {
+                    [require.resolve('eslint-import-resolver-typescript')]: {
+                        alwaysTryTypes: true,
+                    },
+                },
+                { [require.resolve('@noahnu/eslint-import-resolver-require')]: {} },
+            ],
+        },
+    },
+)
 
 export = config

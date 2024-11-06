@@ -1,0 +1,10 @@
+---
+# https://monoweave.github.io/monoweave/configuration/
+preset: "monoweave/preset-manual"
+maxConcurrentWrites: 1
+changesetIgnorePatterns:
+  - "**/*.test.{ts,tsx,mts,cts}"
+  - "**/*.md"
+commitIgnorePatterns:
+  - '\[skip-ci\]'
+autoCommitMessage: "chore: releasing packages [skip-ci]"
