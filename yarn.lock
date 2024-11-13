@@ -1725,7 +1725,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
-    "@types/jest": "npm:^29.5.13"
+    "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.9.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.13.0"
     "@typescript-eslint/parser": "npm:^8.13.0"
@@ -1764,7 +1764,7 @@ __metadata:
   dependencies:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
-    "@types/jest": "npm:^29.5.13"
+    "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.9.0"
     debug: "npm:^4.3.7"
     eslint: "npm:^9.14.0"
@@ -1809,7 +1809,7 @@ __metadata:
     "@monoweave/cli": "npm:^1.10.0"
     "@monoweave/plugin-github": "npm:^2.7.0"
     "@noahnu/eslint-config": "workspace:^"
-    "@types/jest": "npm:^29.5.13"
+    "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.9.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.13.0"
     "@typescript-eslint/parser": "npm:^8.13.0"
@@ -2262,7 +2262,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.13":
+"@types/jest@npm:^29.5.14":
   version: 29.5.14
   resolution: "@types/jest@npm:29.5.14"
   dependencies:
