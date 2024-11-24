@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.2.0) <a name="0.2.0"></a>
+
+Support custom resolvers.
+
+
+
 ## @noahnu/unused-files (v0.0.2) <a name="0.0.2"></a>
 
 Update ESLint config and plugins to ESLint v9.
