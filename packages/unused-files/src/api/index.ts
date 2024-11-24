@@ -114,12 +114,16 @@ export async function findUnusedFiles({
         }
     }
 
+    const unused = Array.from(unvisitedFiles.intersection(files))
+        .map((abspath) => path.relative(cwd, abspath))
+        .sort()
+
+    const used = Array.from(visitedFiles.intersection(files))
+        .map((abspath) => path.relative(cwd, abspath))
+        .sort()
+
     return {
-        unused: Array.from(unvisitedFiles)
-            .map((abspath) => path.relative(cwd, abspath))
-            .sort(),
-        used: Array.from(visitedFiles)
-            .map((abspath) => path.relative(cwd, abspath))
-            .sort(),
+        unused,
+        used,
     }
 }

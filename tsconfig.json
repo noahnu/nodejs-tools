@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ES2022",
+        "target": "ES2023",
         "module": "node16",
         "strict": true,
         "esModuleInterop": true,
@@ -10,7 +10,7 @@
         "noImplicitAny": true,
         "resolveJsonModule": true,
         "allowJs": true,
-        "lib": ["ES2022"],
+        "lib": ["ESNext"],
         "composite": true,
         "rootDir": ".",
         "emitDeclarationOnly": true,
