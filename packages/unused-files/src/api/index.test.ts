@@ -153,4 +153,29 @@ describe('findUnusedFiles', () => {
         expect(result.used).toHaveLength(3)
         expect(result.unused).toHaveLength(0)
     })
+
+    it('does not visit ignored files', async () => {
+        await using tmpDir = await createTempDir()
+
+        await tmpDir.writeFile(
+            'entry.ts',
+            ['import { A } from "./badFile"', 'import { B } from "./depB"'].join('\n'),
+        )
+        await tmpDir.writeFile('badFile.ts', 'import "depC.ts"')
+        await tmpDir.writeFile('depB.ts', 'console.log()')
+        await tmpDir.writeFile('depC.ts', 'console.log()')
+
+        const result = await findUnusedFiles({
+            entryFiles: ['entry.ts'],
+            cwd: tmpDir.dir,
+            ignorePatterns: ['**/badFile.*'],
+        })
+
+        expect(result.used).toHaveLength(2)
+        expect(result.used).toEqual(expect.arrayContaining(['entry.ts', 'depB.ts']))
+
+        expect(result.unused).toHaveLength(1)
+        // since badFile is ignored
+        expect(result.unused).toEqual(expect.arrayContaining(['depC.ts']))
+    })
 })

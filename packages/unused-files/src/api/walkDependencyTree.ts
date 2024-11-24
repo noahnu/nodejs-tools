@@ -3,6 +3,7 @@ import path from 'node:path'
 
 import { TSESTree, parse, simpleTraverse } from '@typescript-eslint/typescript-estree'
 import createDebug from 'debug'
+import micromatch from 'micromatch'
 
 import { type Resolver } from './types'
 
@@ -17,7 +18,13 @@ export async function* walkDependencyTree(
         resolvers,
         visited,
         depth = DEFAULT_DEPTH_LIMIT,
-    }: { resolvers?: Resolver[]; visited?: Set<string>; depth?: number } = {},
+        ignorePatterns,
+    }: {
+        resolvers?: Resolver[]
+        visited?: Set<string>
+        depth?: number
+        ignorePatterns?: string[]
+    } = {},
 ): AsyncGenerator<{ source: string; dependency: string }, void, void> {
     const ext = path.extname(source).substring(1)
     if (!VALID_EXTENSIONS.has(ext)) {
@@ -111,12 +118,17 @@ export async function* walkDependencyTree(
     for (const importFrom of Array.from(importFroms)) {
         const absPath = await resolveToAbsPath(importFrom)
         if (absPath) {
+            if (ignorePatterns && micromatch.isMatch(absPath, ignorePatterns)) {
+                continue
+            }
+
             yield { dependency: absPath, source }
             if (depth === -1 || depth > 0) {
                 yield* walkDependencyTree(absPath, {
                     resolvers,
                     visited: visitedSet,
                     depth: depth === -1 ? depth : depth - 1,
+                    ignorePatterns,
                 })
             }
         } else {

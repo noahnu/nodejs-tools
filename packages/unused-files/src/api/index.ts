@@ -95,6 +95,7 @@ export async function findUnusedFiles({
             resolvers,
             depth,
             visited: visitedFiles,
+            ignorePatterns,
         })) {
             let resolvedDependency = dependency
 
