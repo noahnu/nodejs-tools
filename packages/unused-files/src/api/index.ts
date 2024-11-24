@@ -5,6 +5,7 @@ import createDebug from 'debug'
 import fg from 'fast-glob'
 
 import { type Resolver } from './types'
+import { resolveRealpath } from './utils'
 import { walkDependencyTree } from './walkDependencyTree'
 
 export type { Resolver, ResolverResult, ResolverParams } from './types'
@@ -70,9 +71,7 @@ export async function findUnusedFiles({
             },
         )
 
-        return Promise.all(
-            files.map(async (file) => await fs.promises.realpath(file).catch(() => file)),
-        )
+        return Promise.all(files.map(async (file) => await resolveRealpath(file)))
     }
 
     const sourceDirs = sourceDirectories.length > 0 ? sourceDirectories : [cwd]
@@ -87,7 +86,7 @@ export async function findUnusedFiles({
     const visitedFiles = new Set<string>()
 
     for (const entryFile of entryFiles) {
-        const entry = await fs.promises.realpath(path.resolve(cwd, entryFile))
+        const entry = await resolveRealpath(path.resolve(cwd, entryFile))
 
         unvisitedFiles.delete(entry)
 
@@ -102,7 +101,7 @@ export async function findUnusedFiles({
             if (files.has(dependency)) {
                 debug(`${source}: ${dependency} [dependency]`)
             } else {
-                const realpath = await fs.promises.realpath(dependency)
+                const realpath = await resolveRealpath(dependency)
                 if (files.has(realpath)) {
                     resolvedDependency = realpath
                 } else {

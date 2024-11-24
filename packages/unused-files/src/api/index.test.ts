@@ -178,4 +178,18 @@ describe('findUnusedFiles', () => {
         // since badFile is ignored
         expect(result.unused).toEqual(expect.arrayContaining(['depC.ts']))
     })
+
+    it('supports builtins', async () => {
+        await using context = await createTempDir()
+
+        await context.writeFile('entry.ts', 'import fs from "fs"')
+
+        const result = await findUnusedFiles({
+            entryFiles: ['entry.ts'],
+            cwd: context.dir,
+        })
+
+        expect(result.used).toHaveLength(1)
+        expect(result.unused).toHaveLength(0)
+    })
 })

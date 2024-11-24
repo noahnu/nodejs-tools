@@ -1,4 +1,5 @@
 import fs from 'node:fs'
+import { isBuiltin } from 'node:module'
 import path from 'node:path'
 
 import { TSESTree, parse, simpleTraverse } from '@typescript-eslint/typescript-estree'
@@ -6,6 +7,7 @@ import createDebug from 'debug'
 import micromatch from 'micromatch'
 
 import { type Resolver } from './types'
+import { resolveRealpath } from './utils'
 
 const debug = createDebug('unused-files:parse')
 
@@ -33,7 +35,7 @@ export async function* walkDependencyTree(
     }
 
     // Convert to realpath if possible
-    source = await fs.promises.realpath(source).catch(() => source)
+    source = await resolveRealpath(source)
 
     const visitedSet = visited ?? new Set<string>()
     if (visitedSet.has(source)) return
@@ -119,6 +121,14 @@ export async function* walkDependencyTree(
     }
 
     for (const importFrom of Array.from(importFroms)) {
+        if (isBuiltin(importFrom)) continue
+
+        if (ignorePatterns && micromatch.isMatch(importFrom, ignorePatterns)) {
+            // ignorePatterns is used on the initial request so it doesn't get to the resolvers
+            // as well as on the returned result
+            continue
+        }
+
         const absPath = await resolveToAbsPath(importFrom)
         if (absPath) {
             if (ignorePatterns && micromatch.isMatch(absPath, ignorePatterns)) {
