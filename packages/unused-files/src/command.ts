@@ -41,6 +41,6 @@ export class BaseCommand extends Command {
                     : parseInt(Math.max(this.depth, -1).toFixed(0), 10),
         })
 
-        this.context.stdout.write(result.unusedFiles.join('\n'))
+        this.context.stdout.write(result.unused.join('\n'))
     }
 }

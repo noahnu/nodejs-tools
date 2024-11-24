@@ -4,7 +4,10 @@ import path from 'node:path'
 import createDebug from 'debug'
 import fg from 'fast-glob'
 
+import { type Resolver } from './types'
 import { walkDependencyTree } from './walkDependencyTree'
+
+export type { Resolver, ResolverResult, ResolverParams } from './types'
 
 const debug = createDebug('unused-files')
 
@@ -27,10 +30,11 @@ export interface FindUnusedFilesOptions {
     ignorePatterns?: string[]
 
     /**
-     * Custom aliases that are consulted first before attempting to resolve the import path.
-     * It is recommended to rely on package.json aliases over these custom ones.
+     * Custom resolver to use to resolve an import path relative to a source file.
+     * It is recommended to rely on package.json aliases over these custom ones
+     * when possible.
      */
-    aliases?: Partial<Record<string, string>>
+    resolvers?: Resolver[]
 
     /**
      * Maximum depth to traverse. -1 can be used to disable the depth limit (the default).
@@ -41,14 +45,15 @@ export interface FindUnusedFilesOptions {
 }
 
 export interface UnusedFilesResult {
-    unusedFiles: string[]
+    used: string[]
+    unused: string[]
 }
 
 export async function findUnusedFiles({
     entryFiles,
     ignorePatterns = ['**/node_modules'],
     sourceDirectories = [],
-    aliases,
+    resolvers,
     depth,
     cwd = process.cwd(),
 }: FindUnusedFilesOptions): Promise<UnusedFilesResult> {
@@ -79,6 +84,7 @@ export async function findUnusedFiles({
     )
 
     const unvisitedFiles = new Set<string>(files)
+    const visitedFiles = new Set<string>()
 
     for (const entryFile of entryFiles) {
         const entry = await fs.promises.realpath(path.resolve(cwd, entryFile))
@@ -86,8 +92,9 @@ export async function findUnusedFiles({
         unvisitedFiles.delete(entry)
 
         for await (const { source, dependency } of walkDependencyTree(entry, {
-            aliases,
+            resolvers,
             depth,
+            visited: visitedFiles,
         })) {
             let resolvedDependency = dependency
 
@@ -107,7 +114,10 @@ export async function findUnusedFiles({
     }
 
     return {
-        unusedFiles: Array.from(unvisitedFiles)
+        unused: Array.from(unvisitedFiles)
+            .map((abspath) => path.relative(cwd, abspath))
+            .sort(),
+        used: Array.from(visitedFiles)
             .map((abspath) => path.relative(cwd, abspath))
             .sort(),
     }

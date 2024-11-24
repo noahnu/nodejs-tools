@@ -14,7 +14,8 @@ describe('findUnusedFiles', () => {
             cwd: context.dir,
         })
 
-        expect(result.unusedFiles).toHaveLength(0)
+        expect(result.used).toHaveLength(1)
+        expect(result.unused).toHaveLength(0)
     })
 
     it('reports no unused files if all files are imported by entry', async () => {
@@ -32,7 +33,8 @@ describe('findUnusedFiles', () => {
             cwd: context.dir,
         })
 
-        expect(result.unusedFiles).toHaveLength(0)
+        expect(result.used).toHaveLength(3)
+        expect(result.unused).toHaveLength(0)
     })
 
     it('reports no unused files if at least one file imports the file', async () => {
@@ -47,7 +49,8 @@ describe('findUnusedFiles', () => {
             cwd: context.dir,
         })
 
-        expect(result.unusedFiles).toHaveLength(0)
+        expect(result.used).toHaveLength(3)
+        expect(result.unused).toHaveLength(0)
     })
 
     it('reports unused files when no file imports the file', async () => {
@@ -62,8 +65,9 @@ describe('findUnusedFiles', () => {
             cwd: context.dir,
         })
 
-        expect(result.unusedFiles).toHaveLength(1)
-        expect(result.unusedFiles).toContain('depB.ts')
+        expect(result.used).toHaveLength(2)
+        expect(result.unused).toHaveLength(1)
+        expect(result.unused).toContain('depB.ts')
     })
 
     it('supports require calls', async () => {
@@ -81,10 +85,11 @@ describe('findUnusedFiles', () => {
             cwd: context.dir,
         })
 
-        expect(result.unusedFiles).toHaveLength(0)
+        expect(result.used).toHaveLength(3)
+        expect(result.unused).toHaveLength(0)
     })
 
-    it('supports dynamic import calls', async () => {
+    it('supports dynamic import calls (literals)', async () => {
         await using context = await createTempDir()
 
         await context.writeFile(
@@ -99,6 +104,53 @@ describe('findUnusedFiles', () => {
             cwd: context.dir,
         })
 
-        expect(result.unusedFiles).toHaveLength(0)
+        expect(result.used).toHaveLength(3)
+        expect(result.unused).toHaveLength(0)
+    })
+
+    it('supports dynamic import calls (template literals)', async () => {
+        await using context = await createTempDir()
+
+        await context.writeFile(
+            'entry.ts',
+            ['import { A } from "./depA"', 'import(`./depB`)'].join('\n'),
+        )
+        await context.writeFile('depA.ts', 'console.log()')
+        await context.writeFile('depB.ts', 'console.log()')
+
+        const result = await findUnusedFiles({
+            entryFiles: ['entry.ts'],
+            cwd: context.dir,
+        })
+
+        expect(result.used).toHaveLength(3)
+        expect(result.unused).toHaveLength(0)
+    })
+
+    it('supports custom resolvers', async () => {
+        await using tmpDir = await createTempDir()
+
+        await tmpDir.writeFile(
+            'entry.ts',
+            ['import { A } from "@my/alias-a"', 'import { B } from "./depB"'].join('\n'),
+        )
+        const depA = await tmpDir.writeFile('depA.ts', 'console.log()')
+        await tmpDir.writeFile('depB.ts', 'console.log()')
+
+        const result = await findUnusedFiles({
+            entryFiles: ['entry.ts'],
+            cwd: tmpDir.dir,
+            resolvers: [
+                async ({ request }) => {
+                    if (request === '@my/alias-a') {
+                        return { result: depA }
+                    }
+                    return null
+                },
+            ],
+        })
+
+        expect(result.used).toHaveLength(3)
+        expect(result.unused).toHaveLength(0)
     })
 })
