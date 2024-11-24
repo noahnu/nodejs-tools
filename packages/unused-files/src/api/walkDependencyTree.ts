@@ -32,6 +32,9 @@ export async function* walkDependencyTree(
         return
     }
 
+    // Convert to realpath if possible
+    source = await fs.promises.realpath(source).catch(() => source)
+
     const visitedSet = visited ?? new Set<string>()
     if (visitedSet.has(source)) return
     visitedSet.add(source)
