@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.2.2) <a name="0.2.2"></a>
+
+Filter out files based on source directories.
+
+
+
 ## @noahnu/unused-files (v0.2.1) <a name="0.2.1"></a>
 
 Respect ignorePatterns for visiting files.
