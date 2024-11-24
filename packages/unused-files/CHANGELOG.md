@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.2.1) <a name="0.2.1"></a>
+
+Respect ignorePatterns for visiting files.
+
+
+
 ## @noahnu/unused-files (v0.2.0) <a name="0.2.0"></a>
 
 Support custom resolvers.
