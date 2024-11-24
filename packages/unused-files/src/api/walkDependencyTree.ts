@@ -4,18 +4,20 @@ import path from 'node:path'
 import { TSESTree, parse, simpleTraverse } from '@typescript-eslint/typescript-estree'
 import createDebug from 'debug'
 
+import { type Resolver } from './types'
+
 const debug = createDebug('unused-files:parse')
 
 const DEFAULT_DEPTH_LIMIT = -1 // no depth limit
-const VALID_EXTENSIONS = new Set<string>(['ts', 'tsx', 'mts', 'cts', 'js', 'mjs', 'cjs'])
+const VALID_EXTENSIONS = new Set<string>(['ts', 'tsx', 'mts', 'cts', 'js', 'jsx', 'mjs', 'cjs'])
 
 export async function* walkDependencyTree(
     source: string,
     {
-        aliases,
+        resolvers,
         visited,
         depth = DEFAULT_DEPTH_LIMIT,
-    }: { aliases?: Partial<Record<string, string>>; visited?: Set<string>; depth?: number } = {},
+    }: { resolvers?: Resolver[]; visited?: Set<string>; depth?: number } = {},
 ): AsyncGenerator<{ source: string; dependency: string }, void, void> {
     const ext = path.extname(source).substring(1)
     if (!VALID_EXTENSIONS.has(ext)) {
@@ -72,6 +74,12 @@ export async function* walkDependencyTree(
                     if (typeof node.source.value === 'string') {
                         importFroms.add(node.source.value)
                     }
+                } else if (
+                    node.source.type === TSESTree.AST_NODE_TYPES.TemplateLiteral &&
+                    !node.source.expressions.length &&
+                    node.source.quasis.length === 1
+                ) {
+                    importFroms.add(node.source.quasis[0].value.cooked)
                 } else {
                     debug(
                         `${source}: Dynamic import expression found at ${node.loc.start}:${node.loc.end}`,
@@ -85,25 +93,28 @@ export async function* walkDependencyTree(
         simpleTraverse(body, { visitors })
     }
 
-    const resolveToAbsPath = (request: string): string | undefined => {
-        const aliasedPath = aliases?.[request]
-        if (aliasedPath) {
-            return path.resolve(aliasedPath)
+    const resolveToAbsPath = async (request: string): Promise<string | undefined> => {
+        for (const resolver of resolvers ?? []) {
+            const resolution = await resolver({ context: source, request })
+            if (resolution) {
+                return path.resolve(resolution.result)
+            }
         }
 
         try {
             return require.resolve(request, { paths: [path.dirname(source)] })
         } catch {}
+
         return undefined
     }
 
     for (const importFrom of Array.from(importFroms)) {
-        const absPath = resolveToAbsPath(importFrom)
+        const absPath = await resolveToAbsPath(importFrom)
         if (absPath) {
             yield { dependency: absPath, source }
             if (depth === -1 || depth > 0) {
                 yield* walkDependencyTree(absPath, {
-                    aliases,
+                    resolvers,
                     visited: visitedSet,
                     depth: depth === -1 ? depth : depth - 1,
                 })

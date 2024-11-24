@@ -17,9 +17,14 @@ const result = await findUnusedFiles({
     // optional
     sourceDirectories: [process.cwd()],
     ignorePatterns: ['**/node_modules'],
-    aliases: {
-        '@my/alias': 'path/to/file/index.ts',
-    },
+    resolvers: [
+        async ({ request, context }) => {
+            if (request === '@my/alias') {
+                return { result: 'path/to/file/index.ts' }
+            }
+            return null;
+        }
+    ],
     depth: 10,
 })
 
