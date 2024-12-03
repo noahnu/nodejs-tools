@@ -1735,7 +1735,7 @@ __metadata:
     eslint-config-prettier: "npm:^9.1.0"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^3.6.3"
-    eslint-plugin-import-x: "npm:^4.4.0"
+    eslint-plugin-import-x: "npm:^4.4.2"
     eslint-plugin-jest: "npm:^28.9.0"
     eslint-plugin-prettier: "npm:^5.2.1"
     globals: "npm:^15.12.0"
@@ -1750,7 +1750,7 @@ __metadata:
     eslint-config-prettier: ">=9.1.0"
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=3.6.3"
-    eslint-plugin-import-x: ">=4.4.0"
+    eslint-plugin-import-x: ">=4.4.2"
     eslint-plugin-jest: ">=28.9.0"
     eslint-plugin-prettier: ">=5.2.1"
     prettier: ">=3.3.3"
@@ -5081,9 +5081,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import-x@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "eslint-plugin-import-x@npm:4.4.0"
+"eslint-plugin-import-x@npm:^4.4.2":
+  version: 4.4.3
+  resolution: "eslint-plugin-import-x@npm:4.4.3"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.1.0"
     debug: "npm:^4.3.4"
@@ -5097,7 +5097,7 @@ __metadata:
     tslib: "npm:^2.6.3"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10c0/cf24a58edf5c17ecd7543b297e3691c9ac65db2b6c89c6c794c5b7d76af8f499785fa36ff2e7fdbd452a4b381798649bd188f80c8b840f5b15fe807a54960238
+  checksum: 10c0/8c629786f6791ff12d438a48252188937ce57a8901b5968d18872fe90034e737893fce556669d6b36481706212d1ef87e73cd4696b3406ffc9cc3a26cbdd8584
   languageName: node
   linkType: hard
 
