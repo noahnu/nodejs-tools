@@ -1728,7 +1728,7 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     "@typescript-eslint/eslint-plugin": "npm:^8.16.0"
     "@typescript-eslint/parser": "npm:^8.16.0"
     "@typescript-eslint/utils": "npm:^8.16.0"
@@ -1767,7 +1767,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     debug: "npm:^4.3.7"
     eslint: "npm:^9.15.0"
     eslint-import-resolver-node: "npm:^0.3.9"
@@ -1785,7 +1785,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@noahnu/internal-test-utils": "workspace:*"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     html-webpack-plugin: "npm:^5.6.3"
     typescript: "npm:^5.7.2"
     webpack: "npm:^5.96.1"
@@ -1799,7 +1799,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/internal-test-utils@workspace:packages/internal-test-utils"
   dependencies:
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
   languageName: unknown
   linkType: soft
 
@@ -1812,7 +1812,7 @@ __metadata:
     "@monoweave/plugin-github": "npm:^2.8.0"
     "@noahnu/eslint-config": "workspace:^"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     "@typescript-eslint/eslint-plugin": "npm:^8.16.0"
     "@typescript-eslint/parser": "npm:^8.16.0"
     "@typescript-eslint/utils": "npm:^8.16.0"
@@ -1848,7 +1848,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     "@typescript-eslint/typescript-estree": "npm:^8.16.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.3.7"
@@ -2331,7 +2331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.10.0, @types/node@npm:^22.5.5":
+"@types/node@npm:*, @types/node@npm:^22.10.1, @types/node@npm:^22.5.5":
   version: 22.10.2
   resolution: "@types/node@npm:22.10.2"
   dependencies:
