@@ -33,7 +33,7 @@
         "@yarnpkg/sdks": "^3.2.0",
         "@yarnpkg/types": "^4.0.0",
         "esbuild": "^0.24.0",
-        "eslint": "^9.15.0",
+        "eslint": "^9.16.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-formatter-junit": "^8.40.0",
         "eslint-import-resolver-node": "^0.3.9",
