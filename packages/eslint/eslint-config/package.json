@@ -64,7 +64,7 @@
         "eslint-plugin-import-x": "^4.5.0",
         "eslint-plugin-jest": "^28.9.0",
         "eslint-plugin-prettier": "^5.2.1",
-        "prettier": "^3.4.1",
+        "prettier": "^3.4.2",
         "typescript": "^5.7.2"
     },
     "dependencies": {
@@ -87,7 +87,7 @@
         "eslint-plugin-import-x": ">=4.5.0",
         "eslint-plugin-jest": ">=28.9.0",
         "eslint-plugin-prettier": ">=5.2.1",
-        "prettier": ">=3.4.1",
+        "prettier": ">=3.4.2",
         "typescript": ">=5.7.2"
     }
 }
