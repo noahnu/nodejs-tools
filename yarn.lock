@@ -1737,10 +1737,10 @@ __metadata:
     eslint-config-prettier: "npm:^9.1.0"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^3.7.0"
-    eslint-plugin-import-x: "npm:^4.5.0"
+    eslint-plugin-import-x: "npm:^4.5.1"
     eslint-plugin-jest: "npm:^28.9.0"
     eslint-plugin-prettier: "npm:^5.2.1"
-    globals: "npm:^15.13.0"
+    globals: "npm:^15.14.0"
     prettier: "npm:^3.4.2"
     typescript: "npm:^5.7.2"
     typescript-eslint: "npm:^8.18.1"
@@ -1752,7 +1752,7 @@ __metadata:
     eslint-config-prettier: ">=9.1.0"
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=3.7.0"
-    eslint-plugin-import-x: ">=4.5.0"
+    eslint-plugin-import-x: ">=4.5.1"
     eslint-plugin-jest: ">=28.9.0"
     eslint-plugin-prettier: ">=5.2.1"
     prettier: ">=3.4.2"
@@ -5092,7 +5092,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import-x@npm:^4.5.0":
+"eslint-plugin-import-x@npm:^4.5.1":
   version: 4.6.1
   resolution: "eslint-plugin-import-x@npm:4.6.1"
   dependencies:
@@ -5840,7 +5840,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.13.0":
+"globals@npm:^15.14.0":
   version: 15.14.0
   resolution: "globals@npm:15.14.0"
   checksum: 10c0/039deb8648bd373b7940c15df9f96ab7508fe92b31bbd39cbd1c1a740bd26db12457aa3e5d211553b234f30e9b1db2fee3683012f543a01a6942c9062857facb
