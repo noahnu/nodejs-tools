@@ -348,7 +348,7 @@ class SemverUpCommand extends Command<CommandContext> {
                     {
                         project: workspace.project,
                         workspace,
-                        preserveModifier: true,
+                        preserveModifier: oldDescriptor?.range,
                         cache,
                     },
                 )
