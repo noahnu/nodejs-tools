@@ -15,7 +15,8 @@
     "scripts": {
         "clean": "run workspace:clean \"$(pwd)\"",
         "prepack": "run workspace:build \"$(pwd)\"",
-        "run-local": "run -T tsx ./src/bin.ts"
+        "run-local": "run -T tsx ./src/bin.ts",
+        "run-local-debug": "run -T tsx --inspect-brk ./src/bin.ts"
     },
     "bin": "./src/bin.ts",
     "main": "./src/bin.ts",
