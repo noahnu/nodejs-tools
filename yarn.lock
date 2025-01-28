@@ -1547,7 +1547,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/cli@npm:^1.12.0":
+"@monoweave/cli@npm:^1.13.0":
   version: 1.13.0
   resolution: "@monoweave/cli@npm:1.13.0"
   dependencies:
@@ -1652,7 +1652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/plugin-github@npm:^2.9.0":
+"@monoweave/plugin-github@npm:^2.10.0":
   version: 2.10.0
   resolution: "@monoweave/plugin-github@npm:2.10.0"
   dependencies:
@@ -1818,8 +1818,8 @@ __metadata:
   resolution: "@noahnu/nodejs-tools@workspace:."
   dependencies:
     "@jest/types": "npm:^29.6.3"
-    "@monoweave/cli": "npm:^1.12.0"
-    "@monoweave/plugin-github": "npm:^2.9.0"
+    "@monoweave/cli": "npm:^1.13.0"
+    "@monoweave/plugin-github": "npm:^2.10.0"
     "@noahnu/eslint-config": "workspace:^"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.10.2"
@@ -1868,6 +1868,32 @@ __metadata:
     typescript: "npm:^5.7.2"
   bin:
     unused-files: ./src/bin.ts
+  languageName: unknown
+  linkType: soft
+
+"@noahnu/yarn-semver-up@workspace:packages/yarn-semver-up":
+  version: 0.0.0-use.local
+  resolution: "@noahnu/yarn-semver-up@workspace:packages/yarn-semver-up"
+  dependencies:
+    "@jest/globals": "npm:^29.7.0"
+    "@noahnu/internal-test-utils": "workspace:*"
+    "@types/debug": "npm:^4.1.12"
+    "@types/micromatch": "npm:^4.0.9"
+    "@types/node": "npm:^22.10.2"
+    "@types/semver": "npm:^7.5.8"
+    "@yarnpkg/cli": "npm:^4.6.0"
+    "@yarnpkg/core": "npm:^4.2.0"
+    "@yarnpkg/fslib": "npm:^3.1.1"
+    "@yarnpkg/plugin-essentials": "npm:^4.3.0"
+    "@yarnpkg/plugin-git": "npm:^3.1.0"
+    clipanion: "npm:^4.0.0-rc.4"
+    debug: "npm:^4.4.0"
+    micromatch: "npm:^4.0.8"
+    semver: "npm:^7.6.3"
+    typanion: "npm:^3.14.0"
+    typescript: "npm:^5.7.2"
+  bin:
+    yarn-semver-up: ./src/bin.ts
   languageName: unknown
   linkType: soft
 
@@ -2366,7 +2392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/semver@npm:^7.1.0":
+"@types/semver@npm:^7.1.0, @types/semver@npm:^7.5.8":
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
   checksum: 10c0/8663ff927234d1c5fcc04b33062cb2b9fcfbe0f5f351ed26c4d1e1581657deebd506b41ff7fdf89e787e3d33ce05854bc01686379b89e9c49b564c4cfa988efa

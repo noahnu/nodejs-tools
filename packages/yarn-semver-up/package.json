@@ -1,0 +1,52 @@
+{
+    "name": "@noahnu/yarn-semver-up",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahnu/nodejs-tools.git",
+        "directory": "packages/yarn-semver-up"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "noahnu",
+        "email": "noah@noahnu.com",
+        "url": "https://noahnu.com"
+    },
+    "scripts": {
+        "clean": "run workspace:clean \"$(pwd)\"",
+        "prepack": "run workspace:build \"$(pwd)\"",
+        "run-local": "run -T tsx ./src/bin.ts"
+    },
+    "bin": "./src/bin.ts",
+    "main": "./src/bin.ts",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public",
+        "bin": "./lib/bin.js",
+        "main": "./lib/bin.js"
+    },
+    "files": [
+        "lib"
+    ],
+    "dependencies": {
+        "@types/debug": "^4.1.12",
+        "@yarnpkg/cli": "^4.6.0",
+        "@yarnpkg/core": "^4.2.0",
+        "@yarnpkg/fslib": "^3.1.1",
+        "@yarnpkg/plugin-essentials": "^4.3.0",
+        "@yarnpkg/plugin-git": "^3.1.0",
+        "clipanion": "^4.0.0-rc.4",
+        "debug": "^4.4.0",
+        "micromatch": "^4.0.8",
+        "semver": "^7.6.3",
+        "typanion": "^3.14.0"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@noahnu/internal-test-utils": "workspace:*",
+        "@types/micromatch": "^4.0.9",
+        "@types/node": "^22.10.2",
+        "@types/semver": "^7.5.8",
+        "typescript": "^5.7.2"
+    }
+}
