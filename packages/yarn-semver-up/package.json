@@ -45,7 +45,7 @@
         "@jest/globals": "^29.7.0",
         "@noahnu/internal-test-utils": "workspace:*",
         "@types/micromatch": "^4.0.9",
-        "@types/node": "^22.10.2",
+        "@types/node": "^22.10.5",
         "@types/semver": "^7.5.8",
         "typescript": "^5.7.2"
     }
