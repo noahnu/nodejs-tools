@@ -1,7 +1,7 @@
 import { Command, Option } from 'clipanion'
 import * as t from 'typanion'
 
-import { findUnusedFiles } from './api'
+import { findUnusedFiles } from './api/index.mjs'
 
 export class BaseCommand extends Command {
     entryFiles = Option.Array('--entry', {

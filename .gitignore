@@ -24,7 +24,8 @@ node_modules
 *.log
 *.tmp
 .tmp
+/raw-coverage
 
 # Build Artifacts
 lib
-./reports
+/reports

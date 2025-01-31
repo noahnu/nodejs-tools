@@ -1,10 +1,10 @@
 {
-    "name": "@noahnu/unused-files",
-    "version": "0.2.3",
+    "name": "@noahnu/dependency-utils",
+    "version": "0.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/noahnu/nodejs-tools.git",
-        "directory": "packages/unused-files"
+        "directory": "packages/dependency-utils"
     },
     "license": "MIT",
     "author": {
@@ -14,23 +14,44 @@
     },
     "scripts": {
         "clean": "run workspace:clean \"$(pwd)\"",
-        "prepack": "run workspace:build \"$(pwd)\"",
-        "run-local": "run -T tsx ./src/bin.mts"
+        "prepack": "run workspace:build \"$(pwd)\""
     },
-    "bin": "./src/bin.mts",
-    "main": "./src/api/index.mts",
+    "main": "./src/index.mts",
+    "exports": {
+        ".": {
+            "default": "./src/index.mts"
+        },
+        "./types": {
+            "default": "./src/types.mts"
+        },
+        "./structs": {
+            "default": "./src/structs/index.mts"
+        }
+    },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/",
         "access": "public",
-        "bin": "./lib/bin.mjs",
-        "main": "./lib/api/index.mjs",
-        "types": "./lib/api/index.d.mts"
+        "main": "./lib/index.mjs",
+        "types": "./lib/index.d.mts",
+        "exports": {
+            ".": {
+                "types": "./lib/index.d.mts",
+                "default": "./lib/index.mjs"
+            },
+            "./types": {
+                "types": "./lib/types.d.mts",
+                "default": "./lib/types.mjs"
+            },
+            "./structs": {
+                "types": "./lib/structs/index.d.mts",
+                "default": "./lib/structs/index.mjs"
+            }
+        }
     },
     "files": [
         "lib"
     ],
     "dependencies": {
-        "@noahnu/dependency-utils": "workspace:*",
         "@types/debug": "^4.1.12",
         "@typescript-eslint/typescript-estree": "^8.22.0",
         "clipanion": "^4.0.0-rc.4",

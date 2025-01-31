@@ -1,6 +1,6 @@
 import { Cli } from 'clipanion'
 
-import { BaseCommand } from './command'
+import { BaseCommand } from './command.mjs'
 
 const cli = new Cli({
     binaryLabel: '@noahnu/unused-files',

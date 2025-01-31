@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
         "target": "ES2023",
-        "module": "node16",
+        "module": "NodeNext",
         "strict": true,
         "esModuleInterop": true,
-        "moduleResolution": "node16",
+        "moduleResolution": "NodeNext",
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "noImplicitAny": true,
@@ -17,9 +17,5 @@
         "outDir": ".tmp/tsc/root"
     },
     "exclude": ["**/lib", "./.pnp.*"],
-    "include": ["./packages", "./*.js", "./*.cjs", "./*.ts", "./**/eslint.config.cjs"],
-    "ts-node": {
-        "transpileOnly": true,
-        "ignore": ["(?:^|/)node_modules/", ".yarn/plugins/.*"]
-    }
+    "include": ["./packages", "./*.js", "./*.cjs", "./*.ts", "./**/eslint.config.cjs"]
 }
