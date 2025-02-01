@@ -9,15 +9,15 @@ describe('walkDependencyTree', () => {
     it('detects dynamic imports', async () => {
         await using context = await createTempDir()
 
-        const file = await context.writeFile('file.ts', ['import("node:fs")'].join('\n'))
+        const file = await context.writeFile('file.ts', ['import("fs")'].join('\n'))
 
         const imports = await Array.fromAsync(walkDependencyTree(file, { includeBuiltins: true }))
         expect(imports).toEqual(
             expect.arrayContaining([
                 {
                     kind: ImportDescriptorKind.DynamicImport,
-                    source: 'node:fs',
-                    dependency: '',
+                    source: 'fs',
+                    dependency: 'node:fs',
                 } satisfies DependencyTreeItem,
             ]),
         )
@@ -34,7 +34,7 @@ describe('walkDependencyTree', () => {
                 {
                     kind: ImportDescriptorKind.Require,
                     source: 'node:fs',
-                    dependency: '',
+                    dependency: 'node:fs',
                 } satisfies DependencyTreeItem,
             ]),
         )
