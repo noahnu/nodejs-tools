@@ -1,21 +1,24 @@
 // @ts-check
 
 // @ts-expect-error missing types
-require('tsx/cjs')
+await import('tsx/esm')
 
-const eslintConfig = require('@noahnu/eslint-config')
+const eslintConfig = await import('@noahnu/eslint-config')
 
 /**
  * @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray}
  */
 const config = [
-    ...eslintConfig,
+    ...eslintConfig.default,
     {
         languageOptions: {
-            parserOptions: { project: './tsconfig.lint.json', tsconfigRootDir: __dirname },
+            parserOptions: {
+                project: './tsconfig.lint.json',
+                tsconfigRootDir: import.meta.dirname,
+            },
         },
     },
     { ignores: ['**/coverage', '**/reports', '**/.*', 'packages/**/*.js', '**/lib'] },
 ]
 
-module.exports = config
+export default config

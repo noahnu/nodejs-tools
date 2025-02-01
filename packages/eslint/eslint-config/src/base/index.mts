@@ -1,9 +1,13 @@
+import { createRequire } from 'node:module'
+
 import eslint from '@eslint/js'
 import { type ESLint } from 'eslint'
 import eslintPluginImportX from 'eslint-plugin-import-x'
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
+
+const require = createRequire(import.meta.url)
 
 const rules: ESLint.ConfigData['rules'] = {
     /* Prettier Overrides */
@@ -110,6 +114,10 @@ const rules: ESLint.ConfigData['rules'] = {
         'error',
         { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
     ],
+    '@typescript-eslint/consistent-type-exports': [
+        'error',
+        { fixMixedExportsWithInlineTypeSpecifier: true },
+    ],
     '@typescript-eslint/no-duplicate-enum-values': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
@@ -171,4 +179,4 @@ const config = tseslint.config(
     },
 )
 
-export = config
+export default config

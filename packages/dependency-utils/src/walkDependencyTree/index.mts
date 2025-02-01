@@ -1,18 +1,38 @@
 import fs from 'node:fs'
-import { isBuiltin } from 'node:module'
+import { createRequire, isBuiltin } from 'node:module'
 import path from 'node:path'
 
 import { TSESTree, parse, simpleTraverse } from '@typescript-eslint/typescript-estree'
 import createDebug from 'debug'
 import micromatch from 'micromatch'
 
-import { type Resolver } from './types'
-import { resolveRealpath } from './utils'
+import {
+    type ImportDescriptor,
+    ImportDescriptorKind,
+    ImportDescriptorSet,
+} from '@noahnu/dependency-utils/structs'
+import { type Resolver } from '@noahnu/dependency-utils/types'
 
-const debug = createDebug('unused-files:parse')
+import { resolveRealpath } from '../utils.mjs'
+
+const debug = createDebug('dependency-utils:walk')
 
 const DEFAULT_DEPTH_LIMIT = -1 // no depth limit
 const VALID_EXTENSIONS = new Set<string>(['ts', 'tsx', 'mts', 'cts', 'js', 'jsx', 'mjs', 'cjs'])
+
+export interface DependencyTreeItem extends ImportDescriptor {
+    /** The resolved dependency path. */
+    dependency: string
+}
+
+export interface WalkDependencyTreeOptions {
+    resolvers?: Resolver[]
+    visited?: Set<string>
+    depth?: number
+    ignorePatterns?: string[]
+    /** Whether to include NodeJS builtins. */
+    includeBuiltins?: boolean
+}
 
 export async function* walkDependencyTree(
     source: string,
@@ -21,13 +41,9 @@ export async function* walkDependencyTree(
         visited,
         depth = DEFAULT_DEPTH_LIMIT,
         ignorePatterns,
-    }: {
-        resolvers?: Resolver[]
-        visited?: Set<string>
-        depth?: number
-        ignorePatterns?: string[]
-    } = {},
-): AsyncGenerator<{ source: string; dependency: string }, void, void> {
+        includeBuiltins = false,
+    }: WalkDependencyTreeOptions = {},
+): AsyncGenerator<DependencyTreeItem, void, void> {
     const ext = path.extname(source).substring(1)
     if (!VALID_EXTENSIONS.has(ext)) {
         debug(`${source}: Unknown file extension '${ext}' [skipping]`)
@@ -51,7 +67,7 @@ export async function* walkDependencyTree(
         jsDocParsingMode: 'none',
     })
 
-    const importFroms = new Set<string>()
+    const imports = new ImportDescriptorSet()
 
     const visitors: Record<
         string,
@@ -59,7 +75,10 @@ export async function* walkDependencyTree(
     > = {
         [TSESTree.AST_NODE_TYPES.ImportDeclaration]: (node) => {
             if (node.type === TSESTree.AST_NODE_TYPES.ImportDeclaration) {
-                importFroms.add(node.source.value)
+                imports.add({
+                    kind: ImportDescriptorKind.Import,
+                    source: node.source.value,
+                })
             }
         },
         [TSESTree.AST_NODE_TYPES.CallExpression]: (node) => {
@@ -71,7 +90,10 @@ export async function* walkDependencyTree(
                 const arg = node.arguments[0]
                 if (arg.type === TSESTree.AST_NODE_TYPES.Literal) {
                     if (typeof arg.value === 'string') {
-                        importFroms.add(arg.value)
+                        imports.add({
+                            kind: ImportDescriptorKind.Require,
+                            source: arg.value,
+                        })
                     }
                 } else {
                     debug(
@@ -84,14 +106,20 @@ export async function* walkDependencyTree(
             if (node.type === TSESTree.AST_NODE_TYPES.ImportExpression) {
                 if (node.source.type === TSESTree.AST_NODE_TYPES.Literal) {
                     if (typeof node.source.value === 'string') {
-                        importFroms.add(node.source.value)
+                        imports.add({
+                            kind: ImportDescriptorKind.DynamicImport,
+                            source: node.source.value,
+                        })
                     }
                 } else if (
                     node.source.type === TSESTree.AST_NODE_TYPES.TemplateLiteral &&
                     !node.source.expressions.length &&
                     node.source.quasis.length === 1
                 ) {
-                    importFroms.add(node.source.quasis[0].value.cooked)
+                    imports.add({
+                        kind: ImportDescriptorKind.DynamicImport,
+                        source: node.source.quasis[0].value.cooked,
+                    })
                 } else {
                     debug(
                         `${source}: Dynamic import expression found at ${node.loc.start}:${node.loc.end}`,
@@ -114,28 +142,39 @@ export async function* walkDependencyTree(
         }
 
         try {
-            return require.resolve(request, { paths: [path.dirname(source)] })
-        } catch {}
+            const require = createRequire(source)
+            return require.resolve(request)
+        } catch (err) {
+            console.error(err)
+        }
 
         return undefined
     }
 
-    for (const importFrom of Array.from(importFroms)) {
-        if (isBuiltin(importFrom)) continue
+    for (const importValue of imports.values()) {
+        if (isBuiltin(importValue.source)) {
+            if (includeBuiltins) {
+                yield {
+                    ...importValue,
+                    dependency: '',
+                }
+            }
+            continue
+        }
 
-        if (ignorePatterns && micromatch.isMatch(importFrom, ignorePatterns)) {
+        if (ignorePatterns && micromatch.isMatch(importValue.source, ignorePatterns)) {
             // ignorePatterns is used on the initial request so it doesn't get to the resolvers
             // as well as on the returned result
             continue
         }
 
-        const absPath = await resolveToAbsPath(importFrom)
+        const absPath = await resolveToAbsPath(importValue.source)
         if (absPath) {
             if (ignorePatterns && micromatch.isMatch(absPath, ignorePatterns)) {
                 continue
             }
 
-            yield { dependency: absPath, source }
+            yield { ...importValue, dependency: absPath }
             if (depth === -1 || depth > 0) {
                 yield* walkDependencyTree(absPath, {
                     resolvers,
@@ -145,7 +184,7 @@ export async function* walkDependencyTree(
                 })
             }
         } else {
-            debug(`${source}: Unable to resolve '${importFrom}'`)
+            debug(`${source}: Unable to resolve '${importValue.source}'`)
         }
     }
 }

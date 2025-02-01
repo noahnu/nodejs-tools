@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals'
 import { createTempDir } from '@noahnu/internal-test-utils'
 
-import { findUnusedFiles } from '.'
+import { findUnusedFiles } from './index.mjs'
 
 describe('findUnusedFiles', () => {
     it('reports no unused files on single file project', async () => {

@@ -11,4 +11,4 @@ const config = tseslint.config(
     eslintPluginJest.configs['flat/recommended'],
 )
 
-export = config
+export default config

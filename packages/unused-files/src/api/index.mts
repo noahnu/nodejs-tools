@@ -1,14 +1,11 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
+import { type Resolver, resolveRealpath, walkDependencyTree } from '@noahnu/dependency-utils'
 import createDebug from 'debug'
 import fg from 'fast-glob'
 
-import { type Resolver } from './types'
-import { resolveRealpath } from './utils'
-import { walkDependencyTree } from './walkDependencyTree'
-
-export type { Resolver, ResolverResult, ResolverParams } from './types'
+export type { Resolver, ResolverResult, ResolverParams } from '@noahnu/dependency-utils'
 
 const debug = createDebug('unused-files')
 

@@ -16,33 +16,35 @@
         "clean": "run workspace:clean \"$(pwd)\"",
         "prepack": "run workspace:build \"$(pwd)\""
     },
-    "main": "./src/index.ts",
+    "main": "./src/index.mts",
     "exports": {
         ".": {
-            "default": "./src/index.ts"
+            "default": "./src/index.mts"
         },
         "./base": {
-            "default": "./src/base/index.ts"
+            "default": "./src/base/index.mts"
         },
         "./jest": {
-            "default": "./src/jest/index.ts"
+            "default": "./src/jest/index.mts"
         }
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/",
         "access": "public",
-        "bin": "./lib/bin.js",
-        "main": "./lib/index.js",
-        "types": "./lib/index.d.ts",
+        "main": "./lib/index.mjs",
+        "types": "./lib/index.d.mts",
         "exports": {
             ".": {
-                "default": "./lib/index.js"
+                "types": "./lib/index.d.mts",
+                "default": "./lib/index.mjs"
             },
             "./base": {
-                "default": "./lib/base/index.js"
+                "types": "./lib/base/index.d.mts",
+                "default": "./lib/base/index.mjs"
             },
             "./jest": {
-                "default": "./lib/jest/index.js"
+                "types": "./lib/jest/index.d.mts",
+                "default": "./lib/jest/index.mjs"
             }
         }
     },
