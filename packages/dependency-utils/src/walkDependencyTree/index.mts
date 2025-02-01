@@ -156,7 +156,9 @@ export async function* walkDependencyTree(
             if (includeBuiltins) {
                 yield {
                     ...importValue,
-                    dependency: '',
+                    dependency: importValue.source.startsWith('node:')
+                        ? importValue.source
+                        : `node:${importValue.source}`,
                 }
             }
             continue

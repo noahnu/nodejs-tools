@@ -81,7 +81,7 @@ class SemverUpCommand extends Command<CommandContext> {
 
     preserveSemVerRange: boolean = Option.Boolean('--preserve-semver', true)
 
-    include?: string = Option.String('--include', { required: false })
+    include?: string[] = Option.Array('--include', { required: false })
 
     ruleGlobs: string[] = Option.Rest()
 
@@ -99,7 +99,7 @@ class SemverUpCommand extends Command<CommandContext> {
             const config = await this.parseConfigFile()
 
             const pipeline = async (report: Report) => {
-                if (!workspace && !this.include) {
+                if (!workspace && !this.include?.length) {
                     throw new Error('Must be run from within a workspace.')
                 }
 
@@ -107,7 +107,7 @@ class SemverUpCommand extends Command<CommandContext> {
                     .filter((w) => w.manifest.name)
                     .map((w) => structUtils.stringifyIdent(w.manifest.name!))
 
-                const workspaces = this.include
+                const workspaces = this.include?.length
                     ? new Set<Workspace>(
                           micromatch(allWorkspaceIdents, this.include)
                               .map((ident) =>

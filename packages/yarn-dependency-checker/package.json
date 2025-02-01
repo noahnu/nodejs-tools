@@ -1,0 +1,51 @@
+{
+    "name": "@noahnu/yarn-dependency-checker",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahnu/nodejs-tools.git",
+        "directory": "packages/yarn-dependency-checker"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "noahnu",
+        "email": "noah@noahnu.com",
+        "url": "https://noahnu.com"
+    },
+    "scripts": {
+        "clean": "run workspace:clean \"$(pwd)\"",
+        "prepack": "run workspace:build \"$(pwd)\"",
+        "run-local": "run -T tsx ./src/bin.mts",
+        "run-local-debug": "run -T tsx --inspect-brk ./src/bin.mts"
+    },
+    "bin": "./src/bin.mts",
+    "main": "./src/bin.mts",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "access": "public",
+        "bin": "./lib/bin.mjs",
+        "main": "./lib/bin.mjs"
+    },
+    "files": [
+        "lib"
+    ],
+    "dependencies": {
+        "@noahnu/dependency-utils": "workspace:^",
+        "@types/debug": "^4.1.12",
+        "@yarnpkg/cli": "^4.6.0",
+        "@yarnpkg/core": "^4.2.0",
+        "@yarnpkg/fslib": "^3.1.1",
+        "clipanion": "^4.0.0-rc.4",
+        "debug": "^4.4.0",
+        "fast-glob": "^3.3.3",
+        "micromatch": "^4.0.8",
+        "typanion": "^3.14.0"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@noahnu/internal-test-utils": "workspace:*",
+        "@types/micromatch": "^4.0.9",
+        "@types/node": "^22.12.0",
+        "typescript": "^5.7.3"
+    }
+}
