@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/eslint-config (v4.0.0) <a name="4.0.0"></a>
+
+Migrate to ESM.
+
+
+
 ## @noahnu/eslint-config (v3.0.0) <a name="3.0.0"></a>
 
 Update ESLint config and plugins to ESLint v9.

@@ -1,6 +1,6 @@
 {
     "name": "@noahnu/unused-files",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/noahnu/nodejs-tools.git",
@@ -30,7 +30,7 @@
         "lib"
     ],
     "dependencies": {
-        "@noahnu/dependency-utils": "workspace:*",
+        "@noahnu/dependency-utils": "workspace:^0.0.1",
         "@types/debug": "^4.1.12",
         "@typescript-eslint/typescript-estree": "^8.22.0",
         "clipanion": "^4.0.0-rc.4",
