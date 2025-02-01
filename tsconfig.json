@@ -17,5 +17,5 @@
         "outDir": ".tmp/tsc/root"
     },
     "exclude": ["**/lib", "./.pnp.*"],
-    "include": ["./packages", "./*.js", "./*.cjs", "./*.ts", "./**/eslint.config.cjs"]
+    "include": ["./packages", "./*.js", "./*.cjs", "./*.ts", "./**/eslint.config.mjs"]
 }
