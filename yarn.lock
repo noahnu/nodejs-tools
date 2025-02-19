@@ -1959,6 +1959,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@noahnu/validate-schema@workspace:packages/validate-schema":
+  version: 0.0.0-use.local
+  resolution: "@noahnu/validate-schema@workspace:packages/validate-schema"
+  dependencies:
+    "@jest/globals": "npm:^29.7.0"
+    "@noahnu/internal-test-utils": "workspace:*"
+    "@types/debug": "npm:^4.1.12"
+    "@types/json5": "npm:^2.2.0"
+    "@types/micromatch": "npm:^4.0.9"
+    "@types/node": "npm:^22.12.0"
+    "@types/yaml": "npm:^1.9.7"
+    ajv: "npm:^8.17.1"
+    clipanion: "npm:^4.0.0-rc.4"
+    debug: "npm:^4.4.0"
+    fast-glob: "npm:^3.3.3"
+    json5: "npm:^2.2.3"
+    micromatch: "npm:^4.0.8"
+    typanion: "npm:^3.14.0"
+    typescript: "npm:^5.7.3"
+    yaml: "npm:^2.7.0"
+  bin:
+    validate-schema: ./src/bin.mts
+  languageName: unknown
+  linkType: soft
+
 "@noahnu/yarn-dependency-checker@workspace:packages/yarn-dependency-checker":
   version: 0.0.0-use.local
   resolution: "@noahnu/yarn-dependency-checker@workspace:packages/yarn-dependency-checker"
@@ -2585,6 +2610,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/json5@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@types/json5@npm:2.2.0"
+  dependencies:
+    json5: "npm:*"
+  checksum: 10c0/12e5340f017a1069a7ccd8b40222920dd842b769ac6f8573c6eaea48cdb51fa88ef6efe5e720c1e5b4a7ab1e6e43ff8d6fcd003af16aa1e185387192fd380f43
+  languageName: node
+  linkType: hard
+
 "@types/keyv@npm:^3.1.4":
   version: 3.1.4
   resolution: "@types/keyv@npm:3.1.4"
@@ -2655,6 +2689,15 @@ __metadata:
   version: 1.0.3
   resolution: "@types/treeify@npm:1.0.3"
   checksum: 10c0/758902638ff83a790c13359729d77aeb80aae50f7039670037e3a0ba2bcc7b09dd49173ab21a96946d83af1682fcd70e448e49151ecd46e190f8925077142d4a
+  languageName: node
+  linkType: hard
+
+"@types/yaml@npm:^1.9.7":
+  version: 1.9.7
+  resolution: "@types/yaml@npm:1.9.7"
+  dependencies:
+    yaml: "npm:*"
+  checksum: 10c0/0bbb3015ecf4e483a5431b35a8029374cd944eac67f74973814e287d7075adaa86b30aa40efc53666b4b0a462bdd0b8846a86792039ac600560f29f35821a83b
   languageName: node
   linkType: hard
 
@@ -7501,6 +7544,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:*, json5@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "json5@npm:2.2.3"
+  bin:
+    json5: lib/cli.js
+  checksum: 10c0/5a04eed94810fa55c5ea138b2f7a5c12b97c3750bc63d11e511dcecbfef758003861522a070c2272764ee0f4e3e323862f386945aeb5b85b87ee43f084ba586c
+  languageName: node
+  linkType: hard
+
 "json5@npm:^1.0.2":
   version: 1.0.2
   resolution: "json5@npm:1.0.2"
@@ -7509,15 +7561,6 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: 10c0/9ee316bf21f000b00752e6c2a3b79ecf5324515a5c60ee88983a1910a45426b643a4f3461657586e8aeca87aaf96f0a519b0516d2ae527a6c3e7eed80f68717f
-  languageName: node
-  linkType: hard
-
-"json5@npm:^2.2.3":
-  version: 2.2.3
-  resolution: "json5@npm:2.2.3"
-  bin:
-    json5: lib/cli.js
-  checksum: 10c0/5a04eed94810fa55c5ea138b2f7a5c12b97c3750bc63d11e511dcecbfef758003861522a070c2272764ee0f4e3e323862f386945aeb5b85b87ee43f084ba586c
   languageName: node
   linkType: hard
 
@@ -10031,7 +10074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^2.6.1, yaml@npm:^2.7.0":
+"yaml@npm:*, yaml@npm:^2.6.1, yaml@npm:^2.7.0":
   version: 2.7.0
   resolution: "yaml@npm:2.7.0"
   bin:
