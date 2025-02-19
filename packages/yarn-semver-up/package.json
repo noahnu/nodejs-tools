@@ -39,7 +39,7 @@
         "clipanion": "^4.0.0-rc.4",
         "debug": "^4.4.0",
         "micromatch": "^4.0.8",
-        "semver": "^7.6.3",
+        "semver": "^7.7.0",
         "typanion": "^3.14.0"
     },
     "devDependencies": {
