@@ -7,6 +7,7 @@
         "directory": "packages/validate-schema"
     },
     "license": "MIT",
+    "type": "module",
     "author": {
         "name": "noahnu",
         "email": "noah@noahnu.com",
@@ -30,10 +31,6 @@
         "lib"
     ],
     "dependencies": {
-        "@types/debug": "^4.1.12",
-        "@types/json5": "^2.2.0",
-        "@types/micromatch": "^4.0.9",
-        "@types/yaml": "^1.9.7",
         "ajv": "^8.17.1",
         "clipanion": "^4.0.0-rc.4",
         "debug": "^4.4.0",
@@ -46,8 +43,10 @@
     "devDependencies": {
         "@jest/globals": "^29.7.0",
         "@noahnu/internal-test-utils": "workspace:*",
+        "@types/debug": "^4.1.12",
         "@types/micromatch": "^4.0.9",
         "@types/node": "^22.12.0",
+        "@types/yaml": "^1.9.7",
         "typescript": "^5.7.3"
     }
 }
