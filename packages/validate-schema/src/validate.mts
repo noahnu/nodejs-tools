@@ -60,7 +60,7 @@ const fetchSchemaFile = lru(
         }
 
         // Return the file path relative to the filename
-        const schemaFilename = path.resolve(path.dirname(filename), url)
+        const schemaFilename = resolveFilename({ url, filename })
         return await parse({
             filename: schemaFilename,
             contents: await fs.promises.readFile(schemaFilename, 'utf-8'),
@@ -172,6 +172,7 @@ export async function validateFile({
             if (!($ref in ajv.schemas)) {
                 debug(`[Validate File] [${filename}]: Adding schema $ref '${$ref}'`)
                 ajv.addSchema(refSchema, $ref)
+                ajv.addSchema(refSchema, path.relative(process.cwd(), $ref))
             }
         }
 
