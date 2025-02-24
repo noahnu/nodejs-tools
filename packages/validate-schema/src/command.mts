@@ -20,6 +20,7 @@ interface Summary {
     parseError: number
     validationError: number
     validationWarning: number
+    compileError: number
 }
 
 enum OutputFormat {
@@ -82,6 +83,7 @@ class ValidateSchemaCommand extends Command {
             parseError: 0,
             validationError: 0,
             validationWarning: 0,
+            compileError: 0,
         }
 
         for await (const filename of this.iterateFilePatterns({ patterns, ignore, cwd })) {
@@ -92,7 +94,10 @@ class ValidateSchemaCommand extends Command {
                 filename,
                 schemaStoreBehaviour: this.schemaStoreBehaviour,
             }))
-            if (result.parseError) {
+            if (result.compileError) {
+                debug(`[Compile Error] [${filename}]`, result.compileError)
+                summary.compileError++
+            } else if (result.parseError) {
                 debug(`[Parse Error] [${filename}]`, result.parseError)
                 summary.parseError++
             } else if (result.validationError) {
@@ -123,6 +128,7 @@ class ValidateSchemaCommand extends Command {
         // Print summary
         this.context.stdout.write(
             `Schema Validation: ${summary.files} file${summary.files === 1 ? '' : 's'} processed. ` +
+                `${summary.compileError} compile error${summary.compileError === 1 ? '' : 's'}, ` +
                 `${summary.parseError} parse error${summary.parseError === 1 ? '' : 's'}, ` +
                 `${summary.validationError} validation error${summary.validationError === 1 ? '' : 's'}, ` +
                 `and ${summary.validationWarning} validation warning${summary.validationWarning === 1 ? '' : 's'}.\n`,
