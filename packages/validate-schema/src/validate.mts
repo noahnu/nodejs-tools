@@ -6,7 +6,7 @@ import createDebug from 'debug'
 
 import { type ErrorObject, type SchemaObject, getAjvSingleton } from './ajv/index.mjs'
 import { ParseError, parse } from './parser/index.mjs'
-import { inferSchemaUrl } from './schema/inferSchemaUrl.mjs'
+import { inferSchemaUrl, resolveFilename } from './schema/inferSchemaUrl.mjs'
 import { SchemaSource, SchemaStoreOption } from './schema/types.mjs'
 import { lru } from './utils/cache.mjs'
 
@@ -52,7 +52,7 @@ const fetchSchemaFile = lru(
         }
 
         if (filename.match(/^(https?:)\/\//)) {
-            url = new URL(url, filename).toString()
+            url = resolveFilename({ url, filename })
             return await parse({
                 filename: url,
                 contents: await fetchByUrl(url),
