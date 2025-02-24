@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/validate-schema (v1.0.3) <a name="1.0.3"></a>
+
+Fix bug in resolving relative file paths for schemas.
+
+
+
 ## @noahnu/validate-schema (v1.0.2) <a name="1.0.2"></a>
 
 Traverse $refs in schema files.
