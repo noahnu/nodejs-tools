@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/validate-schema (v1.0.4) <a name="1.0.4"></a>
+
+Fix relative schema url.
+
+
+
 ## @noahnu/validate-schema (v1.0.3) <a name="1.0.3"></a>
 
 Fix bug in resolving relative file paths for schemas.
