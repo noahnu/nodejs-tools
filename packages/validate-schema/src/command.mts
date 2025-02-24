@@ -15,6 +15,13 @@ const debug = createDebug('validate-schema')
 
 type Results = Partial<Record<string, ValidationResult>>
 
+interface Summary {
+    files: number
+    parseError: number
+    validationError: number
+    validationWarning: number
+}
+
 enum OutputFormat {
     Text = 'text',
     GitHub = 'github',
@@ -70,9 +77,16 @@ class ValidateSchemaCommand extends Command {
         )
 
         const results: Results = {}
+        const summary: Summary = {
+            files: 0,
+            parseError: 0,
+            validationError: 0,
+            validationWarning: 0,
+        }
 
         for await (const filename of this.iterateFilePatterns({ patterns, ignore, cwd })) {
             debug(`[Processing] [${filename}]`)
+            summary.files++
 
             const result = (results[filename] = await validateFile({
                 filename,
@@ -80,7 +94,9 @@ class ValidateSchemaCommand extends Command {
             }))
             if (result.parseError) {
                 debug(`[Parse Error] [${filename}]`, result.parseError)
+                summary.parseError++
             } else if (result.validationError) {
+                summary.validationError++
                 const message = formatValidationErrors({ errors: result.validationError })
                 if (formats.has(OutputFormat.Text)) {
                     this.context.stderr.write(`[Validation Error] [${filename}] ${message}\n`)
@@ -91,6 +107,7 @@ class ValidateSchemaCommand extends Command {
                     )
                 }
             } else if (result.validationWarning) {
+                summary.validationWarning++
                 const message = formatValidationErrors({ errors: result.validationWarning })
                 if (formats.has(OutputFormat.Text)) {
                     this.context.stderr.write(`[Validation Warning] [${filename}] ${message}\n`)
@@ -102,6 +119,14 @@ class ValidateSchemaCommand extends Command {
                 }
             }
         }
+
+        // Print summary
+        this.context.stdout.write(
+            `Schema Validation: ${summary.files} file${summary.files === 1 ? '' : 's'} processed. ` +
+                `${summary.parseError} parse error${summary.parseError === 1 ? '' : 's'}, ` +
+                `${summary.validationError} validation error${summary.validationError === 1 ? '' : 's'}, ` +
+                `and ${summary.validationWarning} validation warning${summary.validationWarning === 1 ? '' : 's'}.\n`,
+        )
 
         if (Object.values(results).some((r) => r?.compileError)) {
             return 3

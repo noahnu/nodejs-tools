@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
+import { type AnySchema } from 'ajv'
 import createDebug from 'debug'
 
 import { type ErrorObject, type SchemaObject, getAjvSingleton } from './ajv/index.mjs'
@@ -19,6 +20,21 @@ export interface ValidationResult {
     compileError?: Error
 }
 
+async function fetchByUrl(url: string): Promise<string> {
+    const headers: Record<string, string> = {}
+    if (url.match(/(https:)?\/\/raw\.githubusercontent.com\//) && process.env.GITHUB_TOKEN) {
+        headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`
+    }
+
+    const response = await fetch(url, {
+        headers,
+    })
+    if (!response.ok) {
+        throw new Error(`Failed to download schema '${url}': ${await response.text()}`)
+    }
+    return await response.text()
+}
+
 const fetchSchemaFile = lru(
     async function fetchSchemaFile<T>({
         filename,
@@ -27,11 +43,19 @@ const fetchSchemaFile = lru(
         filename: string
         url: string
     }): Promise<T> {
-        if (url.startsWith('http:') || url.startsWith('https:') || url.startsWith('//')) {
+        if (url.match(/^(https?:)\/\//)) {
             // Download from remote to tmp dir
             return await parse({
                 filename: url,
-                contents: await (await fetch(url)).text(),
+                contents: await fetchByUrl(url),
+            })
+        }
+
+        if (filename.match(/^(https?:)\/\//)) {
+            url = new URL(url, filename).toString()
+            return await parse({
+                filename: url,
+                contents: await fetchByUrl(url),
             })
         }
 
@@ -61,6 +85,47 @@ function isSupportedSchema(schema: unknown): boolean {
     return true
 }
 
+function* iterateOverRefs(obj: object): Generator<string> {
+    for (const [key, value] of Object.entries(obj)) {
+        if (key === '$ref') {
+            yield value
+        }
+        if (typeof value === 'object') {
+            yield* iterateOverRefs(value)
+        }
+    }
+}
+
+async function* getReferencedSchemas({
+    schema,
+    filename,
+}: {
+    schema: AnySchema
+    filename: string
+}) {
+    const seen = new Set<string>()
+
+    const queue: { schema: AnySchema; filename: string }[] = [{ schema, filename }]
+    while (queue.length) {
+        const current = queue.pop()
+        if (!current?.schema || typeof current.schema !== 'object') continue
+        if (seen.has(current.filename)) continue
+
+        seen.add(current.filename)
+
+        for (const $ref of iterateOverRefs(current.schema)) {
+            if (seen.has($ref)) continue // already processed
+
+            const refSchema = await fetchSchemaFile<AnySchema>({
+                filename: current.filename,
+                url: $ref,
+            })
+            queue.push({ schema: refSchema, filename: $ref })
+            yield { $ref, refSchema }
+        }
+    }
+}
+
 export async function validateFile({
     filename,
     schemaStoreBehaviour,
@@ -68,7 +133,9 @@ export async function validateFile({
     filename: string
     schemaStoreBehaviour?: SchemaStoreOption
 }): Promise<ValidationResult> {
+    const ajv = getAjvSingleton()
     const contents = await fs.promises.readFile(filename, 'utf-8')
+
     try {
         const data = await parse({ filename, contents })
         const { schemaUrl, schemaSource } = await inferSchemaUrl({
@@ -85,7 +152,7 @@ export async function validateFile({
 
         debug(`[Validate File] [${filename}]: Schema found '${schemaUrl}' via ${schemaSource}`)
 
-        const schema = await fetchSchemaFile({ filename, url: schemaUrl })
+        const schema = await fetchSchemaFile<AnySchema>({ filename, url: schemaUrl })
 
         if (!isSupportedSchema(schema)) {
             if (
@@ -97,8 +164,19 @@ export async function validateFile({
             return { parseError: new ParseError('The detected schema is not supported.') }
         }
 
+        // Add any referenced schemas
+        for await (const { $ref, refSchema } of getReferencedSchemas({
+            schema,
+            filename: schemaUrl,
+        })) {
+            if (!($ref in ajv.schemas)) {
+                debug(`[Validate File] [${filename}]: Adding schema $ref '${$ref}'`)
+                ajv.addSchema(refSchema, $ref)
+            }
+        }
+
         try {
-            const validate = getAjvSingleton().compile(schema as SchemaObject)
+            const validate = ajv.compile(schema as SchemaObject)
 
             if (validate(data)) {
                 return {} // valid
@@ -125,6 +203,7 @@ export async function validateFile({
                 schemaSource === SchemaSource.SchemaStore &&
                 schemaStoreBehaviour === SchemaStoreOption.Warn
             ) {
+                debug(`[Validate File] [${filename}]`, compileError)
                 return {}
             }
             return {
