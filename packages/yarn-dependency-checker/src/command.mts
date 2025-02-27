@@ -96,23 +96,21 @@ class DependencyCheckerCommand extends Command<CommandContext> {
         process.chdir(cwd)
 
         const configFile = await this.parseConfigFile()
+        this.workspaces ??= configFile?.workspaces
+        this.ignorePackages ??= configFile?.ignorePackages
+        this.include ??= configFile?.include
+        this.exclude ??= configFile?.exclude
+        this.devFilesPatterns ??= configFile?.devFiles
 
-        this.#ignorePatterns = [
-            '**/node_modules',
-            '**/dist',
-            ...(this.exclude ?? configFile?.exclude ?? []),
-        ]
-        this.#includePatterns = this.include ??
-            configFile?.include ?? ['**/*.{ts,js,mjs,cjs,mts,cts,jsx,tsx}']
+        this.#ignorePatterns = ['**/node_modules', '**/dist', ...(this.exclude ?? [])]
+        this.#includePatterns = this.include ?? ['**/*.{ts,js,mjs,cjs,mts,cts,jsx,tsx}']
         this.#devFilePatterns = [
             '**/*.test.*',
             '**/*.spec.*',
             '**/__tests__/**',
-            ...(this.devFilesPatterns ?? configFile?.devFiles ?? []),
+            ...(this.devFilesPatterns ?? []),
         ]
-        this.#ignorePackages = [
-            ...(this.ignorePackages ?? configFile?.ignorePackages ?? ['node:*']),
-        ]
+        this.#ignorePackages = [...(this.ignorePackages ?? ['node:*'])]
 
         try {
             const configuration = await Configuration.find(cwd, getPluginConfiguration())
