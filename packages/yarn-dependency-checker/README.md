@@ -1,5 +1,28 @@
 # @noahnu/yarn-dependency-checker
 
+
+In a `dependencies-checker.config.yaml` file:
+
+```yaml
+workspaces:
+    - "{@some/package,}"
+devFiles:
+    - "**/*.stories.*"
+exclude:
+    - "**/*.yarn"
+include:
+    - "**/src"
+ignorePackages:
+    - "@types/*"
+```
+
+and then:
+
+```sh
+yarn dlx @noahnu/yarn-dependency-checker --config=dependencies-checker.config.yaml
+```
+
+
 ## Development
 
 ```sh
