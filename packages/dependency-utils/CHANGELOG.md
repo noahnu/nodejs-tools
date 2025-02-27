@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/dependency-utils (v0.0.4) <a name="0.0.4"></a>
+
+Support parsing JSX.
+
+
+
 ## @noahnu/dependency-utils (v0.0.3) <a name="0.0.3"></a>
 
 Fix bug where detecting imports would fail if location metadata was missing from the node.

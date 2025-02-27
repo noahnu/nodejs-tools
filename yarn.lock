@@ -1803,7 +1803,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@noahnu/dependency-utils@workspace:^0.0.3, @noahnu/dependency-utils@workspace:packages/dependency-utils":
+"@noahnu/dependency-utils@workspace:^0.0.4, @noahnu/dependency-utils@workspace:packages/dependency-utils":
   version: 0.0.0-use.local
   resolution: "@noahnu/dependency-utils@workspace:packages/dependency-utils"
   dependencies:
@@ -1949,7 +1949,7 @@ __metadata:
   resolution: "@noahnu/unused-files@workspace:packages/unused-files"
   dependencies:
     "@jest/globals": "npm:^29.7.0"
-    "@noahnu/dependency-utils": "workspace:^0.0.3"
+    "@noahnu/dependency-utils": "workspace:^0.0.4"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
@@ -1995,7 +1995,7 @@ __metadata:
   resolution: "@noahnu/yarn-dependency-checker@workspace:packages/yarn-dependency-checker"
   dependencies:
     "@jest/globals": "npm:^29.7.0"
-    "@noahnu/dependency-utils": "workspace:^0.0.3"
+    "@noahnu/dependency-utils": "workspace:^0.0.4"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
