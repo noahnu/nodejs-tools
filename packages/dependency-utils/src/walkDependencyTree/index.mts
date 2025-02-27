@@ -65,6 +65,8 @@ export async function* walkDependencyTree(
         errorOnUnknownASTType: false,
         filePath: source,
         jsDocParsingMode: 'none',
+        errorOnTypeScriptSyntacticAndSemanticIssues: false,
+        jsx: ['jsx', 'tsx'].includes(ext),
     })
 
     const imports = new ImportDescriptorSet()
