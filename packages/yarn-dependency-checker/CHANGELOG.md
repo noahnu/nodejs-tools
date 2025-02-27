@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-dependency-checker (v0.1.1) <a name="0.1.1"></a>
+
+fix bug where config file was being ignored
+
+
+
 ## @noahnu/yarn-dependency-checker (v0.1.0) <a name="0.1.0"></a>
 
 - Filter files by workspace to support nested workspaces.
