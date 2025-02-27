@@ -1,6 +1,6 @@
 {
     "name": "@noahnu/yarn-dependency-checker",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/noahnu/nodejs-tools.git",
@@ -30,7 +30,7 @@
         "lib"
     ],
     "dependencies": {
-        "@noahnu/dependency-utils": "workspace:^0.0.2",
+        "@noahnu/dependency-utils": "workspace:^0.0.3",
         "@types/debug": "^4.1.12",
         "@yarnpkg/cli": "^4.6.0",
         "@yarnpkg/core": "^4.2.0",
