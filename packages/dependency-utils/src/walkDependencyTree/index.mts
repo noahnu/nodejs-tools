@@ -97,7 +97,7 @@ export async function* walkDependencyTree(
                     }
                 } else {
                     debug(
-                        `${source}: Dynamic require expression found at ${node.loc.start}:${node.loc.end}`,
+                        `${source}: Dynamic require expression found at ${node.loc?.start}:${node.loc?.end}`,
                     )
                 }
             }
@@ -121,8 +121,9 @@ export async function* walkDependencyTree(
                         source: node.source.quasis[0].value.cooked,
                     })
                 } else {
+                    // We're seeing node.loc occasionally be null
                     debug(
-                        `${source}: Dynamic import expression found at ${node.loc.start}:${node.loc.end}`,
+                        `${source}: Dynamic import expression found at ${node.loc?.start}:${node.loc?.end}`,
                     )
                 }
             }

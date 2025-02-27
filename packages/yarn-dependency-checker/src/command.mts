@@ -170,7 +170,18 @@ class DependencyCheckerCommand extends Command<CommandContext> {
                 },
             )
 
-            return Promise.all(files.map(async (file) => await resolveRealpath(file)))
+            return Promise.all(
+                files
+                    .filter((file) =>
+                        // Workspaces can be nested, only consider files in the current workspace
+                        structUtils.areDescriptorsEqual(
+                            workspace.project.getWorkspaceByFilePath(npath.toPortablePath(file))
+                                .anchoredDescriptor,
+                            workspace.anchoredDescriptor,
+                        ),
+                    )
+                    .map(async (file) => await resolveRealpath(file)),
+            )
         }
 
         const files = new Set<string>(
