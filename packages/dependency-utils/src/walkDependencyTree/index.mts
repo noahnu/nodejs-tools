@@ -65,6 +65,8 @@ export async function* walkDependencyTree(
         errorOnUnknownASTType: false,
         filePath: source,
         jsDocParsingMode: 'none',
+        errorOnTypeScriptSyntacticAndSemanticIssues: false,
+        jsx: ['jsx', 'tsx'].includes(ext),
     })
 
     const imports = new ImportDescriptorSet()
@@ -142,11 +144,21 @@ export async function* walkDependencyTree(
             }
         }
 
+        const require = createRequire(source)
         try {
-            const require = createRequire(source)
             return require.resolve(request)
-        } catch (err) {
-            console.error(err)
+        } catch (outerError) {
+            try {
+                if (request.endsWith('.mjs')) {
+                    return require.resolve(`${request.substring(0, request.length - 4)}.mts`)
+                }
+                if (request.endsWith('.cjs')) {
+                    return require.resolve(`${request.substring(0, request.length - 4)}.cts`)
+                }
+                throw outerError
+            } catch (innerError) {
+                console.error(innerError)
+            }
         }
 
         return undefined
