@@ -39,7 +39,8 @@
         "debug": "^4.4.0",
         "fast-glob": "^3.3.3",
         "micromatch": "^4.0.8",
-        "typanion": "^3.14.0"
+        "typanion": "^3.14.0",
+        "yaml": "^2.7.0"
     },
     "devDependencies": {
         "@jest/globals": "^29.7.0",

@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import path from 'node:path'
 
 import { resolveRealpath, walkDependencyTree } from '@noahnu/dependency-utils'
@@ -16,6 +17,7 @@ import { npath } from '@yarnpkg/fslib'
 import { Command, Option, type Usage } from 'clipanion'
 import fg from 'fast-glob'
 import micromatch from 'micromatch'
+import YAML from 'yaml'
 
 interface IssueReport {
     missingDependencies: Set<string>
@@ -23,6 +25,14 @@ interface IssueReport {
 
     moveFromDependencyToDev: Set<string>
     moveFromDevToDependency: Set<string>
+}
+
+interface ConfigFile {
+    workspaces?: string[]
+    devFiles?: string[]
+    exclude?: string[]
+    include?: string[]
+    ignorePackages?: string[]
 }
 
 class DependencyCheckerCommand extends Command<CommandContext> {
@@ -33,6 +43,8 @@ class DependencyCheckerCommand extends Command<CommandContext> {
         details: '',
         examples: [],
     })
+
+    configFile?: string = Option.String('--config', { required: false })
 
     cwd?: string = Option.String('--cwd', { required: false })
 
@@ -63,19 +75,44 @@ class DependencyCheckerCommand extends Command<CommandContext> {
     #devFilePatterns: string[] = []
     #ignorePackages: string[] = []
 
+    private async parseConfigFile(): Promise<ConfigFile | null> {
+        if (!this.configFile) {
+            return null
+        }
+
+        const contents = await fs.promises.readFile(this.configFile, { encoding: 'utf-8' })
+        if (this.configFile.endsWith('.yaml') || this.configFile.endsWith('.yml')) {
+            return YAML.parse(contents)
+        }
+        if (this.configFile.endsWith('.json')) {
+            return JSON.parse(contents)
+        }
+
+        throw new Error('Unexpected config file. Only json & yaml file extensions are supported.')
+    }
+
     async execute(): Promise<number> {
         const cwd = npath.toPortablePath(this.cwd ?? process.cwd())
         process.chdir(cwd)
 
-        this.#ignorePatterns = ['**/node_modules', '**/dist', ...(this.exclude ?? [])]
-        this.#includePatterns = this.include ?? ['**/*.{ts,js,mjs,cjs,mts,cts,jsx,tsx}']
+        const configFile = await this.parseConfigFile()
+
+        this.#ignorePatterns = [
+            '**/node_modules',
+            '**/dist',
+            ...(this.exclude ?? configFile?.exclude ?? []),
+        ]
+        this.#includePatterns = this.include ??
+            configFile?.include ?? ['**/*.{ts,js,mjs,cjs,mts,cts,jsx,tsx}']
         this.#devFilePatterns = [
             '**/*.test.*',
             '**/*.spec.*',
             '**/__tests__/**',
-            ...(this.devFilesPatterns ?? []),
+            ...(this.devFilesPatterns ?? configFile?.devFiles ?? []),
         ]
-        this.#ignorePackages = [...(this.ignorePackages ?? ['node:*'])]
+        this.#ignorePackages = [
+            ...(this.ignorePackages ?? configFile?.ignorePackages ?? ['node:*']),
+        ]
 
         try {
             const configuration = await Configuration.find(cwd, getPluginConfiguration())
@@ -170,7 +207,18 @@ class DependencyCheckerCommand extends Command<CommandContext> {
                 },
             )
 
-            return Promise.all(files.map(async (file) => await resolveRealpath(file)))
+            return Promise.all(
+                files
+                    .filter((file) =>
+                        // Workspaces can be nested, only consider files in the current workspace
+                        structUtils.areDescriptorsEqual(
+                            workspace.project.getWorkspaceByFilePath(npath.toPortablePath(file))
+                                .anchoredDescriptor,
+                            workspace.anchoredDescriptor,
+                        ),
+                    )
+                    .map(async (file) => await resolveRealpath(file)),
+            )
         }
 
         const files = new Set<string>(
