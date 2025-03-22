@@ -23,12 +23,12 @@
     "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728",
     "devDependencies": {
         "@jest/types": "^29.6.3",
-        "@monoweave/plugin-github": "^2.10.0",
+        "@monoweave/plugin-github": "^2.10.1",
         "@noahnu/eslint-config": "workspace:^",
-        "@swc/core": "^1.11.4",
+        "@swc/core": "^1.11.5",
         "@swc/jest": "^0.2.37",
         "@types/jest": "^29.5.14",
-        "@types/node": "^22.13.5",
+        "@types/node": "^22.13.7",
         "@typescript-eslint/eslint-plugin": "^8.25.0",
         "@typescript-eslint/parser": "^8.25.0",
         "@typescript-eslint/utils": "^8.25.0",
@@ -50,7 +50,7 @@
         "lint-staged": "^15.4.3",
         "prettier": "^3.5.2",
         "tsx": "^4.19.3",
-        "typescript": "^5.7.3"
+        "typescript": "^5.8.2"
     },
     "scripts": {
         "clean": "rm -rf reports && yarn workspaces foreach -vpi --worktree run clean",
