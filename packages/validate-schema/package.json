@@ -45,7 +45,7 @@
         "@noahnu/internal-test-utils": "workspace:*",
         "@types/debug": "^4.1.12",
         "@types/micromatch": "^4.0.9",
-        "@types/node": "^22.13.7",
+        "@types/node": "^22.13.8",
         "@types/yaml": "^1.9.7",
         "typescript": "^5.8.2"
     }
