@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.3.4) <a name="0.3.4"></a>
+
+Release
+
+
+
 ## @noahnu/unused-files (v0.3.0) <a name="0.3.0"></a>
 
 Migrate to ESM.

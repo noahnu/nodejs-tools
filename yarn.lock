@@ -1628,7 +1628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@noahnu/dependency-utils@workspace:^0.0.4, @noahnu/dependency-utils@workspace:packages/dependency-utils":
+"@noahnu/dependency-utils@workspace:^0.0.5, @noahnu/dependency-utils@workspace:packages/dependency-utils":
   version: 0.0.0-use.local
   resolution: "@noahnu/dependency-utils@workspace:packages/dependency-utils"
   dependencies:
@@ -1652,7 +1652,7 @@ __metadata:
   resolution: "@noahnu/eslint-config@workspace:packages/eslint/eslint-config"
   dependencies:
     "@eslint/js": "npm:^9.21.0"
-    "@noahnu/eslint-import-resolver-require": "workspace:^1.0.0"
+    "@noahnu/eslint-import-resolver-require": "workspace:^1.0.1"
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
@@ -1689,7 +1689,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@noahnu/eslint-import-resolver-require@workspace:^1.0.0, @noahnu/eslint-import-resolver-require@workspace:packages/eslint/eslint-import-resolver-require":
+"@noahnu/eslint-import-resolver-require@workspace:^1.0.1, @noahnu/eslint-import-resolver-require@workspace:packages/eslint/eslint-import-resolver-require":
   version: 0.0.0-use.local
   resolution: "@noahnu/eslint-import-resolver-require@workspace:packages/eslint/eslint-import-resolver-require"
   dependencies:
@@ -1774,7 +1774,7 @@ __metadata:
   resolution: "@noahnu/unused-files@workspace:packages/unused-files"
   dependencies:
     "@jest/globals": "npm:^29.7.0"
-    "@noahnu/dependency-utils": "workspace:^0.0.4"
+    "@noahnu/dependency-utils": "workspace:^0.0.5"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
@@ -1820,7 +1820,7 @@ __metadata:
   resolution: "@noahnu/yarn-dependency-checker@workspace:packages/yarn-dependency-checker"
   dependencies:
     "@jest/globals": "npm:^29.7.0"
-    "@noahnu/dependency-utils": "workspace:^0.0.4"
+    "@noahnu/dependency-utils": "workspace:^0.0.5"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"

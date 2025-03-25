@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/dependency-utils (v0.0.5) <a name="0.0.5"></a>
+
+Release
+
+
+
 ## @noahnu/dependency-utils (v0.0.4) <a name="0.0.4"></a>
 
 Support parsing JSX.

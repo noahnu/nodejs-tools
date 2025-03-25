@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/eslint-config (v4.0.1) <a name="4.0.1"></a>
+
+Release
+
+
+
 ## @noahnu/eslint-config (v4.0.0) <a name="4.0.0"></a>
 
 Migrate to ESM.
