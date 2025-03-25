@@ -32,6 +32,8 @@ export interface WalkDependencyTreeOptions {
     ignorePatterns?: string[]
     /** Whether to include NodeJS builtins. */
     includeBuiltins?: boolean
+    /** Whether to suppress resolver failures, i.e. best effort. */
+    suppressResolverFailures?: boolean
 }
 
 export async function* walkDependencyTree(
@@ -42,6 +44,7 @@ export async function* walkDependencyTree(
         depth = DEFAULT_DEPTH_LIMIT,
         ignorePatterns,
         includeBuiltins = false,
+        suppressResolverFailures = false,
     }: WalkDependencyTreeOptions = {},
 ): AsyncGenerator<DependencyTreeItem, void, void> {
     const ext = path.extname(source).substring(1)
@@ -138,9 +141,15 @@ export async function* walkDependencyTree(
 
     const resolveToAbsPath = async (request: string): Promise<string | undefined> => {
         for (const resolver of resolvers ?? []) {
-            const resolution = await resolver({ context: source, request })
-            if (resolution) {
-                return path.resolve(resolution.result)
+            try {
+                const resolution = await resolver({ context: source, request })
+                if (resolution) {
+                    return path.resolve(resolution.result)
+                }
+            } catch (error) {
+                if (!suppressResolverFailures) {
+                    console.error(error)
+                }
             }
         }
 
@@ -157,7 +166,9 @@ export async function* walkDependencyTree(
                 }
                 throw outerError
             } catch (innerError) {
-                console.error(innerError)
+                if (!suppressResolverFailures) {
+                    console.error(innerError)
+                }
             }
         }
 

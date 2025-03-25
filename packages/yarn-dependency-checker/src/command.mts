@@ -33,6 +33,7 @@ interface ConfigFile {
     exclude?: string[]
     include?: string[]
     ignorePackages?: string[]
+    suppressResolverFailures?: boolean
 }
 
 class DependencyCheckerCommand extends Command<CommandContext> {
@@ -70,10 +71,13 @@ class DependencyCheckerCommand extends Command<CommandContext> {
         required: false,
     })
 
+    suppressResolverFailures = Option.Boolean('--suppress-resolver-failures', { required: false })
+
     #ignorePatterns: string[] = []
     #includePatterns: string[] = []
     #devFilePatterns: string[] = []
     #ignorePackages: string[] = []
+    #suppressResolverFailures = false
 
     private async parseConfigFile(): Promise<ConfigFile | null> {
         if (!this.configFile) {
@@ -111,6 +115,8 @@ class DependencyCheckerCommand extends Command<CommandContext> {
             ...(this.devFilesPatterns ?? []),
         ]
         this.#ignorePackages = [...(this.ignorePackages ?? ['node:*'])]
+        this.#suppressResolverFailures =
+            this.suppressResolverFailures || configFile?.suppressResolverFailures || false
 
         try {
             const configuration = await Configuration.find(cwd, getPluginConfiguration())
@@ -238,6 +244,8 @@ class DependencyCheckerCommand extends Command<CommandContext> {
                 depth: 0,
                 includeBuiltins: false,
                 visited: visitedFiles,
+                suppressResolverFailures: this.#suppressResolverFailures,
+                ignorePatterns: this.#ignorePackages, // we'll re-use ignore-packages to also ignore imports
             })) {
                 const pkgName = source.match(/^((@[^/]+\/[^/]+)|([^/]+))/)?.[1]
                 if (!pkgName) continue
