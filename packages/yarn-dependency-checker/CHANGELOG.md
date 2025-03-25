@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-dependency-checker (v1.0.0) <a name="1.0.0"></a>
+
+Initial release of yarn dependency checker.
+
+
+
 ## @noahnu/yarn-dependency-checker (v0.1.1) <a name="0.1.1"></a>
 
 fix bug where config file was being ignored
