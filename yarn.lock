@@ -1747,7 +1747,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^8.28.0"
     "@typescript-eslint/parser": "npm:^8.28.0"
     "@typescript-eslint/utils": "npm:^8.28.0"
-    "@yarnpkg/sdks": "npm:^3.2.0"
+    "@yarnpkg/sdks": "npm:^3.2.1"
     "@yarnpkg/types": "npm:^4.0.0"
     esbuild: "npm:^0.25.0"
     eslint: "npm:^9.21.0"
@@ -2859,7 +2859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^4.1.2, @yarnpkg/core@npm:^4.1.4, @yarnpkg/core@npm:^4.2.0, @yarnpkg/core@npm:^4.2.1, @yarnpkg/core@npm:^4.3.1":
+"@yarnpkg/core@npm:^4.1.4, @yarnpkg/core@npm:^4.2.0, @yarnpkg/core@npm:^4.2.1, @yarnpkg/core@npm:^4.3.1":
   version: 4.4.1
   resolution: "@yarnpkg/core@npm:4.4.1"
   dependencies:
@@ -3336,13 +3336,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/sdks@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "@yarnpkg/sdks@npm:3.2.0"
+"@yarnpkg/sdks@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@yarnpkg/sdks@npm:3.2.1"
   dependencies:
-    "@yarnpkg/core": "npm:^4.1.2"
-    "@yarnpkg/fslib": "npm:^3.1.0"
-    "@yarnpkg/parsers": "npm:^3.0.2"
+    "@yarnpkg/core": "npm:^4.2.1"
+    "@yarnpkg/fslib": "npm:^3.1.2"
+    "@yarnpkg/parsers": "npm:^3.0.3"
     chalk: "npm:^3.0.0"
     clipanion: "npm:^4.0.0-rc.2"
     comment-json: "npm:^2.2.0"
@@ -3350,7 +3350,7 @@ __metadata:
     tslib: "npm:^2.4.0"
   bin:
     sdks: ./lib/cli.js
-  checksum: 10c0/f6d8f4844d036eedc7e994c5e0b1fbd33caa88a971fc2f8dec20870d1dbbde784d9d24388b40efe505b08d4d1c7fadede06ef82529b4a860eeb2a423459f962c
+  checksum: 10c0/d2ac4842f6827aba82de14c05dbc9d3139cdf79b62c93f1b70ce8b7613ac22253dd8436ed5692a0b9d9bd70d08789942126f939ec71a31037d1cf437c9b40118
   languageName: node
   linkType: hard
 
