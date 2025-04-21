@@ -38,14 +38,14 @@
         "json5": "^2.2.3",
         "micromatch": "^4.0.8",
         "typanion": "^3.14.0",
-        "yaml": "^2.7.0"
+        "yaml": "^2.7.1"
     },
     "devDependencies": {
         "@jest/globals": "^29.7.0",
         "@noahnu/internal-test-utils": "workspace:*",
         "@types/debug": "^4.1.12",
         "@types/micromatch": "^4.0.9",
-        "@types/node": "^22.13.8",
+        "@types/node": "^22.13.14",
         "@types/yaml": "^1.9.7",
         "typescript": "^5.8.2"
     }
