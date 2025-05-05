@@ -23,34 +23,34 @@
     "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538",
     "devDependencies": {
         "@jest/types": "^29.6.3",
-        "@monoweave/plugin-github": "^2.13.0",
+        "@monoweave/plugin-github": "^2.14.0",
         "@noahnu/eslint-config": "workspace:^",
-        "@swc/core": "^1.11.16",
+        "@swc/core": "^1.11.21",
         "@swc/jest": "^0.2.37",
         "@types/jest": "^29.5.14",
-        "@types/node": "^22.13.17",
-        "@typescript-eslint/eslint-plugin": "^8.29.0",
-        "@typescript-eslint/parser": "^8.29.0",
-        "@typescript-eslint/utils": "^8.29.0",
+        "@types/node": "^22.14.1",
+        "@typescript-eslint/eslint-plugin": "^8.30.0",
+        "@typescript-eslint/parser": "^8.30.0",
+        "@typescript-eslint/utils": "^8.30.0",
         "@yarnpkg/sdks": "^3.2.1",
         "@yarnpkg/types": "^4.0.1",
         "esbuild": "^0.25.0",
-        "eslint": "^9.23.0",
-        "eslint-config-prettier": "^10.1.1",
+        "eslint": "^9.24.0",
+        "eslint-config-prettier": "^10.1.2",
         "eslint-formatter-junit": "^8.40.0",
         "eslint-import-resolver-node": "^0.3.9",
         "eslint-import-resolver-typescript": "^3.10.0",
         "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-jest": "^28.11.0",
         "eslint-plugin-jsx-a11y": "^6.10.2",
-        "eslint-plugin-prettier": "^5.2.5",
+        "eslint-plugin-prettier": "^5.2.6",
         "husky": "^9.1.7",
         "jest": "^v30.0.0-alpha.7",
         "jest-junit": "^16.0.0",
-        "lint-staged": "^15.5.0",
+        "lint-staged": "^15.5.1",
         "prettier": "^3.5.3",
         "tsx": "^4.19.3",
-        "typescript": "^5.8.2"
+        "typescript": "^5.8.3"
     },
     "scripts": {
         "clean": "rm -rf reports && yarn workspaces foreach -vpi --worktree run clean",
@@ -67,6 +67,6 @@
         "release": "monoweave --log-level 0 --plugins @monoweave/plugin-github"
     },
     "dependencies": {
-        "@monoweave/cli": "^1.16.0"
+        "@monoweave/cli": "^1.17.0"
     }
 }
