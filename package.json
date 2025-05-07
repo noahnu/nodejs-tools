@@ -23,15 +23,15 @@
     "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538",
     "devDependencies": {
         "@jest/types": "^29.6.3",
-        "@monoweave/plugin-github": "^2.14.0",
+        "@monoweave/plugin-github": "^2.14.1",
         "@noahnu/eslint-config": "workspace:^",
         "@swc/core": "^1.11.21",
         "@swc/jest": "^0.2.37",
         "@types/jest": "^29.5.14",
         "@types/node": "^22.14.1",
-        "@typescript-eslint/eslint-plugin": "^8.30.0",
-        "@typescript-eslint/parser": "^8.30.0",
-        "@typescript-eslint/utils": "^8.30.0",
+        "@typescript-eslint/eslint-plugin": "^8.30.1",
+        "@typescript-eslint/parser": "^8.30.1",
+        "@typescript-eslint/utils": "^8.30.1",
         "@yarnpkg/sdks": "^3.2.1",
         "@yarnpkg/types": "^4.0.1",
         "esbuild": "^0.25.0",
@@ -67,6 +67,6 @@
         "release": "monoweave --log-level 0 --plugins @monoweave/plugin-github"
     },
     "dependencies": {
-        "@monoweave/cli": "^1.17.0"
+        "@monoweave/cli": "^1.17.1"
     }
 }
