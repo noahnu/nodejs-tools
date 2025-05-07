@@ -1938,7 +1938,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
     "@types/node": "npm:^22.14.1"
-    "@yarnpkg/cli": "npm:^4.8.1"
+    "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.3.1"
     "@yarnpkg/fslib": "npm:^3.1.2"
     clipanion: "npm:^4.0.0-rc.4"
@@ -1963,7 +1963,7 @@ __metadata:
     "@types/micromatch": "npm:^4.0.9"
     "@types/node": "npm:^22.14.1"
     "@types/semver": "npm:^7.7.0"
-    "@yarnpkg/cli": "npm:^4.8.1"
+    "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.3.1"
     "@yarnpkg/fslib": "npm:^3.1.2"
     "@yarnpkg/plugin-essentials": "npm:^4.3.2"
@@ -3156,7 +3156,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli@npm:^4.8.1, @yarnpkg/cli@npm:^4.9.1":
+"@yarnpkg/cli@npm:^4.9.1":
   version: 4.9.1
   resolution: "@yarnpkg/cli@npm:4.9.1"
   dependencies:
