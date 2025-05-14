@@ -26,7 +26,7 @@
         "@monoweave/plugin-github": "^2.14.1",
         "@noahnu/eslint-config": "workspace:^",
         "@swc/core": "^1.11.21",
-        "@swc/jest": "^0.2.37",
+        "@swc/jest": "^0.2.38",
         "@types/jest": "^29.5.14",
         "@types/node": "^22.14.1",
         "@typescript-eslint/eslint-plugin": "^8.31.0",
