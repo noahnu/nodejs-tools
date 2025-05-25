@@ -1763,7 +1763,7 @@ __metadata:
     eslint-import-resolver-typescript: "npm:^4.3.4"
     eslint-plugin-import-x: "npm:^4.11.0"
     eslint-plugin-jest: "npm:^28.11.0"
-    eslint-plugin-prettier: "npm:^5.2.6"
+    eslint-plugin-prettier: "npm:^5.3.1"
     globals: "npm:^16.0.0"
     prettier: "npm:^3.5.3"
     typescript: "npm:^5.8.3"
@@ -1778,7 +1778,7 @@ __metadata:
     eslint-import-resolver-typescript: ">=4.3.4"
     eslint-plugin-import-x: ">=4.11.0"
     eslint-plugin-jest: ">=28.11.0"
-    eslint-plugin-prettier: ">=5.2.6"
+    eslint-plugin-prettier: ">=5.3.1"
     prettier: ">=3.5.3"
     typescript: ">=5.8.3"
   languageName: unknown
@@ -1853,7 +1853,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.31.0"
     eslint-plugin-jest: "npm:^28.11.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
-    eslint-plugin-prettier: "npm:^5.2.6"
+    eslint-plugin-prettier: "npm:^5.3.1"
     husky: "npm:^9.1.7"
     jest: "npm:^v30.0.0-alpha.7"
     jest-junit: "npm:^16.0.0"
@@ -5516,7 +5516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.2.6":
+"eslint-plugin-prettier@npm:^5.3.1":
   version: 5.4.0
   resolution: "eslint-plugin-prettier@npm:5.4.0"
   dependencies:
