@@ -1731,8 +1731,8 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.3"
-    "@typescript-eslint/typescript-estree": "npm:^8.31.1"
+    "@types/node": "npm:^22.15.13"
+    "@typescript-eslint/typescript-estree": "npm:^8.32.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.0"
     fast-glob: "npm:^3.3.3"
@@ -1752,10 +1752,10 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.3"
-    "@typescript-eslint/eslint-plugin": "npm:^8.31.1"
-    "@typescript-eslint/parser": "npm:^8.31.1"
-    "@typescript-eslint/utils": "npm:^8.31.1"
+    "@types/node": "npm:^22.15.13"
+    "@typescript-eslint/eslint-plugin": "npm:^8.32.0"
+    "@typescript-eslint/parser": "npm:^8.32.0"
+    "@typescript-eslint/utils": "npm:^8.32.0"
     debug: "npm:^4.4.0"
     eslint: "npm:^9.26.0"
     eslint-config-prettier: "npm:^10.1.2"
@@ -1763,22 +1763,22 @@ __metadata:
     eslint-import-resolver-typescript: "npm:^4.3.4"
     eslint-plugin-import-x: "npm:^4.11.0"
     eslint-plugin-jest: "npm:^28.11.0"
-    eslint-plugin-prettier: "npm:^5.3.1"
+    eslint-plugin-prettier: "npm:^5.4.0"
     globals: "npm:^16.0.0"
     prettier: "npm:^3.5.3"
     typescript: "npm:^5.8.3"
-    typescript-eslint: "npm:^8.31.1"
+    typescript-eslint: "npm:^8.32.0"
   peerDependencies:
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.0"
-    "@typescript-eslint/eslint-plugin": ">=8.31.1"
-    "@typescript-eslint/parser": ">=8.31.1"
+    "@typescript-eslint/eslint-plugin": ">=8.32.0"
+    "@typescript-eslint/parser": ">=8.32.0"
     eslint: ">=9.26.0"
     eslint-config-prettier: ">=10.1.2"
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=4.3.4"
     eslint-plugin-import-x: ">=4.11.0"
     eslint-plugin-jest: ">=28.11.0"
-    eslint-plugin-prettier: ">=5.3.1"
+    eslint-plugin-prettier: ">=5.4.0"
     prettier: ">=3.5.3"
     typescript: ">=5.8.3"
   languageName: unknown
@@ -1791,7 +1791,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.3"
+    "@types/node": "npm:^22.15.13"
     debug: "npm:^4.4.0"
     eslint: "npm:^9.26.0"
     eslint-import-resolver-node: "npm:^0.3.9"
@@ -1809,13 +1809,13 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@noahnu/internal-test-utils": "workspace:*"
-    "@types/node": "npm:^22.15.3"
+    "@types/node": "npm:^22.15.13"
     html-webpack-plugin: "npm:^5.6.3"
     typescript: "npm:^5.8.3"
-    webpack: "npm:^5.99.7"
+    webpack: "npm:^5.99.8"
   peerDependencies:
     html-webpack-plugin: ^5.6.3
-    webpack: ^5.99.7
+    webpack: ^5.99.8
   languageName: unknown
   linkType: soft
 
@@ -1823,7 +1823,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/internal-test-utils@workspace:packages/internal-test-utils"
   dependencies:
-    "@types/node": "npm:^22.15.3"
+    "@types/node": "npm:^22.15.13"
   languageName: unknown
   linkType: soft
 
@@ -1838,10 +1838,10 @@ __metadata:
     "@swc/core": "npm:^1.11.24"
     "@swc/jest": "npm:^0.2.38"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.3"
-    "@typescript-eslint/eslint-plugin": "npm:^8.31.1"
-    "@typescript-eslint/parser": "npm:^8.31.1"
-    "@typescript-eslint/utils": "npm:^8.31.1"
+    "@types/node": "npm:^22.15.13"
+    "@typescript-eslint/eslint-plugin": "npm:^8.32.0"
+    "@typescript-eslint/parser": "npm:^8.32.0"
+    "@typescript-eslint/utils": "npm:^8.32.0"
     "@yarnpkg/sdks": "npm:^3.2.1"
     "@yarnpkg/types": "npm:^4.0.1"
     esbuild: "npm:^0.25.3"
@@ -1853,11 +1853,11 @@ __metadata:
     eslint-plugin-import: "npm:^2.31.0"
     eslint-plugin-jest: "npm:^28.11.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
-    eslint-plugin-prettier: "npm:^5.3.1"
+    eslint-plugin-prettier: "npm:^5.4.0"
     husky: "npm:^9.1.7"
     jest: "npm:^v30.0.0-alpha.7"
     jest-junit: "npm:^16.0.0"
-    lint-staged: "npm:^15.5.1"
+    lint-staged: "npm:^15.5.2"
     prettier: "npm:^3.5.3"
     tsx: "npm:^4.19.4"
     typescript: "npm:^5.8.3"
@@ -1873,8 +1873,8 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.3"
-    "@typescript-eslint/typescript-estree": "npm:^8.31.1"
+    "@types/node": "npm:^22.15.13"
+    "@typescript-eslint/typescript-estree": "npm:^8.32.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.0"
     fast-glob: "npm:^3.3.3"
@@ -1894,7 +1894,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.3"
+    "@types/node": "npm:^22.15.13"
     "@types/yaml": "npm:^1.9.7"
     ajv: "npm:^8.17.1"
     clipanion: "npm:^4.0.0-rc.4"
@@ -1919,7 +1919,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.3"
+    "@types/node": "npm:^22.15.13"
     "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.4.1"
     "@yarnpkg/fslib": "npm:^3.1.2"
@@ -1943,7 +1943,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.3"
+    "@types/node": "npm:^22.15.13"
     "@types/semver": "npm:^7.7.0"
     "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.4.1"
@@ -2646,12 +2646,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.15.3":
-  version: 22.15.19
-  resolution: "@types/node@npm:22.15.19"
+"@types/node@npm:*, @types/node@npm:^22.15.13":
+  version: 22.15.21
+  resolution: "@types/node@npm:22.15.21"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/8ef52fa1a91b1c8891616d46f3921a9f3c65ad1c6bb62db7899c8c28643c13bf9d607a2403b1e5aceb3e6fa6749efc9e0ba5c39618a4872da6946437b0edbfbe
+  checksum: 10c0/f092bbccda2131c2b2c8f720338080aa0ef1d928f5f1062c03954a4f7dafa7ee3ed29bc3e51bd4e2584473b3d943c637a2b39ad7174898970818270187cf10c1
   languageName: node
   linkType: hard
 
@@ -2726,7 +2726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:8.32.1, @typescript-eslint/eslint-plugin@npm:^8.31.1":
+"@typescript-eslint/eslint-plugin@npm:8.32.1, @typescript-eslint/eslint-plugin@npm:^8.32.0":
   version: 8.32.1
   resolution: "@typescript-eslint/eslint-plugin@npm:8.32.1"
   dependencies:
@@ -2747,7 +2747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:8.32.1, @typescript-eslint/parser@npm:^8.31.1":
+"@typescript-eslint/parser@npm:8.32.1, @typescript-eslint/parser@npm:^8.32.0":
   version: 8.32.1
   resolution: "@typescript-eslint/parser@npm:8.32.1"
   dependencies:
@@ -2795,7 +2795,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:8.32.1, @typescript-eslint/typescript-estree@npm:^8.31.1":
+"@typescript-eslint/typescript-estree@npm:8.32.1, @typescript-eslint/typescript-estree@npm:^8.32.0":
   version: 8.32.1
   resolution: "@typescript-eslint/typescript-estree@npm:8.32.1"
   dependencies:
@@ -2813,7 +2813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.32.1, @typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.31.0, @typescript-eslint/utils@npm:^8.31.1":
+"@typescript-eslint/utils@npm:8.32.1, @typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.31.0, @typescript-eslint/utils@npm:^8.32.0":
   version: 8.32.1
   resolution: "@typescript-eslint/utils@npm:8.32.1"
   dependencies:
@@ -5516,7 +5516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.3.1":
+"eslint-plugin-prettier@npm:^5.4.0":
   version: 5.4.0
   resolution: "eslint-plugin-prettier@npm:5.4.0"
   dependencies:
@@ -7807,9 +7807,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^15.5.1":
-  version: 15.5.1
-  resolution: "lint-staged@npm:15.5.1"
+"lint-staged@npm:^15.5.2":
+  version: 15.5.2
+  resolution: "lint-staged@npm:15.5.2"
   dependencies:
     chalk: "npm:^5.4.1"
     commander: "npm:^13.1.0"
@@ -7823,7 +7823,7 @@ __metadata:
     yaml: "npm:^2.7.0"
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/86deddb08bf10428f2eb96c02326a9ee403360729225f0b12afb0c0f13c287a75daa01e179d86f64e3432576446d8643d204a47417296f9ef0aa56f1340ff2af
+  checksum: 10c0/618386254600ada3af3672486a9d082250108245e7c0863d9dfe0a21e7764e3b2eb6416b0f8970e548f4e9d368637331598b27df5a1306925feabbaf16a667e1
   languageName: node
   linkType: hard
 
@@ -10054,7 +10054,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.31.1":
+"typescript-eslint@npm:^8.32.0":
   version: 8.32.1
   resolution: "typescript-eslint@npm:8.32.1"
   dependencies:
@@ -10310,9 +10310,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.99.7":
-  version: 5.99.8
-  resolution: "webpack@npm:5.99.8"
+"webpack@npm:^5.99.8":
+  version: 5.99.9
+  resolution: "webpack@npm:5.99.9"
   dependencies:
     "@types/eslint-scope": "npm:^3.7.7"
     "@types/estree": "npm:^1.0.6"
@@ -10343,7 +10343,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 10c0/c4852c3b795ed3fba799d2925802a4e259b2de7c2c597f0aaf0e228acfdc6755389ed8c29f1dad86610a9c6ad968c0b57c702b93891d60f09d302af63b2debe0
+  checksum: 10c0/34ec3f19b50bccaf27929e5e5b901b25047f2d414acba7d0967dc98eb4f404d107fb1a4b63095edbca2b006ff5815f1720b131e10b20664b074dfc86b7ffa717
   languageName: node
   linkType: hard
 
