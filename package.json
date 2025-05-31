@@ -47,7 +47,7 @@
         "husky": "^9.1.7",
         "jest": "^v30.0.0-alpha.7",
         "jest-junit": "^16.0.0",
-        "lint-staged": "^15.5.2",
+        "lint-staged": "^16.0.0",
         "prettier": "^3.5.3",
         "tsx": "^4.19.4",
         "typescript": "^5.8.3"
