@@ -1904,7 +1904,7 @@ __metadata:
     micromatch: "npm:^4.0.8"
     typanion: "npm:^3.14.0"
     typescript: "npm:^5.8.3"
-    yaml: "npm:^2.7.1"
+    yaml: "npm:^2.8.0"
   bin:
     validate-schema: ./src/bin.mts
   languageName: unknown
@@ -1929,7 +1929,7 @@ __metadata:
     micromatch: "npm:^4.0.8"
     typanion: "npm:^3.14.0"
     typescript: "npm:^5.8.3"
-    yaml: "npm:^2.7.1"
+    yaml: "npm:^2.8.0"
   bin:
     yarn-dependency-checker: ./src/bin.mts
   languageName: unknown
@@ -10503,7 +10503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:*, yaml@npm:^2.7.0, yaml@npm:^2.7.1, yaml@npm:^2.8.0":
+"yaml@npm:*, yaml@npm:^2.7.0, yaml@npm:^2.8.0":
   version: 2.8.0
   resolution: "yaml@npm:2.8.0"
   bin:
