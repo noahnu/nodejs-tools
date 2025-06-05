@@ -38,7 +38,7 @@
         "json5": "^2.2.3",
         "micromatch": "^4.0.8",
         "typanion": "^3.14.0",
-        "yaml": "^2.7.1"
+        "yaml": "^2.8.0"
     },
     "devDependencies": {
         "@jest/globals": "^29.7.0",
