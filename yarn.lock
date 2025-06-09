@@ -1731,7 +1731,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@typescript-eslint/typescript-estree": "npm:^8.32.1"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
@@ -1752,7 +1752,7 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@typescript-eslint/eslint-plugin": "npm:^8.32.1"
     "@typescript-eslint/parser": "npm:^8.32.1"
     "@typescript-eslint/utils": "npm:^8.32.1"
@@ -1791,7 +1791,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     debug: "npm:^4.4.1"
     eslint: "npm:^9.27.0"
     eslint-import-resolver-node: "npm:^0.3.9"
@@ -1809,7 +1809,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@noahnu/internal-test-utils": "workspace:*"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     html-webpack-plugin: "npm:^5.6.3"
     typescript: "npm:^5.8.3"
     webpack: "npm:^5.99.8"
@@ -1823,7 +1823,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/internal-test-utils@workspace:packages/internal-test-utils"
   dependencies:
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
   languageName: unknown
   linkType: soft
 
@@ -1838,7 +1838,7 @@ __metadata:
     "@swc/core": "npm:^1.11.24"
     "@swc/jest": "npm:^0.2.38"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@typescript-eslint/eslint-plugin": "npm:^8.32.1"
     "@typescript-eslint/parser": "npm:^8.32.1"
     "@typescript-eslint/utils": "npm:^8.32.1"
@@ -1873,7 +1873,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@typescript-eslint/typescript-estree": "npm:^8.32.1"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
@@ -1894,7 +1894,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@types/yaml": "npm:^1.9.7"
     ajv: "npm:^8.17.1"
     clipanion: "npm:^4.0.0-rc.4"
@@ -1919,7 +1919,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.4.1"
     "@yarnpkg/fslib": "npm:^3.1.2"
@@ -1943,7 +1943,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^22.15.19"
     "@types/semver": "npm:^7.7.0"
     "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.4.1"
@@ -2646,12 +2646,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.15.18":
-  version: 22.15.29
-  resolution: "@types/node@npm:22.15.29"
+"@types/node@npm:*, @types/node@npm:^22.15.19":
+  version: 22.15.30
+  resolution: "@types/node@npm:22.15.30"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/602cc88c6150780cd9b5b44604754e0ce13983ae876a538861d6ecfb1511dff289e5576fffd26c841cde2142418d4bb76e2a72a382b81c04557ccb17cff29e1d
+  checksum: 10c0/ca330ac0e7fd502686d6df115fcc606aba46fd334220f749bbba2f639accdadcb23f7900603ceccdc8240be736739cad5c0b87c0fa92c9255a4dff245f07d664
   languageName: node
   linkType: hard
 
