@@ -1812,10 +1812,10 @@ __metadata:
     "@types/node": "npm:^22.15.19"
     html-webpack-plugin: "npm:^5.6.3"
     typescript: "npm:^5.8.3"
-    webpack: "npm:^5.99.8"
+    webpack: "npm:^5.99.9"
   peerDependencies:
     html-webpack-plugin: ^5.6.3
-    webpack: ^5.99.8
+    webpack: ^5.99.9
   languageName: unknown
   linkType: soft
 
@@ -10285,7 +10285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.99.8":
+"webpack@npm:^5.99.9":
   version: 5.99.9
   resolution: "webpack@npm:5.99.9"
   dependencies:
