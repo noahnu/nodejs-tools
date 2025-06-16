@@ -1760,8 +1760,8 @@ __metadata:
     eslint: "npm:^9.27.0"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-import-resolver-node: "npm:^0.3.9"
-    eslint-import-resolver-typescript: "npm:^4.4.0"
-    eslint-plugin-import-x: "npm:^4.13.1"
+    eslint-import-resolver-typescript: "npm:^4.4.1"
+    eslint-plugin-import-x: "npm:^4.13.3"
     eslint-plugin-jest: "npm:^28.11.0"
     eslint-plugin-prettier: "npm:^5.4.0"
     globals: "npm:^16.2.0"
@@ -1775,8 +1775,8 @@ __metadata:
     eslint: ">=9.27.0"
     eslint-config-prettier: ">=10.1.5"
     eslint-import-resolver-node: ">=0.3.9"
-    eslint-import-resolver-typescript: ">=4.4.0"
-    eslint-plugin-import-x: ">=4.13.1"
+    eslint-import-resolver-typescript: ">=4.4.1"
+    eslint-plugin-import-x: ">=4.13.3"
     eslint-plugin-jest: ">=28.11.0"
     eslint-plugin-prettier: ">=5.4.0"
     prettier: ">=3.5.3"
@@ -1849,7 +1849,7 @@ __metadata:
     eslint-config-prettier: "npm:^10.1.5"
     eslint-formatter-junit: "npm:^8.40.0"
     eslint-import-resolver-node: "npm:^0.3.9"
-    eslint-import-resolver-typescript: "npm:^4.4.0"
+    eslint-import-resolver-typescript: "npm:^4.4.1"
     eslint-plugin-import: "npm:^2.31.0"
     eslint-plugin-jest: "npm:^28.11.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
@@ -5448,7 +5448,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^4.4.0":
+"eslint-import-resolver-typescript@npm:^4.4.1":
   version: 4.4.3
   resolution: "eslint-import-resolver-typescript@npm:4.4.3"
   dependencies:
@@ -5484,7 +5484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import-x@npm:^4.13.1":
+"eslint-plugin-import-x@npm:^4.13.3":
   version: 4.15.2
   resolution: "eslint-plugin-import-x@npm:4.15.2"
   dependencies:
