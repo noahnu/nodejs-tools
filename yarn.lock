@@ -1776,7 +1776,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@typescript-eslint/typescript-estree": "npm:^8.33.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
@@ -1797,7 +1797,7 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@typescript-eslint/eslint-plugin": "npm:^8.33.0"
     "@typescript-eslint/parser": "npm:^8.33.0"
     "@typescript-eslint/utils": "npm:^8.33.0"
@@ -1807,8 +1807,8 @@ __metadata:
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.1"
     eslint-plugin-import-x: "npm:^4.13.3"
-    eslint-plugin-jest: "npm:^28.11.1"
-    eslint-plugin-prettier: "npm:^5.4.0"
+    eslint-plugin-jest: "npm:^28.12.0"
+    eslint-plugin-prettier: "npm:^5.4.1"
     globals: "npm:^16.2.0"
     prettier: "npm:^3.5.3"
     typescript: "npm:^5.8.3"
@@ -1822,8 +1822,8 @@ __metadata:
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=4.4.1"
     eslint-plugin-import-x: ">=4.13.3"
-    eslint-plugin-jest: ">=28.11.1"
-    eslint-plugin-prettier: ">=5.4.0"
+    eslint-plugin-jest: ">=28.12.0"
+    eslint-plugin-prettier: ">=5.4.1"
     prettier: ">=3.5.3"
     typescript: ">=5.8.3"
   languageName: unknown
@@ -1836,7 +1836,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     debug: "npm:^4.4.1"
     eslint: "npm:^9.27.0"
     eslint-import-resolver-node: "npm:^0.3.9"
@@ -1854,7 +1854,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@noahnu/internal-test-utils": "workspace:*"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     html-webpack-plugin: "npm:^5.6.3"
     typescript: "npm:^5.8.3"
     webpack: "npm:^5.99.9"
@@ -1868,7 +1868,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/internal-test-utils@workspace:packages/internal-test-utils"
   dependencies:
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
   languageName: unknown
   linkType: soft
 
@@ -1883,7 +1883,7 @@ __metadata:
     "@swc/core": "npm:^1.11.29"
     "@swc/jest": "npm:^0.2.38"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@typescript-eslint/eslint-plugin": "npm:^8.33.0"
     "@typescript-eslint/parser": "npm:^8.33.0"
     "@typescript-eslint/utils": "npm:^8.33.0"
@@ -1896,9 +1896,9 @@ __metadata:
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.1"
     eslint-plugin-import: "npm:^2.31.0"
-    eslint-plugin-jest: "npm:^28.11.1"
+    eslint-plugin-jest: "npm:^28.12.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
-    eslint-plugin-prettier: "npm:^5.4.0"
+    eslint-plugin-prettier: "npm:^5.4.1"
     husky: "npm:^9.1.7"
     jest: "npm:^30.0.0-beta.5"
     jest-junit: "npm:^16.0.0"
@@ -1918,7 +1918,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@typescript-eslint/typescript-estree": "npm:^8.33.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
@@ -1939,7 +1939,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@types/yaml": "npm:^1.9.7"
     ajv: "npm:^8.17.1"
     clipanion: "npm:^4.0.0-rc.4"
@@ -1964,7 +1964,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.4.1"
     "@yarnpkg/fslib": "npm:^3.1.2"
@@ -1988,7 +1988,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
-    "@types/node": "npm:^22.15.24"
+    "@types/node": "npm:^22.15.27"
     "@types/semver": "npm:^7.7.0"
     "@yarnpkg/cli": "npm:^4.9.1"
     "@yarnpkg/core": "npm:^4.4.1"
@@ -2684,7 +2684,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.15.24":
+"@types/node@npm:*, @types/node@npm:^22.15.27":
   version: 22.15.32
   resolution: "@types/node@npm:22.15.32"
   dependencies:
@@ -5566,7 +5566,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^28.11.1":
+"eslint-plugin-jest@npm:^28.12.0":
   version: 28.14.0
   resolution: "eslint-plugin-jest@npm:28.14.0"
   dependencies:
@@ -5609,12 +5609,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.4.0":
-  version: 5.4.0
-  resolution: "eslint-plugin-prettier@npm:5.4.0"
+"eslint-plugin-prettier@npm:^5.4.1":
+  version: 5.5.0
+  resolution: "eslint-plugin-prettier@npm:5.5.0"
   dependencies:
     prettier-linter-helpers: "npm:^1.0.0"
-    synckit: "npm:^0.11.0"
+    synckit: "npm:^0.11.7"
   peerDependencies:
     "@types/eslint": ">=8.0.0"
     eslint: ">=8.0.0"
@@ -5625,7 +5625,7 @@ __metadata:
       optional: true
     eslint-config-prettier:
       optional: true
-  checksum: 10c0/50718d16266dfbe6909697f9d7c9188d2664f5be50fa1de4decc0c8236565570823fdf5973f89cd51254af5551b6160650e092716002a62aaa0f0b2c18e8fc3e
+  checksum: 10c0/d739940d5f5ea9b4c3a52836b24907b273a46909cdd1def5526f8934e54082fe5aac13512eb2c27d538ca79e16916ca54c651e3372aa53b7d4297afb4c156d47
   languageName: node
   linkType: hard
 
@@ -9708,7 +9708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.11.0, synckit@npm:^0.11.8":
+"synckit@npm:^0.11.7, synckit@npm:^0.11.8":
   version: 0.11.8
   resolution: "synckit@npm:0.11.8"
   dependencies:
