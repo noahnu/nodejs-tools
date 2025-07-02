@@ -1994,7 +1994,7 @@ __metadata:
     "@yarnpkg/core": "npm:^4.4.2"
     "@yarnpkg/fslib": "npm:^3.1.2"
     "@yarnpkg/plugin-essentials": "npm:^4.4.0"
-    "@yarnpkg/plugin-git": "npm:^3.1.1"
+    "@yarnpkg/plugin-git": "npm:^3.1.2"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
     micromatch: "npm:^4.0.8"
@@ -3438,7 +3438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-git@npm:^3.1.1, @yarnpkg/plugin-git@npm:^3.1.2":
+"@yarnpkg/plugin-git@npm:^3.1.2":
   version: 3.1.2
   resolution: "@yarnpkg/plugin-git@npm:3.1.2"
   dependencies:
