@@ -1786,7 +1786,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
     "@types/node": "npm:^22.15.32"
-    "@typescript-eslint/typescript-estree": "npm:^8.34.1"
+    "@typescript-eslint/typescript-estree": "npm:^8.36.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
     fast-glob: "npm:^3.3.3"
@@ -1807,9 +1807,9 @@ __metadata:
     "@types/eslint-config-prettier": "npm:^6.11.3"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.15.32"
-    "@typescript-eslint/eslint-plugin": "npm:^8.34.1"
-    "@typescript-eslint/parser": "npm:^8.34.1"
-    "@typescript-eslint/utils": "npm:^8.34.1"
+    "@typescript-eslint/eslint-plugin": "npm:^8.36.0"
+    "@typescript-eslint/parser": "npm:^8.36.0"
+    "@typescript-eslint/utils": "npm:^8.36.0"
     debug: "npm:^4.4.1"
     eslint: "npm:^9.29.0"
     eslint-config-prettier: "npm:^10.1.5"
@@ -1821,7 +1821,7 @@ __metadata:
     globals: "npm:^16.2.0"
     prettier: "npm:^3.6.0"
     typescript: "npm:^5.8.3"
-    typescript-eslint: "npm:^8.34.1"
+    typescript-eslint: "npm:^8.36.0"
   peerDependencies:
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.0"
     "@typescript-eslint/eslint-plugin": ">=8.34.1"
@@ -1893,9 +1893,9 @@ __metadata:
     "@swc/jest": "npm:^0.2.38"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.15.32"
-    "@typescript-eslint/eslint-plugin": "npm:^8.34.1"
-    "@typescript-eslint/parser": "npm:^8.34.1"
-    "@typescript-eslint/utils": "npm:^8.34.1"
+    "@typescript-eslint/eslint-plugin": "npm:^8.36.0"
+    "@typescript-eslint/parser": "npm:^8.36.0"
+    "@typescript-eslint/utils": "npm:^8.36.0"
     "@yarnpkg/sdks": "npm:^3.2.2"
     "@yarnpkg/types": "npm:^4.0.1"
     esbuild: "npm:^0.25.5"
@@ -1928,7 +1928,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.9"
     "@types/node": "npm:^22.15.32"
-    "@typescript-eslint/typescript-estree": "npm:^8.34.1"
+    "@typescript-eslint/typescript-estree": "npm:^8.36.0"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.1"
     fast-glob: "npm:^3.3.3"
@@ -2773,7 +2773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:8.36.0, @typescript-eslint/eslint-plugin@npm:^8.34.1":
+"@typescript-eslint/eslint-plugin@npm:8.36.0, @typescript-eslint/eslint-plugin@npm:^8.36.0":
   version: 8.36.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.36.0"
   dependencies:
@@ -2794,7 +2794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:8.36.0, @typescript-eslint/parser@npm:^8.34.1":
+"@typescript-eslint/parser@npm:8.36.0, @typescript-eslint/parser@npm:^8.36.0":
   version: 8.36.0
   resolution: "@typescript-eslint/parser@npm:8.36.0"
   dependencies:
@@ -2857,14 +2857,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:8.36.0, @typescript-eslint/types@npm:^8.35.0, @typescript-eslint/types@npm:^8.36.0":
+"@typescript-eslint/types@npm:*, @typescript-eslint/types@npm:8.36.0, @typescript-eslint/types@npm:^8.35.0, @typescript-eslint/types@npm:^8.36.0":
   version: 8.36.0
   resolution: "@typescript-eslint/types@npm:8.36.0"
   checksum: 10c0/cacb941a0caad6ab556c416051b97ec33b364b7c8e0703e2729ae43f12daf02b42eef12011705329107752e3f1685ca82cfffe181d637f85907293cb634bee31
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:8.36.0, @typescript-eslint/typescript-estree@npm:^8.34.1":
+"@typescript-eslint/typescript-estree@npm:8.36.0, @typescript-eslint/typescript-estree@npm:^8.36.0":
   version: 8.36.0
   resolution: "@typescript-eslint/typescript-estree@npm:8.36.0"
   dependencies:
@@ -2884,7 +2884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.36.0, @typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.34.1":
+"@typescript-eslint/utils@npm:8.36.0, @typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.36.0":
   version: 8.36.0
   resolution: "@typescript-eslint/utils@npm:8.36.0"
   dependencies:
@@ -10218,7 +10218,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.34.1":
+"typescript-eslint@npm:^8.36.0":
   version: 8.36.0
   resolution: "typescript-eslint@npm:8.36.0"
   dependencies:
