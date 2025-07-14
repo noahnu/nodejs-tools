@@ -1805,7 +1805,7 @@ __metadata:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
     "@types/eslint-config-prettier": "npm:^6.11.3"
-    "@types/jest": "npm:^29.5.14"
+    "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^22.15.32"
     "@typescript-eslint/eslint-plugin": "npm:^8.36.0"
     "@typescript-eslint/parser": "npm:^8.36.0"
@@ -1844,7 +1844,7 @@ __metadata:
   dependencies:
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
-    "@types/jest": "npm:^29.5.14"
+    "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^22.15.32"
     debug: "npm:^4.4.1"
     eslint: "npm:^9.29.0"
@@ -1891,7 +1891,7 @@ __metadata:
     "@noahnu/eslint-config": "workspace:^"
     "@swc/core": "npm:^1.12.5"
     "@swc/jest": "npm:^0.2.38"
-    "@types/jest": "npm:^29.5.14"
+    "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^22.15.32"
     "@typescript-eslint/eslint-plugin": "npm:^8.36.0"
     "@typescript-eslint/parser": "npm:^8.36.0"
@@ -2644,13 +2644,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.14":
-  version: 29.5.14
-  resolution: "@types/jest@npm:29.5.14"
+"@types/jest@npm:^30.0.0":
+  version: 30.0.0
+  resolution: "@types/jest@npm:30.0.0"
   dependencies:
-    expect: "npm:^29.0.0"
-    pretty-format: "npm:^29.0.0"
-  checksum: 10c0/18e0712d818890db8a8dab3d91e9ea9f7f19e3f83c2e50b312f557017dc81466207a71f3ed79cf4428e813ba939954fa26ffa0a9a7f153181ba174581b1c2aed
+    expect: "npm:^30.0.0"
+    pretty-format: "npm:^30.0.0"
+  checksum: 10c0/20c6ce574154bc16f8dd6a97afacca4b8c4921a819496a3970382031c509ebe87a1b37b152a1b8475089b82d8ca951a9e95beb4b9bf78fbf579b1536f0b65969
   languageName: node
   linkType: hard
 
@@ -5827,7 +5827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:30.0.4":
+"expect@npm:30.0.4, expect@npm:^30.0.0":
   version: 30.0.4
   resolution: "expect@npm:30.0.4"
   dependencies:
@@ -5841,7 +5841,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^29.0.0, expect@npm:^29.7.0":
+"expect@npm:^29.7.0":
   version: 29.7.0
   resolution: "expect@npm:29.7.0"
   dependencies:
@@ -8945,7 +8945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:30.0.2":
+"pretty-format@npm:30.0.2, pretty-format@npm:^30.0.0":
   version: 30.0.2
   resolution: "pretty-format@npm:30.0.2"
   dependencies:
@@ -8956,7 +8956,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.0.0, pretty-format@npm:^29.7.0":
+"pretty-format@npm:^29.7.0":
   version: 29.7.0
   resolution: "pretty-format@npm:29.7.0"
   dependencies:
