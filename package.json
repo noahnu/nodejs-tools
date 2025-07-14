@@ -23,33 +23,33 @@
     "packageManager": "yarn@4.9.2+sha512.1fc009bc09d13cfd0e19efa44cbfc2b9cf6ca61482725eb35bbc5e257e093ebf4130db6dfe15d604ff4b79efd8e1e8e99b25fa7d0a6197c9f9826358d4d65c3c",
     "devDependencies": {
         "@jest/types": "^29.6.3",
-        "@monoweave/plugin-github": "^2.14.1",
+        "@monoweave/plugin-github": "^2.15.0",
         "@noahnu/eslint-config": "workspace:^",
-        "@swc/core": "^1.11.29",
+        "@swc/core": "^1.12.5",
         "@swc/jest": "^0.2.38",
         "@types/jest": "^29.5.14",
-        "@types/node": "^22.15.29",
-        "@typescript-eslint/eslint-plugin": "^8.33.1",
-        "@typescript-eslint/parser": "^8.33.1",
-        "@typescript-eslint/utils": "^8.33.1",
+        "@types/node": "^22.15.32",
+        "@typescript-eslint/eslint-plugin": "^8.34.1",
+        "@typescript-eslint/parser": "^8.34.1",
+        "@typescript-eslint/utils": "^8.34.1",
         "@yarnpkg/sdks": "^3.2.2",
         "@yarnpkg/types": "^4.0.1",
         "esbuild": "^0.25.5",
-        "eslint": "^9.28.0",
+        "eslint": "^9.29.0",
         "eslint-config-prettier": "^10.1.5",
         "eslint-formatter-junit": "^8.40.0",
         "eslint-import-resolver-node": "^0.3.9",
-        "eslint-import-resolver-typescript": "^4.4.2",
-        "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-jest": "^28.12.0",
+        "eslint-import-resolver-typescript": "^4.4.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-jest": "^28.14.0",
         "eslint-plugin-jsx-a11y": "^6.10.2",
-        "eslint-plugin-prettier": "^5.4.1",
+        "eslint-plugin-prettier": "^5.5.0",
         "husky": "^9.1.7",
-        "jest": "^30.0.0-beta.5",
+        "jest": "^30.0.2",
         "jest-junit": "^16.0.0",
-        "lint-staged": "^16.1.0",
-        "prettier": "^3.5.3",
-        "tsx": "^4.19.4",
+        "lint-staged": "^16.1.2",
+        "prettier": "^3.6.0",
+        "tsx": "^4.20.3",
         "typescript": "^5.8.3"
     },
     "scripts": {
@@ -67,6 +67,6 @@
         "release": "monoweave --log-level 0 --plugins @monoweave/plugin-github"
     },
     "dependencies": {
-        "@monoweave/cli": "^1.17.1"
+        "@monoweave/cli": "^1.18.0"
     }
 }

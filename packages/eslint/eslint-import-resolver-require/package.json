@@ -30,15 +30,15 @@
         "@types/debug": "^4.1.12",
         "@types/eslint": "^9.6.1",
         "@types/jest": "^29.5.14",
-        "@types/node": "^22.15.29",
-        "eslint": "^9.28.0",
-        "eslint-plugin-import": "^2.31.0"
+        "@types/node": "^22.15.32",
+        "eslint": "^9.29.0",
+        "eslint-plugin-import": "^2.32.0"
     },
     "dependencies": {
         "debug": "^4.4.1",
         "eslint-import-resolver-node": "^0.3.9"
     },
     "peerDependencies": {
-        "eslint-plugin-import": ">= 2.31.0"
+        "eslint-plugin-import": ">= 2.32.0"
     }
 }
