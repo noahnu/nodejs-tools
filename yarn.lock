@@ -1485,7 +1485,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:30.0.1":
+"@jest/types@npm:30.0.1, @jest/types@npm:^30.0.1":
   version: 30.0.1
   resolution: "@jest/types@npm:30.0.1"
   dependencies:
@@ -1885,7 +1885,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/nodejs-tools@workspace:."
   dependencies:
-    "@jest/types": "npm:^29.6.3"
+    "@jest/types": "npm:^30.0.1"
     "@monoweave/cli": "npm:^1.18.0"
     "@monoweave/plugin-github": "npm:^2.15.0"
     "@noahnu/eslint-config": "workspace:^"
