@@ -63,10 +63,10 @@
         "eslint-config-prettier": "^10.1.5",
         "eslint-import-resolver-node": "^0.3.9",
         "eslint-import-resolver-typescript": "^4.4.4",
-        "eslint-plugin-import-x": "^4.16.0",
+        "eslint-plugin-import-x": "^4.16.1",
         "eslint-plugin-jest": "^29.0.1",
         "eslint-plugin-prettier": "^5.5.1",
-        "prettier": "^3.6.1",
+        "prettier": "^3.6.2",
         "typescript": "^5.8.3"
     },
     "dependencies": {
@@ -86,10 +86,10 @@
         "eslint-config-prettier": ">=10.1.5",
         "eslint-import-resolver-node": ">=0.3.9",
         "eslint-import-resolver-typescript": ">=4.4.4",
-        "eslint-plugin-import-x": ">=4.16.0",
+        "eslint-plugin-import-x": ">=4.16.1",
         "eslint-plugin-jest": ">=29.0.1",
         "eslint-plugin-prettier": ">=5.5.1",
-        "prettier": ">=3.6.1",
+        "prettier": ">=3.6.2",
         "typescript": ">=5.8.3"
     }
 }
