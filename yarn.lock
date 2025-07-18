@@ -806,7 +806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.31.0, @eslint/js@npm:^9.29.0":
+"@eslint/js@npm:9.31.0, @eslint/js@npm:^9.30.0":
   version: 9.31.0
   resolution: "@eslint/js@npm:9.31.0"
   checksum: 10c0/f9d4c73d0fafe70679a418cbb25ab7ebcc8f1dba6c32456d6f8ba5a137d583ecff233cfe10f61f41d7d4d2220e94cff1f39fc7ed1fa3819d1888dee1cad678ea
@@ -1720,7 +1720,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/eslint-config@workspace:packages/eslint/eslint-config"
   dependencies:
-    "@eslint/js": "npm:^9.29.0"
+    "@eslint/js": "npm:^9.30.0"
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.1"
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
@@ -1731,7 +1731,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.36.0"
     "@typescript-eslint/utils": "npm:^8.36.0"
     debug: "npm:^4.4.1"
-    eslint: "npm:^9.29.0"
+    eslint: "npm:^9.30.0"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.4"
@@ -1746,7 +1746,7 @@ __metadata:
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.0"
     "@typescript-eslint/eslint-plugin": ">=8.35.0"
     "@typescript-eslint/parser": ">=8.35.0"
-    eslint: ">=9.29.0"
+    eslint: ">=9.30.0"
     eslint-config-prettier: ">=10.1.5"
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=4.4.4"
@@ -1767,7 +1767,7 @@ __metadata:
     "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^22.15.33"
     debug: "npm:^4.4.1"
-    eslint: "npm:^9.29.0"
+    eslint: "npm:^9.30.0"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-plugin-import: "npm:^2.32.0"
   peerDependencies:
@@ -1819,7 +1819,7 @@ __metadata:
     "@yarnpkg/sdks": "npm:^3.2.2"
     "@yarnpkg/types": "npm:^4.0.1"
     esbuild: "npm:^0.25.5"
-    eslint: "npm:^9.29.0"
+    eslint: "npm:^9.30.0"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-formatter-junit: "npm:^8.40.0"
     eslint-import-resolver-node: "npm:^0.3.9"
@@ -5638,7 +5638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.29.0":
+"eslint@npm:^9.30.0":
   version: 9.31.0
   resolution: "eslint@npm:9.31.0"
   dependencies:
