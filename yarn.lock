@@ -1735,11 +1735,11 @@ __metadata:
     eslint-config-prettier: "npm:^10.1.5"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.4"
-    eslint-plugin-import-x: "npm:^4.16.0"
+    eslint-plugin-import-x: "npm:^4.16.1"
     eslint-plugin-jest: "npm:^29.0.1"
     eslint-plugin-prettier: "npm:^5.5.1"
     globals: "npm:^16.2.0"
-    prettier: "npm:^3.6.1"
+    prettier: "npm:^3.6.2"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.36.0"
   peerDependencies:
@@ -1750,10 +1750,10 @@ __metadata:
     eslint-config-prettier: ">=10.1.5"
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=4.4.4"
-    eslint-plugin-import-x: ">=4.16.0"
+    eslint-plugin-import-x: ">=4.16.1"
     eslint-plugin-jest: ">=29.0.1"
     eslint-plugin-prettier: ">=5.5.1"
-    prettier: ">=3.6.1"
+    prettier: ">=3.6.2"
     typescript: ">=5.8.3"
   languageName: unknown
   linkType: soft
@@ -1832,7 +1832,7 @@ __metadata:
     jest: "npm:^30.0.3"
     jest-junit: "npm:^16.0.0"
     lint-staged: "npm:^16.1.2"
-    prettier: "npm:^3.6.1"
+    prettier: "npm:^3.6.2"
     tsx: "npm:^4.20.3"
     typescript: "npm:^5.8.3"
   languageName: unknown
@@ -5486,7 +5486,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import-x@npm:^4.16.0":
+"eslint-plugin-import-x@npm:^4.16.1":
   version: 4.16.1
   resolution: "eslint-plugin-import-x@npm:4.16.1"
   dependencies:
@@ -8716,7 +8716,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.6.1":
+"prettier@npm:^3.6.2":
   version: 3.6.2
   resolution: "prettier@npm:3.6.2"
   bin:
