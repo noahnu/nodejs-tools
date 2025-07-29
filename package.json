@@ -28,7 +28,7 @@
         "@swc/core": "^1.12.11",
         "@swc/jest": "^0.2.38",
         "@types/jest": "^30.0.0",
-        "@types/node": "^24.0.10",
+        "@types/node": "^24.0.11",
         "@typescript-eslint/eslint-plugin": "^8.36.0",
         "@typescript-eslint/parser": "^8.36.0",
         "@typescript-eslint/utils": "^8.36.0",
