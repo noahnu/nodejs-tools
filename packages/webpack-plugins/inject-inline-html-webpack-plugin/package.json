@@ -28,14 +28,14 @@
     ],
     "peerDependencies": {
         "html-webpack-plugin": "^5.6.3",
-        "webpack": "^5.100.1"
+        "webpack": "^5.100.2"
     },
     "devDependencies": {
         "@jest/globals": "^30.0.4",
         "@noahnu/internal-test-utils": "workspace:*",
-        "@types/node": "^24.0.13",
+        "@types/node": "^24.0.14",
         "html-webpack-plugin": "^5.6.3",
         "typescript": "^5.8.3",
-        "webpack": "^5.100.1"
+        "webpack": "^5.100.2"
     }
 }
