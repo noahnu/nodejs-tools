@@ -25,7 +25,7 @@
         "@jest/types": "^30.0.1",
         "@monoweave/plugin-github": "^2.15.0",
         "@noahnu/eslint-config": "workspace:^",
-        "@swc/core": "^1.12.14",
+        "@swc/core": "^1.13.0",
         "@swc/jest": "^0.2.39",
         "@types/jest": "^30.0.0",
         "@types/node": "^24.0.14",
