@@ -53,7 +53,7 @@
     ],
     "dependencies": {
         "@types/debug": "^4.1.12",
-        "@typescript-eslint/typescript-estree": "^8.37.0",
+        "@typescript-eslint/typescript-estree": "^8.38.0",
         "clipanion": "^4.0.0-rc.4",
         "debug": "^4.4.1",
         "fast-glob": "^3.3.3",
@@ -61,7 +61,7 @@
         "typanion": "^3.14.0"
     },
     "devDependencies": {
-        "@jest/globals": "^30.0.4",
+        "@jest/globals": "^30.0.5",
         "@noahnu/internal-test-utils": "workspace:*",
         "@types/micromatch": "^4.0.9",
         "@types/node": "^24.0.15",

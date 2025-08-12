@@ -41,7 +41,7 @@
         "yaml": "^2.8.0"
     },
     "devDependencies": {
-        "@jest/globals": "^30.0.4",
+        "@jest/globals": "^30.0.5",
         "@noahnu/internal-test-utils": "workspace:*",
         "@types/debug": "^4.1.12",
         "@types/micromatch": "^4.0.9",
