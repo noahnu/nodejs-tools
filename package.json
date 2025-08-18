@@ -34,7 +34,7 @@
         "@typescript-eslint/utils": "^8.38.0",
         "@yarnpkg/sdks": "^3.2.2",
         "@yarnpkg/types": "^4.0.1",
-        "esbuild": "^0.25.6",
+        "esbuild": "^0.25.8",
         "eslint": "^9.32.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-formatter-junit": "^8.40.0",
