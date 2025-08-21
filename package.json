@@ -50,7 +50,7 @@
         "lint-staged": "^16.1.2",
         "prettier": "^3.6.2",
         "tsx": "^4.20.3",
-        "typescript": "^5.8.3"
+        "typescript": "^5.9.2"
     },
     "scripts": {
         "clean": "rm -rf reports && yarn workspaces foreach -vpi --worktree run clean",
