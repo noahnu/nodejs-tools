@@ -1687,7 +1687,7 @@ __metadata:
     fast-glob: "npm:^3.3.3"
     micromatch: "npm:^4.0.8"
     typanion: "npm:^3.14.0"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
   languageName: unknown
   linkType: soft
 
@@ -1715,7 +1715,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.5.3"
     globals: "npm:^16.3.0"
     prettier: "npm:^3.6.2"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
     typescript-eslint: "npm:^8.38.0"
   peerDependencies:
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.0"
@@ -1729,7 +1729,7 @@ __metadata:
     eslint-plugin-jest: ">=29.0.1"
     eslint-plugin-prettier: ">=5.5.3"
     prettier: ">=3.6.2"
-    typescript: ">=5.8.3"
+    typescript: ">=5.9.2"
   languageName: unknown
   linkType: soft
 
@@ -1760,7 +1760,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/node": "npm:^24.1.0"
     html-webpack-plugin: "npm:^5.6.3"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
     webpack: "npm:^5.101.0"
   peerDependencies:
     html-webpack-plugin: ^5.6.3
@@ -1809,7 +1809,7 @@ __metadata:
     lint-staged: "npm:^16.1.2"
     prettier: "npm:^3.6.2"
     tsx: "npm:^4.20.3"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
   languageName: unknown
   linkType: soft
 
@@ -1829,7 +1829,7 @@ __metadata:
     fast-glob: "npm:^3.3.3"
     micromatch: "npm:^4.0.8"
     typanion: "npm:^3.14.0"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
   bin:
     unused-files: ./src/bin.mts
   languageName: unknown
@@ -1852,7 +1852,7 @@ __metadata:
     json5: "npm:^2.2.3"
     micromatch: "npm:^4.0.8"
     typanion: "npm:^3.14.0"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
     yaml: "npm:^2.8.0"
   bin:
     validate-schema: ./src/bin.mts
@@ -1877,7 +1877,7 @@ __metadata:
     fast-glob: "npm:^3.3.3"
     micromatch: "npm:^4.0.8"
     typanion: "npm:^3.14.0"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
     yaml: "npm:^2.8.0"
   bin:
     yarn-dependency-checker: ./src/bin.mts
@@ -1904,7 +1904,7 @@ __metadata:
     micromatch: "npm:^4.0.8"
     semver: "npm:^7.7.2"
     typanion: "npm:^3.14.0"
-    typescript: "npm:^5.8.3"
+    typescript: "npm:^5.9.2"
   bin:
     yarn-semver-up: ./src/bin.ts
   languageName: unknown
@@ -9909,23 +9909,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.8.3":
-  version: 5.8.3
-  resolution: "typescript@npm:5.8.3"
+"typescript@npm:^5.9.2":
+  version: 5.9.2
+  resolution: "typescript@npm:5.9.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/5f8bb01196e542e64d44db3d16ee0e4063ce4f3e3966df6005f2588e86d91c03e1fb131c2581baf0fb65ee79669eea6e161cd448178986587e9f6844446dbb48
+  checksum: 10c0/cd635d50f02d6cf98ed42de2f76289701c1ec587a363369255f01ed15aaf22be0813226bff3c53e99d971f9b540e0b3cc7583dbe05faded49b1b0bed2f638a18
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.8.3#optional!builtin<compat/typescript>":
-  version: 5.8.3
-  resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
+"typescript@patch:typescript@npm%3A^5.9.2#optional!builtin<compat/typescript>":
+  version: 5.9.2
+  resolution: "typescript@patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/39117e346ff8ebd87ae1510b3a77d5d92dae5a89bde588c747d25da5c146603a99c8ee588c7ef80faaf123d89ed46f6dbd918d534d641083177d5fac38b8a1cb
+  checksum: 10c0/34d2a8e23eb8e0d1875072064d5e1d9c102e0bdce56a10a25c0b917b8aa9001a9cf5c225df12497e99da107dc379360bc138163c66b55b95f5b105b50578067e
   languageName: node
   linkType: hard
 
