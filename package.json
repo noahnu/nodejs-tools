@@ -20,10 +20,10 @@
         "packages/eslint/*",
         "packages/webpack-plugins/*"
     ],
-    "packageManager": "yarn@4.9.4+sha512.7b1cb0b62abba6a537b3a2ce00811a843bea02bcf53138581a6ae5b1bf563f734872bd47de49ce32a9ca9dcaff995aa789577ffb16811da7c603dcf69e73750b",
+    "packageManager": "yarn@4.10.3+sha512.c38cafb5c7bb273f3926d04e55e1d8c9dfa7d9c3ea1f36a4868fa028b9e5f72298f0b7f401ad5eb921749eb012eb1c3bb74bf7503df3ee43fd600d14a018266f",
     "devDependencies": {
         "@jest/types": "^30.0.5",
-        "@monoweave/plugin-github": "^2.16.0",
+        "@monoweave/plugin-github": "^2.17.1",
         "@noahnu/eslint-config": "workspace:^",
         "@swc/core": "^1.13.5",
         "@swc/jest": "^0.2.39",
@@ -32,7 +32,7 @@
         "@typescript-eslint/eslint-plugin": "^8.42.0",
         "@typescript-eslint/parser": "^8.42.0",
         "@typescript-eslint/utils": "^8.42.0",
-        "@yarnpkg/sdks": "^3.2.2",
+        "@yarnpkg/sdks": "^3.2.3",
         "@yarnpkg/types": "^4.0.1",
         "esbuild": "^0.25.9",
         "eslint": "^9.34.0",
@@ -67,6 +67,6 @@
         "release": "monoweave --log-level 0 --plugins @monoweave/plugin-github"
     },
     "dependencies": {
-        "@monoweave/cli": "^1.19.0"
+        "@monoweave/cli": "^1.20.2"
     }
 }
