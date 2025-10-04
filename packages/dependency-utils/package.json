@@ -55,7 +55,7 @@
         "@types/debug": "^4.1.12",
         "@typescript-eslint/typescript-estree": "^8.43.0",
         "clipanion": "^4.0.0-rc.4",
-        "debug": "^4.4.1",
+        "debug": "^4.4.3",
         "fast-glob": "^3.3.3",
         "micromatch": "^4.0.8",
         "typanion": "^3.14.0"
