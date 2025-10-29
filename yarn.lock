@@ -1799,10 +1799,10 @@ __metadata:
     "@types/node": "npm:^24.7.0"
     html-webpack-plugin: "npm:^5.6.4"
     typescript: "npm:^5.9.3"
-    webpack: "npm:^5.102.0"
+    webpack: "npm:^5.102.1"
   peerDependencies:
     html-webpack-plugin: ^5.6.4
-    webpack: ^5.102.0
+    webpack: ^5.102.1
   languageName: unknown
   linkType: soft
 
@@ -1940,7 +1940,7 @@ __metadata:
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.3"
     micromatch: "npm:^4.0.8"
-    semver: "npm:^7.7.2"
+    semver: "npm:^7.7.3"
     typanion: "npm:^3.14.0"
     typescript: "npm:^5.9.3"
   bin:
@@ -9088,12 +9088,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.1.2, semver@npm:^7.3.5, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.3, semver@npm:^7.7.1, semver@npm:^7.7.2":
-  version: 7.7.2
-  resolution: "semver@npm:7.7.2"
+"semver@npm:^7.1.2, semver@npm:^7.3.5, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.3, semver@npm:^7.7.1, semver@npm:^7.7.2, semver@npm:^7.7.3":
+  version: 7.7.3
+  resolution: "semver@npm:7.7.3"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/aca305edfbf2383c22571cb7714f48cadc7ac95371b4b52362fb8eeffdfbc0de0669368b82b2b15978f8848f01d7114da65697e56cd8c37b0dab8c58e543f9ea
+  checksum: 10c0/4afe5c986567db82f44c8c6faef8fe9df2a9b1d98098fc1721f57c696c4c21cebd572f297fc21002f81889492345b8470473bc6f4aff5fb032a6ea59ea2bc45e
   languageName: node
   linkType: hard
 
@@ -10172,7 +10172,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.102.0":
+"webpack@npm:^5.102.1":
   version: 5.102.1
   resolution: "webpack@npm:5.102.1"
   dependencies:
