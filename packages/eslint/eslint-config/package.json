@@ -55,7 +55,7 @@
         "@types/debug": "^4.1.12",
         "@types/eslint": "^9.6.1",
         "@types/jest": "^30.0.0",
-        "@types/node": "^24.7.0",
+        "@types/node": "^24.7.1",
         "@typescript-eslint/eslint-plugin": "^8.46.0",
         "@typescript-eslint/parser": "^8.46.0",
         "@typescript-eslint/utils": "^8.46.0",
