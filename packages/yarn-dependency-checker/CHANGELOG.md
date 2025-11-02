@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-dependency-checker (v1.0.2) <a name="1.0.2"></a>
+
+Routine dependency updates.
+
+
+
 ## @noahnu/yarn-dependency-checker (v1.0.0) <a name="1.0.0"></a>
 
 Initial release of yarn dependency checker.

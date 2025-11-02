@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/dependency-utils (v0.0.6) <a name="0.0.6"></a>
+
+Routine dependency updates.
+
+
+
 ## @noahnu/dependency-utils (v0.0.5) <a name="0.0.5"></a>
 
 Release

@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-semver-up (v0.0.4) <a name="0.0.4"></a>
+
+Routine dependency updates.
+
+
+
 ## @noahnu/yarn-semver-up (v0.0.3) <a name="0.0.3"></a>
 
 Release new Yarn dependencer checker.

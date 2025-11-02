@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/validate-schema (v1.0.5) <a name="1.0.5"></a>
+
+Routine dependency updates.
+
+
+
 ## @noahnu/validate-schema (v1.0.4) <a name="1.0.4"></a>
 
 Fix relative schema url.

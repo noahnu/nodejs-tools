@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/eslint-config (v4.0.2) <a name="4.0.2"></a>
+
+Routine dependency updates.
+
+
+
 ## @noahnu/eslint-config (v4.0.1) <a name="4.0.1"></a>
 
 Release
