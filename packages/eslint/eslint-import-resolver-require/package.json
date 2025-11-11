@@ -30,7 +30,7 @@
         "@types/debug": "^4.1.12",
         "@types/eslint": "^9.6.1",
         "@types/jest": "^30.0.0",
-        "@types/node": "^24.8.1",
+        "@types/node": "^24.9.1",
         "eslint": "^9.38.0",
         "eslint-plugin-import": "^2.32.0"
     },
