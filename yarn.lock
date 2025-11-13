@@ -1834,7 +1834,7 @@ __metadata:
     esbuild: "npm:^0.25.11"
     eslint: "npm:^9.38.0"
     eslint-config-prettier: "npm:^10.1.8"
-    eslint-formatter-junit: "npm:^9.0.0"
+    eslint-formatter-junit: "npm:^9.0.1"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.4"
     eslint-plugin-import: "npm:^2.32.0"
@@ -5381,7 +5381,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-formatter-junit@npm:^9.0.0":
+"eslint-formatter-junit@npm:^9.0.1":
   version: 9.0.1
   resolution: "eslint-formatter-junit@npm:9.0.1"
   checksum: 10c0/817d5ac38582ae53aaaca9f75df1a169d24f73dc157a4ad85914dd413274da47d498db9129f4a72ebea44c24b52a70b2d0b4a76108d9c85035b8e088f71e0486
