@@ -53,7 +53,7 @@
     ],
     "dependencies": {
         "@types/debug": "^4.1.12",
-        "@typescript-eslint/typescript-estree": "^8.46.2",
+        "@typescript-eslint/typescript-estree": "^8.46.3",
         "clipanion": "^4.0.0-rc.4",
         "debug": "^4.4.3",
         "fast-glob": "^3.3.3",
