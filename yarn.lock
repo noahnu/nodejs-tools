@@ -813,7 +813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.39.1, @eslint/js@npm:^9.39.0":
+"@eslint/js@npm:9.39.1, @eslint/js@npm:^9.39.1":
   version: 9.39.1
   resolution: "@eslint/js@npm:9.39.1"
   checksum: 10c0/6f7f26f8cdb7ad6327bbf9741973b6278eb946f18f70e35406e88194b0d5c522d0547a34a02f2a208eec95c5d1388cdf7ccb20039efd2e4cb6655615247a50f1
@@ -1733,7 +1733,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/eslint-config@workspace:packages/eslint/eslint-config"
   dependencies:
-    "@eslint/js": "npm:^9.39.0"
+    "@eslint/js": "npm:^9.39.1"
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.2"
     "@types/debug": "npm:^4.1.12"
     "@types/eslint": "npm:^9.6.1"
@@ -1744,7 +1744,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.46.3"
     "@typescript-eslint/utils": "npm:^8.46.3"
     debug: "npm:^4.4.3"
-    eslint: "npm:^9.39.0"
+    eslint: "npm:^9.39.1"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.4"
@@ -1759,7 +1759,7 @@ __metadata:
     "@noahnu/eslint-import-resolver-require": "workspace:^1.0.0"
     "@typescript-eslint/eslint-plugin": ">=8.46.3"
     "@typescript-eslint/parser": ">=8.46.3"
-    eslint: ">=9.39.0"
+    eslint: ">=9.39.1"
     eslint-config-prettier: ">=10.1.8"
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=4.4.4"
@@ -1780,7 +1780,7 @@ __metadata:
     "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^24.10.0"
     debug: "npm:^4.4.3"
-    eslint: "npm:^9.39.0"
+    eslint: "npm:^9.39.1"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-plugin-import: "npm:^2.32.0"
   peerDependencies:
@@ -1832,7 +1832,7 @@ __metadata:
     "@yarnpkg/sdks": "npm:^3.2.3"
     "@yarnpkg/types": "npm:^4.0.1"
     esbuild: "npm:^0.25.12"
-    eslint: "npm:^9.39.0"
+    eslint: "npm:^9.39.1"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-formatter-junit: "npm:^9.0.1"
     eslint-import-resolver-node: "npm:^0.3.9"
@@ -5601,7 +5601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.39.0":
+"eslint@npm:^9.39.1":
   version: 9.39.1
   resolution: "eslint@npm:9.39.1"
   dependencies:
