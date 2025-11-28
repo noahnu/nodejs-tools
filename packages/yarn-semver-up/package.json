@@ -32,7 +32,7 @@
     "dependencies": {
         "@types/debug": "^4.1.12",
         "@yarnpkg/cli": "^4.11.0",
-        "@yarnpkg/core": "^4.4.4",
+        "@yarnpkg/core": "^4.5.0",
         "@yarnpkg/fslib": "^3.1.4",
         "@yarnpkg/plugin-essentials": "^4.4.4",
         "@yarnpkg/plugin-git": "^3.1.3",
