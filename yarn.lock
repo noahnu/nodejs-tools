@@ -1681,42 +1681,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/changelog@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/changelog@npm:2.0.0"
+"@monoweave/changelog@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/changelog@npm:2.2.0"
   dependencies:
     conventional-changelog-writer: "npm:^7.0.1"
     conventional-commits-parser: "npm:^5.0.0"
-    p-limit: "npm:^6.2.0"
+    p-limit: "npm:^7.2.0"
   peerDependencies:
-    "@monoweave/git": ^2.0.0
-    "@monoweave/io": ^2.0.0
-    "@monoweave/logging": ^2.0.0
-    "@monoweave/types": ^2.0.0
-    "@yarnpkg/core": ^4.4.4
-    "@yarnpkg/fslib": ^3.1.3
+    "@monoweave/git": ^2.2.0
+    "@monoweave/io": ^2.2.0
+    "@monoweave/logging": ^2.2.0
+    "@monoweave/types": ^2.2.0
+    "@yarnpkg/core": ^4.5.0
+    "@yarnpkg/fslib": ^3.1.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/edc86ba27d75095adbdcfa342ccce6a89986490fa99b5998ad1f5e2083f96d415616580f0244587b649bdbe7b2698d3bbb62d1827c087fc5a45816746d393301
+  checksum: 10c0/8a501a57f73a018f9b5285f8786c551dbac0ff633de38d7b00805149d479823ad00b9f045ecf6429b5d5c9ea75a591e1c6e2a717df763c80274cc66621fc3878
   languageName: node
   linkType: hard
 
-"@monoweave/cli@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/cli@npm:2.0.0"
+"@monoweave/cli@npm:^2.1.0":
+  version: 2.2.0
+  resolution: "@monoweave/cli@npm:2.2.0"
   dependencies:
     "@inquirer/prompts": "npm:^7.9.0"
-    "@monoweave/changelog": "npm:^2.0.0"
-    "@monoweave/dependencies": "npm:^2.0.0"
-    "@monoweave/git": "npm:^2.0.0"
-    "@monoweave/io": "npm:^2.0.0"
-    "@monoweave/logging": "npm:^2.0.0"
-    "@monoweave/node": "npm:^2.0.0"
-    "@monoweave/types": "npm:^2.0.0"
-    "@monoweave/versions": "npm:^2.0.0"
-    "@yarnpkg/cli": "npm:^4.10.3"
-    "@yarnpkg/core": "npm:^4.4.4"
-    "@yarnpkg/fslib": "npm:^3.1.3"
-    "@yarnpkg/plugin-npm": "npm:^3.3.2"
+    "@monoweave/changelog": "npm:^2.2.0"
+    "@monoweave/dependencies": "npm:^2.2.0"
+    "@monoweave/git": "npm:^2.2.0"
+    "@monoweave/io": "npm:^2.2.0"
+    "@monoweave/logging": "npm:^2.2.0"
+    "@monoweave/node": "npm:^2.2.0"
+    "@monoweave/types": "npm:^2.2.0"
+    "@monoweave/versions": "npm:^2.2.0"
+    "@yarnpkg/cli": "npm:^4.12.0"
+    "@yarnpkg/core": "npm:^4.5.0"
+    "@yarnpkg/fslib": "npm:^3.1.4"
+    "@yarnpkg/plugin-npm": "npm:^3.4.0"
     "@yarnpkg/plugin-pack": "npm:^4.0.4"
     "@yarnpkg/shell": "npm:^4.1.3"
     ajv: "npm:^8.17.1"
@@ -1726,158 +1726,158 @@ __metadata:
     yaml: "npm:^2.8.1"
   bin:
     monoweave: ./lib/index.js
-  checksum: 10c0/3cc6910c3aab1d8e038bfe4570f05dac2124f077549a27aaaf5cfac7a53c106152d7d8bada0af00e73e7434713364b6bcd894e65f33a45803ef3507aa05108d4
+  checksum: 10c0/28bb33f75c9b316294cfd27aff58c92a91cd4d15924176262eebf78c343ce0e1556fe3959612f217db2664551b7d2744b00cb955c7abc436c87c6e0e415fba49
   languageName: node
   linkType: hard
 
-"@monoweave/dependencies@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/dependencies@npm:2.0.0"
+"@monoweave/dependencies@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/dependencies@npm:2.2.0"
   peerDependencies:
-    "@monoweave/logging": ^2.0.0
-    "@monoweave/types": ^2.0.0
-    "@yarnpkg/core": ^4.4.4
-  checksum: 10c0/37e508643a5114af02a7f260f77c10f616d4b17a3b8811426c89920761a4d7181a0f5fe5b695e756c50d4512b0facc41001d946a09761bd52f2546509d245371
+    "@monoweave/logging": ^2.2.0
+    "@monoweave/types": ^2.2.0
+    "@yarnpkg/core": ^4.5.0
+  checksum: 10c0/7d028f7dea022c279445813650356ecc95d2ce21d124831bce59f7e2d6bdf70e63d246b29f463e7ccef9c845da30c839a895eb437a23ed85d7af10dbc30cf041
   languageName: node
   linkType: hard
 
-"@monoweave/git@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/git@npm:2.0.0"
+"@monoweave/git@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/git@npm:2.2.0"
   dependencies:
     micromatch: "npm:^4.0.8"
   peerDependencies:
-    "@monoweave/io": ^2.0.0
-    "@monoweave/logging": ^2.0.0
-    "@monoweave/types": ^2.0.0
-    "@yarnpkg/core": ^4.4.4
-    "@yarnpkg/fslib": ^3.1.3
+    "@monoweave/io": ^2.2.0
+    "@monoweave/logging": ^2.2.0
+    "@monoweave/types": ^2.2.0
+    "@yarnpkg/core": ^4.5.0
+    "@yarnpkg/fslib": ^3.1.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/30773e18ea5d6fc571d9e4c8785a2e3ccef8d7a1795353b632e6bad94909e6fbdbe10fd4946d848a73b81356ef3c017820fc3c74a1a643188eb3b3f21a22fe40
+  checksum: 10c0/409174a834f0c105c1d2a801a9cb5eadeb61619d85638866e228d792d2d4c9b663109fe1a0312272f832f2860b12347383d49fc52c46732eee3ac4ff4b4f8400
   languageName: node
   linkType: hard
 
-"@monoweave/io@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/io@npm:2.0.0"
+"@monoweave/io@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/io@npm:2.2.0"
   dependencies:
     semver: "npm:^7.7.3"
   peerDependencies:
-    "@monoweave/logging": ^2.0.0
-    "@monoweave/types": ^2.0.0
-    "@yarnpkg/core": ^4.4.4
-    "@yarnpkg/fslib": ^3.1.3
+    "@monoweave/logging": ^2.2.0
+    "@monoweave/types": ^2.2.0
+    "@yarnpkg/core": ^4.5.0
+    "@yarnpkg/fslib": ^3.1.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/093706161c3e089e24d4123da0c0bcfccfe70fe64afd5b1006903ec299a8f00592e9447f9a937d2f04419c6d9710c849c4b40865d70515ebe531f8205500548d
+  checksum: 10c0/bf0915fa19c71f655bbd2a8d8be1876fd3b361f971aef9ad0793dae5147ec2ba3e8598c0fdc7d761f4a73c49f227557c77c15a92af39ae2486f29200a3d08a18
   languageName: node
   linkType: hard
 
-"@monoweave/logging@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/logging@npm:2.0.0"
+"@monoweave/logging@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/logging@npm:2.2.0"
   peerDependencies:
-    "@yarnpkg/core": ^4.4.4
-  checksum: 10c0/03e4f6ba85b3128f05799d4a6faa1768e733dd0e49a541c7e93dfb394e97a1e8594baae0fa431b5a44b59039e9d0cda2992d3f66e1388b67bfff9a7118a506d9
+    "@yarnpkg/core": ^4.5.0
+  checksum: 10c0/0a12d02462866e3741a7002b9dde94fb2ff75e72cb64180624fd7f7f22da4978a88992d354e1d5bf205caafaa3b75251cebcbe6c56419feaf8de2a6a4dc890ec
   languageName: node
   linkType: hard
 
-"@monoweave/node@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/node@npm:2.0.0"
+"@monoweave/node@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/node@npm:2.2.0"
   dependencies:
-    "@monoweave/changelog": "npm:^2.0.0"
-    "@monoweave/dependencies": "npm:^2.0.0"
-    "@monoweave/git": "npm:^2.0.0"
-    "@monoweave/io": "npm:^2.0.0"
-    "@monoweave/logging": "npm:^2.0.0"
-    "@monoweave/publish": "npm:^2.0.0"
-    "@monoweave/types": "npm:^2.0.0"
-    "@monoweave/versions": "npm:^2.0.0"
-    "@yarnpkg/cli": "npm:^4.10.3"
-    "@yarnpkg/core": "npm:^4.4.4"
-    "@yarnpkg/fslib": "npm:^3.1.3"
-    "@yarnpkg/plugin-npm": "npm:^3.3.2"
+    "@monoweave/changelog": "npm:^2.2.0"
+    "@monoweave/dependencies": "npm:^2.2.0"
+    "@monoweave/git": "npm:^2.2.0"
+    "@monoweave/io": "npm:^2.2.0"
+    "@monoweave/logging": "npm:^2.2.0"
+    "@monoweave/publish": "npm:^2.2.0"
+    "@monoweave/types": "npm:^2.2.0"
+    "@monoweave/versions": "npm:^2.2.0"
+    "@yarnpkg/cli": "npm:^4.12.0"
+    "@yarnpkg/core": "npm:^4.5.0"
+    "@yarnpkg/fslib": "npm:^3.1.4"
+    "@yarnpkg/plugin-npm": "npm:^3.4.0"
     "@yarnpkg/plugin-pack": "npm:^4.0.4"
     "@yarnpkg/shell": "npm:^4.1.3"
     micromatch: "npm:^4.0.8"
     tapable: "npm:^2.3.0"
-  checksum: 10c0/15b71853cfba04ed2c3e9d924246b3b89f42f93cab4b35226b4169e8af7b04ca19f42d93b58d10fe04c9d4586e93b08bf417e7d351bd5c2a40c0d93e8c58a545
+  checksum: 10c0/74c1531be4655eedfbee0e5d489084e7878ec918adb9d758a7a25ef52be3e64d6cd11d2c06affa659a81407824772726cf59ca56e0a7fdb23a0efd4885e2a74e
   languageName: node
   linkType: hard
 
-"@monoweave/plugin-github@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@monoweave/plugin-github@npm:3.0.0"
+"@monoweave/plugin-github@npm:^3.1.0":
+  version: 3.2.0
+  resolution: "@monoweave/plugin-github@npm:3.2.0"
   dependencies:
-    "@monoweave/git": "npm:^2.0.0"
-    "@monoweave/io": "npm:^2.0.0"
-    "@monoweave/logging": "npm:^2.0.0"
-    "@monoweave/types": "npm:^2.0.0"
-    "@octokit/core": "npm:^6.1.4"
-    "@octokit/plugin-throttling": "npm:^9.4.0"
-    "@yarnpkg/core": "npm:^4.4.4"
-    "@yarnpkg/fslib": "npm:^3.1.3"
+    "@monoweave/git": "npm:^2.2.0"
+    "@monoweave/io": "npm:^2.2.0"
+    "@monoweave/logging": "npm:^2.2.0"
+    "@monoweave/types": "npm:^2.2.0"
+    "@octokit/core": "npm:^6.1.6"
+    "@octokit/plugin-throttling": "npm:^9.6.1"
+    "@yarnpkg/core": "npm:^4.5.0"
+    "@yarnpkg/fslib": "npm:^3.1.4"
     "@yarnpkg/shell": "npm:^4.1.3"
-  checksum: 10c0/0e79b7fd5fc54093939cadd44222e7a54af51d56e7307e0aebf591c05d8c4bfc28c24886356fb4c9e26400c191d9d1999f9d9de54dcb90fe357c3ba2aa3e2934
+  checksum: 10c0/5853b6d868a4e180eafed1394f5bda1da5224e11d37ce5fad046ffbab7ea740ee3dd3b30d540316b44d2f0fcd744bb6ab1aa1510b976750c9f74c42442eb6eaa
   languageName: node
   linkType: hard
 
-"@monoweave/publish@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/publish@npm:2.0.0"
+"@monoweave/publish@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/publish@npm:2.2.0"
   dependencies:
-    p-limit: "npm:^6.2.0"
+    p-limit: "npm:^7.2.0"
   peerDependencies:
-    "@monoweave/dependencies": ^2.0.0
-    "@monoweave/git": ^2.0.0
-    "@monoweave/io": ^2.0.0
-    "@monoweave/logging": ^2.0.0
-    "@monoweave/types": ^2.0.0
-    "@yarnpkg/cli": ^4.10.3
-    "@yarnpkg/core": ^4.4.4
-    "@yarnpkg/fslib": ^3.1.3
-    "@yarnpkg/plugin-npm": ^3.3.2
+    "@monoweave/dependencies": ^2.2.0
+    "@monoweave/git": ^2.2.0
+    "@monoweave/io": ^2.2.0
+    "@monoweave/logging": ^2.2.0
+    "@monoweave/types": ^2.2.0
+    "@yarnpkg/cli": ^4.12.0
+    "@yarnpkg/core": ^4.5.0
+    "@yarnpkg/fslib": ^3.1.4
+    "@yarnpkg/plugin-npm": ^3.4.0
     "@yarnpkg/plugin-pack": ^4.0.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/b2fe5938c9e26e2241546bbc6858956f792301c604bece861ad890ebe4b8fe8f3be7d00dedbd4968e7f91ae39b1c78daec06e8c2e07f0a25d296ed19f82bcfb4
+  checksum: 10c0/92663d03a225d172b7aeeb71492848a8f92adba44140936c16200fb16e726ed7e19a7ac4d5f1203302d079466a528d566ad9a11222c0a1c5d7ddea4f8d646931
   languageName: node
   linkType: hard
 
-"@monoweave/types@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/types@npm:2.0.0"
+"@monoweave/types@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/types@npm:2.2.0"
   dependencies:
-    "@yarnpkg/core": "npm:^4.4.4"
+    "@yarnpkg/core": "npm:^4.5.0"
     tapable: "npm:^2.3.0"
   peerDependencies:
-    "@yarnpkg/core": ^4.4.4
-  checksum: 10c0/a6666417e273f2e13fa2986cf537a0a6d32d4b9c5337afc30f653e1748e1214a94889e58399c1713e5f36c022fc0e17f4234362ec07201f5ca1a706ea0043e42
+    "@yarnpkg/core": ^4.5.0
+  checksum: 10c0/7ee90fb5fdb731916606d8aa1ce6ee305492f4bbcaa862d7de74ce8595b4c78a58342252234685d67ff9643a78172011965b8d0a4b085175f70b6103dcfcd57a
   languageName: node
   linkType: hard
 
-"@monoweave/versions@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@monoweave/versions@npm:2.0.0"
+"@monoweave/versions@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@monoweave/versions@npm:2.2.0"
   dependencies:
     conventional-commits-parser: "npm:^5.0.0"
     micromatch: "npm:^4.0.8"
-    p-limit: "npm:^6.2.0"
+    p-limit: "npm:^7.2.0"
     semver: "npm:^7.7.3"
     yaml: "npm:^2.8.1"
   peerDependencies:
-    "@monoweave/changelog": ^2.0.0
-    "@monoweave/dependencies": ^2.0.0
-    "@monoweave/git": ^2.0.0
-    "@monoweave/io": ^2.0.0
-    "@monoweave/logging": ^2.0.0
-    "@monoweave/types": ^2.0.0
-    "@yarnpkg/cli": ^4.10.3
-    "@yarnpkg/core": ^4.4.4
-    "@yarnpkg/fslib": ^3.1.3
-    "@yarnpkg/plugin-npm": ^3.3.2
+    "@monoweave/changelog": ^2.2.0
+    "@monoweave/dependencies": ^2.2.0
+    "@monoweave/git": ^2.2.0
+    "@monoweave/io": ^2.2.0
+    "@monoweave/logging": ^2.2.0
+    "@monoweave/types": ^2.2.0
+    "@yarnpkg/cli": ^4.12.0
+    "@yarnpkg/core": ^4.5.0
+    "@yarnpkg/fslib": ^3.1.4
+    "@yarnpkg/plugin-npm": ^3.4.0
     "@yarnpkg/plugin-pack": ^4.0.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/1da6e5effd06df83b650c0472986f9ae30f84cfa32414791e7055d8ea6bfdd3849e647115215e13f2308ee7f5ab3f78664a202b6f255b6c97faa02ccb7cbbbc9
+  checksum: 10c0/6b8389fa3a7efc438b717b69dc4b35dd72717a5968332a489f73357a065c82f61d1a831c6602760944f9fec35b6d8ed421541b67c8c6eabe5b54370719c868df
   languageName: node
   linkType: hard
 
@@ -2001,8 +2001,8 @@ __metadata:
   resolution: "@noahnu/nodejs-tools@workspace:."
   dependencies:
     "@jest/types": "npm:^30.2.0"
-    "@monoweave/cli": "npm:^2.0.0"
-    "@monoweave/plugin-github": "npm:^3.0.0"
+    "@monoweave/cli": "npm:^2.1.0"
+    "@monoweave/plugin-github": "npm:^3.1.0"
     "@noahnu/eslint-config": "workspace:^"
     "@swc/core": "npm:^1.15.2"
     "@swc/jest": "npm:^0.2.39"
@@ -2208,39 +2208,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:^6.1.4":
-  version: 6.1.4
-  resolution: "@octokit/core@npm:6.1.4"
+"@octokit/core@npm:^6.1.6":
+  version: 6.1.6
+  resolution: "@octokit/core@npm:6.1.6"
   dependencies:
     "@octokit/auth-token": "npm:^5.0.0"
-    "@octokit/graphql": "npm:^8.1.2"
-    "@octokit/request": "npm:^9.2.1"
-    "@octokit/request-error": "npm:^6.1.7"
-    "@octokit/types": "npm:^13.6.2"
+    "@octokit/graphql": "npm:^8.2.2"
+    "@octokit/request": "npm:^9.2.3"
+    "@octokit/request-error": "npm:^6.1.8"
+    "@octokit/types": "npm:^14.0.0"
     before-after-hook: "npm:^3.0.2"
     universal-user-agent: "npm:^7.0.0"
-  checksum: 10c0/bcb05e83c54f686ae55bd3793e63a1832f83cbe804586b52c61b0e18942609dcc209af501720de6f2c87dc575047645b074f4cd5822d461e892058ea9654aebc
+  checksum: 10c0/72fcbafb61e3fed34bc1fd3795349a46fcc4c7e5815f2d0840c786372a9a529c0372f645b836b55f073401364938fcc202f49f887e8edbfb924fe69f533f4b86
   languageName: node
   linkType: hard
 
-"@octokit/endpoint@npm:^10.1.3":
-  version: 10.1.3
-  resolution: "@octokit/endpoint@npm:10.1.3"
+"@octokit/endpoint@npm:^10.1.4":
+  version: 10.1.4
+  resolution: "@octokit/endpoint@npm:10.1.4"
   dependencies:
-    "@octokit/types": "npm:^13.6.2"
+    "@octokit/types": "npm:^14.0.0"
     universal-user-agent: "npm:^7.0.2"
-  checksum: 10c0/096956534efee1f683b4749673c2d1673c6fbe5362b9cce553f9f4b956feaf59bde816594de72f4352f749b862d0b15bc0e2fa7fb0e198deb1fe637b5f4a8bc7
+  checksum: 10c0/bf7cca71a05dc4751df658588e32642e59c98768e7509521226b997ea4837e2d16efd35c391231c76d888226f4daf80e6a9f347dee01a69f490253654dada581
   languageName: node
   linkType: hard
 
-"@octokit/graphql@npm:^8.1.2":
-  version: 8.2.1
-  resolution: "@octokit/graphql@npm:8.2.1"
+"@octokit/graphql@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "@octokit/graphql@npm:8.2.2"
   dependencies:
-    "@octokit/request": "npm:^9.2.2"
-    "@octokit/types": "npm:^13.8.0"
+    "@octokit/request": "npm:^9.2.3"
+    "@octokit/types": "npm:^14.0.0"
     universal-user-agent: "npm:^7.0.0"
-  checksum: 10c0/79fe7b50113bef90a32e3b6ee48923cad2afc049aba5c22e44167cf5773e2688a4e953f3ee1e24bee9706ccf7588ae14451933b282f63f1f7d5c95d319df23dd
+  checksum: 10c0/29cd5af5ed04e416d28798a11907ab861dc73c0af47f8c9c3f4183d81d2e77d88228643825538acc81e7015f78d891f84107929019a673b06a6b38ccea6a24e0
   languageName: node
   linkType: hard
 
@@ -2251,46 +2251,62 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-throttling@npm:^9.4.0":
-  version: 9.6.0
-  resolution: "@octokit/plugin-throttling@npm:9.6.0"
+"@octokit/openapi-types@npm:^25.1.0":
+  version: 25.1.0
+  resolution: "@octokit/openapi-types@npm:25.1.0"
+  checksum: 10c0/b5b1293b11c6ec7112c7a2713f8507c2696d5db8902ce893b594080ab0329f5a6fcda1b5ac6fe6eed9425e897f4d03326c1bdf5c337e35d324e7b925e52a2661
+  languageName: node
+  linkType: hard
+
+"@octokit/plugin-throttling@npm:^9.6.1":
+  version: 9.6.1
+  resolution: "@octokit/plugin-throttling@npm:9.6.1"
   dependencies:
     "@octokit/types": "npm:^13.7.0"
     bottleneck: "npm:^2.15.3"
   peerDependencies:
     "@octokit/core": ^6.1.3
-  checksum: 10c0/e957200015e15df4f6724f79a593d2fff74399066d3dcd526b72ed6ff0397daf7b5b9051f1ab28d4dbdf1ea293b9b5fc4b718df6b9049baec06f0bdd8d38540f
+  checksum: 10c0/f1e533a06891d555eb81327473873c683eb15ba9b9dd73c7aa1fc3f3cec54925bbef55f67b1473fefcda58ec26b2174f1cd50eff4004e7681a41e7cb5b34644c
   languageName: node
   linkType: hard
 
-"@octokit/request-error@npm:^6.1.7":
-  version: 6.1.7
-  resolution: "@octokit/request-error@npm:6.1.7"
+"@octokit/request-error@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@octokit/request-error@npm:6.1.8"
   dependencies:
-    "@octokit/types": "npm:^13.6.2"
-  checksum: 10c0/24bd6f98b1d7b2d4062de34777b4195d3cc4dc40c3187a0321dd588291ec5e13b5760765aacdef3a73796a529d3dec0bfb820780be6ef526a3e774d13566b5b0
+    "@octokit/types": "npm:^14.0.0"
+  checksum: 10c0/02aa5bfebb5b1b9e152558b4a6f4f7dcb149b41538778ffe0fce3395fd0da5c0862311a78e94723435667581b2a58a7cefa458cf7aa19ae2948ae419276f7ee1
   languageName: node
   linkType: hard
 
-"@octokit/request@npm:^9.2.1, @octokit/request@npm:^9.2.2":
-  version: 9.2.2
-  resolution: "@octokit/request@npm:9.2.2"
+"@octokit/request@npm:^9.2.3":
+  version: 9.2.4
+  resolution: "@octokit/request@npm:9.2.4"
   dependencies:
-    "@octokit/endpoint": "npm:^10.1.3"
-    "@octokit/request-error": "npm:^6.1.7"
-    "@octokit/types": "npm:^13.6.2"
+    "@octokit/endpoint": "npm:^10.1.4"
+    "@octokit/request-error": "npm:^6.1.8"
+    "@octokit/types": "npm:^14.0.0"
     fast-content-type-parse: "npm:^2.0.0"
     universal-user-agent: "npm:^7.0.2"
-  checksum: 10c0/14cb523c17ed619c63e52025af9fdc67357b63d113905ec0ccb47badd20926e6f37a17a0620d3a906823b496e3b7efb29ed1e2af658cde5daf3ed3f88b421973
+  checksum: 10c0/783ddf004e89e9738a6b4196c38fc377f166196a9f39a4956c50d675310113cf7a8e1ed1ed3842ae1d222d990231d1361fc8cf96adea2740e7e4caad216f19ab
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^13.6.2, @octokit/types@npm:^13.7.0, @octokit/types@npm:^13.8.0":
+"@octokit/types@npm:^13.7.0":
   version: 13.10.0
   resolution: "@octokit/types@npm:13.10.0"
   dependencies:
     "@octokit/openapi-types": "npm:^24.2.0"
   checksum: 10c0/f66a401b89d653ec28e5c1529abdb7965752db4d9d40fa54c80e900af4c6bf944af6bd0a83f5b4f1eecb72e3d646899dfb27ffcf272ac243552de7e3b97a038d
+  languageName: node
+  linkType: hard
+
+"@octokit/types@npm:^14.0.0":
+  version: 14.1.0
+  resolution: "@octokit/types@npm:14.1.0"
+  dependencies:
+    "@octokit/openapi-types": "npm:^25.1.0"
+  checksum: 10c0/4640a6c0a95386be4d015b96c3a906756ea657f7df3c6e706d19fea6bf3ac44fd2991c8c817afe1e670ff9042b85b0e06f7fd373f6bbd47da64208701bb46d5b
   languageName: node
   linkType: hard
 
@@ -3306,7 +3322,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli@npm:^4.10.3, @yarnpkg/cli@npm:^4.11.0":
+"@yarnpkg/cli@npm:^4.11.0, @yarnpkg/cli@npm:^4.12.0":
   version: 4.12.0
   resolution: "@yarnpkg/cli@npm:4.12.0"
   dependencies:
@@ -3351,7 +3367,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^4.4.2, @yarnpkg/core@npm:^4.4.3, @yarnpkg/core@npm:^4.4.4, @yarnpkg/core@npm:^4.5.0":
+"@yarnpkg/core@npm:^4.4.2, @yarnpkg/core@npm:^4.4.3, @yarnpkg/core@npm:^4.5.0":
   version: 4.5.0
   resolution: "@yarnpkg/core@npm:4.5.0"
   dependencies:
@@ -3691,7 +3707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-npm@npm:^3.3.2, @yarnpkg/plugin-npm@npm:^3.4.0":
+"@yarnpkg/plugin-npm@npm:^3.4.0":
   version: 3.4.0
   resolution: "@yarnpkg/plugin-npm@npm:3.4.0"
   dependencies:
@@ -8684,12 +8700,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-limit@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "p-limit@npm:6.2.0"
+"p-limit@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "p-limit@npm:7.2.0"
   dependencies:
-    yocto-queue: "npm:^1.1.1"
-  checksum: 10c0/448bf55a1776ca1444594d53b3c731e68cdca00d44a6c8df06a2f6e506d5bbd540ebb57b05280f8c8bff992a630ed782a69612473f769a7473495d19e2270166
+    yocto-queue: "npm:^1.2.1"
+  checksum: 10c0/18e5ea305c31fdc0cf5260da7b63adfd46748cd72d4b40a31a13bd23eeece729c9308047fb5d848d7fa006d1b2fc2f36bb0d9dd173a300c38cd6dc1ed3355382
   languageName: node
   linkType: hard
 
@@ -10728,10 +10744,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yocto-queue@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "yocto-queue@npm:1.1.1"
-  checksum: 10c0/cb287fe5e6acfa82690acb43c283de34e945c571a78a939774f6eaba7c285bacdf6c90fbc16ce530060863984c906d2b4c6ceb069c94d1e0a06d5f2b458e2a92
+"yocto-queue@npm:^1.2.1":
+  version: 1.2.2
+  resolution: "yocto-queue@npm:1.2.2"
+  checksum: 10c0/36d4793e9cf7060f9da543baf67c55e354f4862c8d3d34de1a1b1d7c382d44171315cc54abf84d8900b8113d742b830108a1434f4898fb244f9b7e8426d4b8f5
   languageName: node
   linkType: hard
 
