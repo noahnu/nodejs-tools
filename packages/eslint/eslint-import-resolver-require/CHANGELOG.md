@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/eslint-import-resolver-require (v1.0.3) <a name="1.0.3"></a>
+
+Release (no changes).
+
+
+
 ## @noahnu/eslint-import-resolver-require (v1.0.2) <a name="1.0.2"></a>
 
 Routine dependency updates.

@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-dependency-checker (v1.0.3) <a name="1.0.3"></a>
+
+Release (no changes).
+
+
+
 ## @noahnu/yarn-dependency-checker (v1.0.2) <a name="1.0.2"></a>
 
 Routine dependency updates.

@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-semver-up (v0.0.5) <a name="0.0.5"></a>
+
+Release (no changes).
+
+
+
 ## @noahnu/yarn-semver-up (v0.0.4) <a name="0.0.4"></a>
 
 Routine dependency updates.

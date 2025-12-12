@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.3.6) <a name="0.3.6"></a>
+
+Release (no changes).
+
+
+
 ## @noahnu/unused-files (v0.3.5) <a name="0.3.5"></a>
 
 Routine dependency updates.

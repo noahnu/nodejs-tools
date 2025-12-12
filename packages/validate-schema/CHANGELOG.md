@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/validate-schema (v1.0.6) <a name="1.0.6"></a>
+
+Release (no changes).
+
+
+
 ## @noahnu/validate-schema (v1.0.5) <a name="1.0.5"></a>
 
 Routine dependency updates.
