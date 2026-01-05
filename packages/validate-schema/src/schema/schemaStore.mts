@@ -36,7 +36,7 @@ export async function resolveSchemaFromSchemaStore({
     const match = catalog.schemas.find((schema) =>
         Boolean(
             schema.fileMatch?.length &&
-                micromatch.isMatch(filename, schema.fileMatch, { basename: true }),
+            micromatch.isMatch(filename, schema.fileMatch, { basename: true }),
         ),
     )
     if (match) {
