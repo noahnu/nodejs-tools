@@ -1822,7 +1822,7 @@ __metadata:
     "@monoweave/cli": "npm:^2.2.0"
     "@monoweave/plugin-github": "npm:^3.2.0"
     "@noahnu/eslint-config": "workspace:^"
-    "@swc/core": "npm:^1.15.4"
+    "@swc/core": "npm:^1.15.5"
     "@swc/jest": "npm:^0.2.39"
     "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^25.0.2"
@@ -2309,7 +2309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.15.4":
+"@swc/core@npm:^1.15.5":
   version: 1.15.8
   resolution: "@swc/core@npm:1.15.8"
   dependencies:
