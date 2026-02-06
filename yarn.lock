@@ -1803,11 +1803,11 @@ __metadata:
     "@jest/globals": "npm:^30.2.0"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/node": "npm:^25.0.9"
-    html-webpack-plugin: "npm:^5.6.5"
+    html-webpack-plugin: "npm:^5.6.6"
     typescript: "npm:^5.9.3"
     webpack: "npm:^5.104.1"
   peerDependencies:
-    html-webpack-plugin: ^5.6.5
+    html-webpack-plugin: ^5.6.6
     webpack: ^5.104.1
   languageName: unknown
   linkType: soft
@@ -6405,7 +6405,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:^5.6.5":
+"html-webpack-plugin@npm:^5.6.6":
   version: 5.6.6
   resolution: "html-webpack-plugin@npm:5.6.6"
   dependencies:
