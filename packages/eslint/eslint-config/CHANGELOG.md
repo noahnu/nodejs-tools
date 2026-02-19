@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/eslint-config (v4.0.4) <a name="4.0.4"></a>
+
+Add option to include top level workspace in dependency checker.
+
+
+
 ## @noahnu/eslint-config (v4.0.3) <a name="4.0.3"></a>
 
 Release (no changes).

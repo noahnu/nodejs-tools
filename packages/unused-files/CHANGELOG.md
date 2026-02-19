@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/unused-files (v0.3.7) <a name="0.3.7"></a>
+
+Add option to include top level workspace in dependency checker.
+
+
+
 ## @noahnu/unused-files (v0.3.6) <a name="0.3.6"></a>
 
 Release (no changes).

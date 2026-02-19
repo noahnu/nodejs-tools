@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/inject-inline-html-webpack-plugin (v0.0.4) <a name="0.0.4"></a>
+
+Add option to include top level workspace in dependency checker.
+
+
+
 ## @noahnu/inject-inline-html-webpack-plugin (v0.0.3) <a name="0.0.3"></a>
 
 Release (no changes).

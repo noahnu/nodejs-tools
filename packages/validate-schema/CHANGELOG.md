@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/validate-schema (v1.0.7) <a name="1.0.7"></a>
+
+Add option to include top level workspace in dependency checker.
+
+
+
 ## @noahnu/validate-schema (v1.0.6) <a name="1.0.6"></a>
 
 Release (no changes).

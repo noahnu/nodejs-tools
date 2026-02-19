@@ -2,6 +2,12 @@
 
 <!-- MONOWEAVE:BELOW -->
 
+## @noahnu/yarn-semver-up (v0.0.6) <a name="0.0.6"></a>
+
+Add option to include top level workspace in dependency checker.
+
+
+
 ## @noahnu/yarn-semver-up (v0.0.5) <a name="0.0.5"></a>
 
 Release (no changes).
