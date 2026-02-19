@@ -34,6 +34,7 @@ interface ConfigFile {
     include?: string[]
     ignorePackages?: string[]
     suppressResolverFailures?: boolean
+    includeTopLevelWorkspace?: boolean
 }
 
 class DependencyCheckerCommand extends Command<CommandContext> {
@@ -50,6 +51,10 @@ class DependencyCheckerCommand extends Command<CommandContext> {
     cwd?: string = Option.String('--cwd', { required: false })
 
     workspaces?: string[] = Option.Array('--workspaces', { required: false })
+    includeTopLevelWorkspace?: boolean = Option.Boolean('--include-top-level-workspace', {
+        required: false,
+        description: 'Include the top-level workspace in the check.',
+    })
 
     devFilesPatterns?: string[] = Option.Array('--dev-files', { required: false })
 
@@ -105,6 +110,7 @@ class DependencyCheckerCommand extends Command<CommandContext> {
         this.include ??= configFile?.include
         this.exclude ??= configFile?.exclude
         this.devFilesPatterns ??= configFile?.devFiles
+        this.includeTopLevelWorkspace ??= configFile?.includeTopLevelWorkspace
 
         this.#ignorePatterns = ['**/node_modules', '**/dist', ...(this.exclude ?? [])]
         this.#includePatterns = this.include ?? ['**/*.{ts,js,mjs,cjs,mts,cts,jsx,tsx}']
@@ -148,12 +154,12 @@ class DependencyCheckerCommand extends Command<CommandContext> {
                 }
 
                 for (const workspace of workspaces) {
-                    // Skip top-level workspace (can make a cli flag to toggle this behaviour in the future)
                     if (
                         structUtils.areDescriptorsEqual(
                             project.topLevelWorkspace.anchoredDescriptor,
                             workspace.anchoredDescriptor,
-                        )
+                        ) &&
+                        !this.includeTopLevelWorkspace
                     ) {
                         continue
                     }
