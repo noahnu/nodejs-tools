@@ -1755,7 +1755,7 @@ __metadata:
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.4"
     eslint-plugin-import-x: "npm:^4.16.1"
-    eslint-plugin-jest: "npm:^29.12.1"
+    eslint-plugin-jest: "npm:^29.12.2"
     eslint-plugin-prettier: "npm:^5.5.5"
     globals: "npm:^17.3.0"
     prettier: "npm:^3.8.1"
@@ -1770,7 +1770,7 @@ __metadata:
     eslint-import-resolver-node: ">=0.3.9"
     eslint-import-resolver-typescript: ">=4.4.4"
     eslint-plugin-import-x: ">=4.16.1"
-    eslint-plugin-jest: ">=29.12.1"
+    eslint-plugin-jest: ">=29.12.2"
     eslint-plugin-prettier: ">=5.5.5"
     prettier: ">=3.8.1"
     typescript: ">=5.9.3"
@@ -1844,7 +1844,7 @@ __metadata:
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^4.4.4"
     eslint-plugin-import: "npm:^2.32.0"
-    eslint-plugin-jest: "npm:^29.12.1"
+    eslint-plugin-jest: "npm:^29.12.2"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
     eslint-plugin-prettier: "npm:^5.5.5"
     husky: "npm:^9.1.7"
@@ -5515,21 +5515,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^29.12.1":
-  version: 29.12.1
-  resolution: "eslint-plugin-jest@npm:29.12.1"
+"eslint-plugin-jest@npm:^29.12.2":
+  version: 29.15.0
+  resolution: "eslint-plugin-jest@npm:29.15.0"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.0.0"
   peerDependencies:
     "@typescript-eslint/eslint-plugin": ^8.0.0
-    eslint: ^8.57.0 || ^9.0.0
+    eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
     jest: "*"
+    typescript: ">=4.8.4 <6.0.0"
   peerDependenciesMeta:
     "@typescript-eslint/eslint-plugin":
       optional: true
     jest:
       optional: true
-  checksum: 10c0/54c149328c97964a34958b7e32c56f24e9c9fb8eeb6892c357ae527d543cc766d960ef024baaa57be603befda8cb1e25f5cb9701993f554655143e199264ba7a
+    typescript:
+      optional: true
+  checksum: 10c0/e3d8f67708ba4a77a628f8d97a9ebbb20f62ad690d7cc155c0a1066d36b74a6ad8e943fda5c54264c4ad4186dd8d212075bce9f5c2debdd35708ed74ecdc81ef
   languageName: node
   linkType: hard
 
