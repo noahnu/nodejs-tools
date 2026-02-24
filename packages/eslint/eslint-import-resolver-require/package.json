@@ -30,8 +30,8 @@
         "@types/debug": "^4.1.12",
         "@types/eslint": "^9.6.1",
         "@types/jest": "^30.0.0",
-        "@types/node": "^25.2.0",
-        "eslint": "^9.39.2",
+        "@types/node": "^25.3.0",
+        "eslint": "^9.39.3",
         "eslint-plugin-import": "^2.32.0"
     },
     "dependencies": {
