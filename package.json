@@ -26,8 +26,8 @@
     }
   },
   "devDependencies": {
-    "@monoweave/cli": "^2.6.0",
-    "@monoweave/plugin-github": "^3.6.0",
+    "@monoweave/cli": "^2.7.0",
+    "@monoweave/plugin-github": "^3.7.0",
     "@types/node": "^25.9.3",
     "@vitest/coverage-v8": "^4.1.9",
     "@yarnpkg/sdks": "^3.3.0",
