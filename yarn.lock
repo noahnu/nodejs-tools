@@ -907,42 +907,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monoweave/changelog@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/changelog@npm:2.6.0"
+"@monoweave/changelog@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/changelog@npm:2.7.0"
   dependencies:
     conventional-changelog-writer: "npm:^7.0.1"
     conventional-commits-parser: "npm:^5.0.0"
     p-limit: "npm:^7.3.0"
   peerDependencies:
-    "@monoweave/git": ^2.6.0
-    "@monoweave/io": ^2.6.0
-    "@monoweave/logging": ^2.6.0
-    "@monoweave/types": ^2.6.0
-    "@yarnpkg/core": ^4.8.0
+    "@monoweave/git": ^2.7.0
+    "@monoweave/io": ^2.7.0
+    "@monoweave/logging": ^2.7.0
+    "@monoweave/types": ^2.7.0
+    "@yarnpkg/core": ^4.9.0
     "@yarnpkg/fslib": ^3.1.5
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/16a0403c57b8042c734550ca1abf7bd696dea080337528ec23bed8a5a5645c34692d39188be740e45139cc239373601f45c32eec0db5b955f1bcd4905d3272b8
+  checksum: 10c0/648db35a393b644c06b52508074d3d4a16ca10ed5c273da0f4e7e5170b693b490ae28b5ac0e7afd453ac616b8a6eaa97d46566ef7ec4f412f536bcf870e49a7a
   languageName: node
   linkType: hard
 
-"@monoweave/cli@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/cli@npm:2.6.0"
+"@monoweave/cli@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/cli@npm:2.7.0"
   dependencies:
     "@inquirer/prompts": "npm:^8.3.2"
-    "@monoweave/changelog": "npm:^2.6.0"
-    "@monoweave/dependencies": "npm:^2.6.0"
-    "@monoweave/git": "npm:^2.6.0"
-    "@monoweave/io": "npm:^2.6.0"
-    "@monoweave/logging": "npm:^2.6.0"
-    "@monoweave/node": "npm:^2.6.0"
-    "@monoweave/types": "npm:^2.6.0"
-    "@monoweave/versions": "npm:^2.6.0"
-    "@yarnpkg/cli": "npm:^4.16.0"
-    "@yarnpkg/core": "npm:^4.8.0"
+    "@monoweave/changelog": "npm:^2.7.0"
+    "@monoweave/dependencies": "npm:^2.7.0"
+    "@monoweave/git": "npm:^2.7.0"
+    "@monoweave/io": "npm:^2.7.0"
+    "@monoweave/logging": "npm:^2.7.0"
+    "@monoweave/node": "npm:^2.7.0"
+    "@monoweave/types": "npm:^2.7.0"
+    "@monoweave/versions": "npm:^2.7.0"
+    "@yarnpkg/cli": "npm:^4.17.0"
+    "@yarnpkg/core": "npm:^4.9.0"
     "@yarnpkg/fslib": "npm:^3.1.5"
-    "@yarnpkg/plugin-npm": "npm:^3.6.0"
+    "@yarnpkg/plugin-npm": "npm:^3.7.0"
     "@yarnpkg/plugin-pack": "npm:^4.0.4"
     "@yarnpkg/shell": "npm:^4.1.3"
     ajv: "npm:^8.18.0"
@@ -952,138 +952,138 @@ __metadata:
     yaml: "npm:^2.8.3"
   bin:
     monoweave: ./lib/index.js
-  checksum: 10c0/d12b1605a55738cc01dce7cb3b328a04837b2cec1ba4162bc9122f39c35f74b62fb290a53ce555876152c3cf1721e38404b2c535351f85a95182285ca90c76b8
+  checksum: 10c0/917c85a4809499f0d51f99f63e58014f4d3cc5556184dcb27b6081e62f753c96f5248777d8a9b9be8ce88f3701e5089f4ead7c918ef37d641d365fa7a02b5281
   languageName: node
   linkType: hard
 
-"@monoweave/dependencies@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/dependencies@npm:2.6.0"
+"@monoweave/dependencies@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/dependencies@npm:2.7.0"
   peerDependencies:
-    "@monoweave/logging": ^2.6.0
-    "@monoweave/types": ^2.6.0
-    "@yarnpkg/core": ^4.8.0
-  checksum: 10c0/9747f7cb0abcabec0fdff079a93f03282fe5c6dc4080c4c515911ec663bc668a90158680911fbe3b8347edd723f62cba43fc8bca4019cd2c6cc8e399bd89f95c
+    "@monoweave/logging": ^2.7.0
+    "@monoweave/types": ^2.7.0
+    "@yarnpkg/core": ^4.9.0
+  checksum: 10c0/058e329bea3e8db41e6fabd5d9a7c5428666fa55e12d5b625975c2bc23cfeda5cd0c158f64540eb0f6a64b4e51a0e1694c57190af769a90858bff182fded96ae
   languageName: node
   linkType: hard
 
-"@monoweave/git@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/git@npm:2.6.0"
+"@monoweave/git@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/git@npm:2.7.0"
   dependencies:
     micromatch: "npm:^4.0.8"
   peerDependencies:
-    "@monoweave/io": ^2.6.0
-    "@monoweave/logging": ^2.6.0
-    "@monoweave/types": ^2.6.0
-    "@yarnpkg/core": ^4.8.0
+    "@monoweave/io": ^2.7.0
+    "@monoweave/logging": ^2.7.0
+    "@monoweave/types": ^2.7.0
+    "@yarnpkg/core": ^4.9.0
     "@yarnpkg/fslib": ^3.1.5
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/8751ad7403f5799af1b607a6e5b19d30f2366c048a724cc41ccb918b1d352dd336c8531920efb724b38784b556c6cb4a683f527c38df4e506abcd76218838158
+  checksum: 10c0/ed6e8bbe00e6f94eacf5a2540c79990dec0b3ef180d2bf45273b1d3586a5d06c151456070eeacd072fa9a82589c538d2ea7b13bbb1431ae39fe53730017f2753
   languageName: node
   linkType: hard
 
-"@monoweave/io@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/io@npm:2.6.0"
+"@monoweave/io@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/io@npm:2.7.0"
   dependencies:
     semver: "npm:^7.7.4"
   peerDependencies:
-    "@monoweave/logging": ^2.6.0
-    "@monoweave/types": ^2.6.0
-    "@yarnpkg/core": ^4.8.0
+    "@monoweave/logging": ^2.7.0
+    "@monoweave/types": ^2.7.0
+    "@yarnpkg/core": ^4.9.0
     "@yarnpkg/fslib": ^3.1.5
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/2ce6296d44a6644ea0f66777a8e68eb5031338cfcefb77039d2f90f39bb77ab874269e6e7fe599a0f72054f125bfc630a3a02942ebc271cee0ed654006167b4f
+  checksum: 10c0/7572495c66a7ee434d3f58e13b3def826c7ecfa19c1551f220cb4f17c75b90016dd65f99eabfda7b62cca2d35955d517972dee27bcd16d98e728800491592da8
   languageName: node
   linkType: hard
 
-"@monoweave/logging@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/logging@npm:2.6.0"
+"@monoweave/logging@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/logging@npm:2.7.0"
   peerDependencies:
-    "@yarnpkg/core": ^4.8.0
-  checksum: 10c0/aee6a389bd9f7ef9856045025c380a1077fd1be2134005594f52e71e433fd8b136004805fef89d257fdec553adc7817aaa98b7160bc9f975161c7edc6e46ddac
+    "@yarnpkg/core": ^4.9.0
+  checksum: 10c0/01a87cc7b5f3daa353ed86003d9b413dcbddd9a45f2cb8beec7096061e3e4fc93209cdacbb5824829eaa528e5ded64ae23ae34d82072b91d9d843c4dd31c35bb
   languageName: node
   linkType: hard
 
-"@monoweave/node@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/node@npm:2.6.0"
+"@monoweave/node@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/node@npm:2.7.0"
   dependencies:
-    "@monoweave/changelog": "npm:^2.6.0"
-    "@monoweave/dependencies": "npm:^2.6.0"
-    "@monoweave/git": "npm:^2.6.0"
-    "@monoweave/io": "npm:^2.6.0"
-    "@monoweave/logging": "npm:^2.6.0"
-    "@monoweave/publish": "npm:^2.6.0"
-    "@monoweave/types": "npm:^2.6.0"
-    "@monoweave/versions": "npm:^2.6.0"
-    "@yarnpkg/cli": "npm:^4.16.0"
-    "@yarnpkg/core": "npm:^4.8.0"
+    "@monoweave/changelog": "npm:^2.7.0"
+    "@monoweave/dependencies": "npm:^2.7.0"
+    "@monoweave/git": "npm:^2.7.0"
+    "@monoweave/io": "npm:^2.7.0"
+    "@monoweave/logging": "npm:^2.7.0"
+    "@monoweave/publish": "npm:^2.7.0"
+    "@monoweave/types": "npm:^2.7.0"
+    "@monoweave/versions": "npm:^2.7.0"
+    "@yarnpkg/cli": "npm:^4.17.0"
+    "@yarnpkg/core": "npm:^4.9.0"
     "@yarnpkg/fslib": "npm:^3.1.5"
-    "@yarnpkg/plugin-npm": "npm:^3.6.0"
+    "@yarnpkg/plugin-npm": "npm:^3.7.0"
     "@yarnpkg/plugin-pack": "npm:^4.0.4"
     "@yarnpkg/shell": "npm:^4.1.3"
     micromatch: "npm:^4.0.8"
     tapable: "npm:^2.3.2"
-  checksum: 10c0/bf8b9a8cbcc7d6427c85632f9ce053435a2c62edb7a1b56f616cc76b7a2cf6a6143e71aa3553ce8d8adef2cf7e0885dc448fb6d32342cd14b64a70049f7102f2
+  checksum: 10c0/cad22cf6f04a3f0b980f014c102ae56864926a427a1dcaa2f4b0dec08f02460c4c05653a00aeaad2601b8f721323ac76bc69beea91d3611b6f3edb229bf7c762
   languageName: node
   linkType: hard
 
-"@monoweave/plugin-github@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "@monoweave/plugin-github@npm:3.6.0"
+"@monoweave/plugin-github@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "@monoweave/plugin-github@npm:3.7.0"
   dependencies:
-    "@monoweave/git": "npm:^2.6.0"
-    "@monoweave/io": "npm:^2.6.0"
-    "@monoweave/logging": "npm:^2.6.0"
-    "@monoweave/types": "npm:^2.6.0"
+    "@monoweave/git": "npm:^2.7.0"
+    "@monoweave/io": "npm:^2.7.0"
+    "@monoweave/logging": "npm:^2.7.0"
+    "@monoweave/types": "npm:^2.7.0"
     "@octokit/core": "npm:^7.0.6"
     "@octokit/plugin-throttling": "npm:^11.0.3"
-    "@yarnpkg/core": "npm:^4.8.0"
+    "@yarnpkg/core": "npm:^4.9.0"
     "@yarnpkg/fslib": "npm:^3.1.5"
     "@yarnpkg/shell": "npm:^4.1.3"
-  checksum: 10c0/73f7048ddfa30d85cfa747dffe7c7eece91b9c0c111d6c91b5980900c8efa5a4cdbb47b2c5a7de4547d7d15c878b6c64ce84fd967d8c09a5c77be1944607e54e
+  checksum: 10c0/11785eaa7d5cacc94471d041aa2d77ac854f4ea678023765a648c77827cb433920514f531dbbe6f2d17fc43d9f4959b56e434fa7dc7b29ae9522398acf9ab6d2
   languageName: node
   linkType: hard
 
-"@monoweave/publish@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/publish@npm:2.6.0"
+"@monoweave/publish@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/publish@npm:2.7.0"
   dependencies:
     p-limit: "npm:^7.3.0"
   peerDependencies:
-    "@monoweave/dependencies": ^2.6.0
-    "@monoweave/git": ^2.6.0
-    "@monoweave/io": ^2.6.0
-    "@monoweave/logging": ^2.6.0
-    "@monoweave/types": ^2.6.0
-    "@yarnpkg/cli": ^4.16.0
-    "@yarnpkg/core": ^4.8.0
+    "@monoweave/dependencies": ^2.7.0
+    "@monoweave/git": ^2.7.0
+    "@monoweave/io": ^2.7.0
+    "@monoweave/logging": ^2.7.0
+    "@monoweave/types": ^2.7.0
+    "@yarnpkg/cli": ^4.17.0
+    "@yarnpkg/core": ^4.9.0
     "@yarnpkg/fslib": ^3.1.5
-    "@yarnpkg/plugin-npm": ^3.6.0
+    "@yarnpkg/plugin-npm": ^3.7.0
     "@yarnpkg/plugin-pack": ^4.0.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/dbdda75948192e8c9d998f0d5931589ba5ff194445ed59fba6d491bd6c29277a2e18957458bd1b992346309f604795598ba67c529f2781051d6cfe760ffb1c50
+  checksum: 10c0/0281d887f9788f921efef730a58d5377af7b1ad55b50bc6d1bf3a6e1d0f4448d6fcaa0e44741256933a1dc49ce9a297412e8a0d5251234a9dcbf42e9dd0da310
   languageName: node
   linkType: hard
 
-"@monoweave/types@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/types@npm:2.6.0"
+"@monoweave/types@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/types@npm:2.7.0"
   dependencies:
-    "@yarnpkg/core": "npm:^4.8.0"
+    "@yarnpkg/core": "npm:^4.9.0"
     tapable: "npm:^2.3.2"
   peerDependencies:
-    "@yarnpkg/core": ^4.8.0
-  checksum: 10c0/c9388d199babcb3b1eae2dcaf3fad896bc48b0e13fdc992692f48f76dbf58560fd147a45f3a3a47c1099c7efe8737540582117988fe347d8bab7cd1c0ca9fb20
+    "@yarnpkg/core": ^4.9.0
+  checksum: 10c0/9130f2d5295983d6236f34bc1fe67148d8ce731085e2a55c55a2eeea51213a21d62cb04117c94859b1075f8214e30fdaa0268076d017330d4f0af693d252fa89
   languageName: node
   linkType: hard
 
-"@monoweave/versions@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@monoweave/versions@npm:2.6.0"
+"@monoweave/versions@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@monoweave/versions@npm:2.7.0"
   dependencies:
     conventional-commits-parser: "npm:^5.0.0"
     micromatch: "npm:^4.0.8"
@@ -1091,19 +1091,19 @@ __metadata:
     semver: "npm:^7.7.4"
     yaml: "npm:^2.8.3"
   peerDependencies:
-    "@monoweave/changelog": ^2.6.0
-    "@monoweave/dependencies": ^2.6.0
-    "@monoweave/git": ^2.6.0
-    "@monoweave/io": ^2.6.0
-    "@monoweave/logging": ^2.6.0
-    "@monoweave/types": ^2.6.0
-    "@yarnpkg/cli": ^4.16.0
-    "@yarnpkg/core": ^4.8.0
+    "@monoweave/changelog": ^2.7.0
+    "@monoweave/dependencies": ^2.7.0
+    "@monoweave/git": ^2.7.0
+    "@monoweave/io": ^2.7.0
+    "@monoweave/logging": ^2.7.0
+    "@monoweave/types": ^2.7.0
+    "@yarnpkg/cli": ^4.17.0
+    "@yarnpkg/core": ^4.9.0
     "@yarnpkg/fslib": ^3.1.5
-    "@yarnpkg/plugin-npm": ^3.6.0
+    "@yarnpkg/plugin-npm": ^3.7.0
     "@yarnpkg/plugin-pack": ^4.0.4
     "@yarnpkg/shell": ^4.1.3
-  checksum: 10c0/6b51f3976c89c61290b13d973734966a67ccac66796e384182c2dcd6ed32491b5e4de510f7c0b6aa2a3342b72a8288af7cb1b7ee23ed4702a217f3ddc0eac66d
+  checksum: 10c0/31f15679ec66d6b84eba067118ee576cc4e181dc94cd71c8cc084c9d1d47c2c676b6a17be43a59e5945c132264caf6f624df367411b0d66bd9b1343f914da63c
   languageName: node
   linkType: hard
 
@@ -1166,8 +1166,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/nodejs-tools@workspace:."
   dependencies:
-    "@monoweave/cli": "npm:^2.6.0"
-    "@monoweave/plugin-github": "npm:^3.6.0"
+    "@monoweave/cli": "npm:^2.7.0"
+    "@monoweave/plugin-github": "npm:^3.7.0"
     "@types/node": "npm:^25.9.3"
     "@vitest/coverage-v8": "npm:^4.1.9"
     "@yarnpkg/sdks": "npm:^3.3.0"
@@ -2502,7 +2502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli@npm:^4.12.0, @yarnpkg/cli@npm:^4.16.0":
+"@yarnpkg/cli@npm:^4.12.0, @yarnpkg/cli@npm:^4.17.0":
   version: 4.17.0
   resolution: "@yarnpkg/cli@npm:4.17.0"
   dependencies:
@@ -2888,7 +2888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-npm@npm:^3.6.0, @yarnpkg/plugin-npm@npm:^3.7.0":
+"@yarnpkg/plugin-npm@npm:^3.7.0":
   version: 3.7.0
   resolution: "@yarnpkg/plugin-npm@npm:3.7.0"
   dependencies:
