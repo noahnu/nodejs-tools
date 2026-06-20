@@ -1119,7 +1119,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@noahnu/dependency-utils@workspace:^0.0.8, @noahnu/dependency-utils@workspace:packages/dependency-utils":
+"@noahnu/dependency-utils@workspace:*, @noahnu/dependency-utils@workspace:packages/dependency-utils":
   version: 0.0.0-use.local
   resolution: "@noahnu/dependency-utils@workspace:packages/dependency-utils"
   dependencies:
@@ -1191,7 +1191,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/unused-files@workspace:packages/unused-files"
   dependencies:
-    "@noahnu/dependency-utils": "workspace:^0.0.8"
+    "@noahnu/dependency-utils": "workspace:*"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
@@ -1236,7 +1236,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/yarn-dependency-checker@workspace:packages/yarn-dependency-checker"
   dependencies:
-    "@noahnu/dependency-utils": "workspace:^0.0.8"
+    "@noahnu/dependency-utils": "workspace:*"
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
