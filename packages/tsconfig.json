@@ -1,7 +1,9 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-        "declaration": true,
-        "emitDeclarationOnly": false
-    }
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "typeRoots": ["../.yarn/types/@types"],
+    "types": ["node"]
+  }
 }

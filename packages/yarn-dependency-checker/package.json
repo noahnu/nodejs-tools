@@ -1,52 +1,51 @@
 {
-    "name": "@noahnu/yarn-dependency-checker",
-    "version": "1.1.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/noahnu/nodejs-tools.git",
-        "directory": "packages/yarn-dependency-checker"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "noahnu",
-        "email": "noah@noahnu.com",
-        "url": "https://noahnu.com"
-    },
-    "scripts": {
-        "clean": "run workspace:clean \"$(pwd)\"",
-        "prepack": "run workspace:build \"$(pwd)\"",
-        "run-local": "run -T tsx ./src/bin.mts",
-        "run-local-debug": "run -T tsx --inspect-brk ./src/bin.mts"
-    },
-    "bin": "./src/bin.mts",
-    "main": "./src/bin.mts",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public",
-        "bin": "./lib/bin.mjs",
-        "main": "./lib/bin.mjs"
-    },
-    "files": [
-        "lib"
-    ],
-    "dependencies": {
-        "@noahnu/dependency-utils": "workspace:^0.0.8",
-        "@types/debug": "^4.1.12",
-        "@yarnpkg/cli": "^4.12.0",
-        "@yarnpkg/core": "^4.5.0",
-        "@yarnpkg/fslib": "^3.1.4",
-        "clipanion": "^4.0.0-rc.4",
-        "debug": "^4.4.3",
-        "fast-glob": "^3.3.3",
-        "micromatch": "^4.0.8",
-        "typanion": "^3.14.0",
-        "yaml": "^2.8.2"
-    },
-    "devDependencies": {
-        "@jest/globals": "^30.2.0",
-        "@noahnu/internal-test-utils": "workspace:*",
-        "@types/micromatch": "^4.0.10",
-        "@types/node": "^25.3.0",
-        "typescript": "^5.9.3"
-    }
+  "name": "@noahnu/yarn-dependency-checker",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahnu/nodejs-tools.git",
+    "directory": "packages/yarn-dependency-checker"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "noahnu",
+    "email": "noah@noahnu.com",
+    "url": "https://noahnu.com"
+  },
+  "scripts": {
+    "clean": "run workspace:clean \"$(pwd)\"",
+    "prepack": "run workspace:build \"$(pwd)\"",
+    "run-local": "run -T tsx ./src/bin.mts",
+    "run-local-debug": "run -T tsx --inspect-brk ./src/bin.mts"
+  },
+  "bin": "./src/bin.mts",
+  "main": "./src/bin.mts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "bin": "./lib/bin.mjs",
+    "main": "./lib/bin.mjs"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@noahnu/dependency-utils": "workspace:^0.0.8",
+    "@types/debug": "^4.1.12",
+    "@yarnpkg/cli": "^4.12.0",
+    "@yarnpkg/core": "^4.5.0",
+    "@yarnpkg/fslib": "^3.1.4",
+    "clipanion": "^4.0.0-rc.4",
+    "debug": "^4.4.3",
+    "fast-glob": "^3.3.3",
+    "micromatch": "^4.0.8",
+    "typanion": "^3.14.0",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@noahnu/internal-test-utils": "workspace:*",
+    "@types/micromatch": "^4.0.10",
+    "@types/node": "^25.3.0",
+    "typescript": "^6.0.3"
+  }
 }

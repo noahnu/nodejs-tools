@@ -6,46 +6,31 @@
 
 Add option to include top level workspace in dependency checker.
 
-
-
 ## @noahnu/yarn-dependency-checker (v1.0.3) <a name="1.0.3"></a>
 
 Release (no changes).
-
-
 
 ## @noahnu/yarn-dependency-checker (v1.0.2) <a name="1.0.2"></a>
 
 Routine dependency updates.
 
-
-
 ## @noahnu/yarn-dependency-checker (v1.0.0) <a name="1.0.0"></a>
 
 Initial release of yarn dependency checker.
 
-
-
 ## @noahnu/yarn-dependency-checker (v0.1.1) <a name="0.1.1"></a>
 
 fix bug where config file was being ignored
-
-
 
 ## @noahnu/yarn-dependency-checker (v0.1.0) <a name="0.1.0"></a>
 
 - Filter files by workspace to support nested workspaces.
 - Add config file support.
 
-
-
 ## @noahnu/yarn-dependency-checker (v0.0.2) <a name="0.0.2"></a>
 
 Fix ESM bug.
 
-
-
 ## @noahnu/yarn-dependency-checker (v0.0.1) <a name="0.0.1"></a>
 
 Release new Yarn dependencer checker.
-

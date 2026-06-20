@@ -1,53 +1,52 @@
 {
-    "name": "@noahnu/yarn-semver-up",
-    "version": "0.0.6",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/noahnu/nodejs-tools.git",
-        "directory": "packages/yarn-semver-up"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "noahnu",
-        "email": "noah@noahnu.com",
-        "url": "https://noahnu.com"
-    },
-    "scripts": {
-        "clean": "run workspace:clean \"$(pwd)\"",
-        "prepack": "run workspace:build \"$(pwd)\"",
-        "run-local": "run -T tsx ./src/bin.ts",
-        "run-local-debug": "run -T tsx --inspect-brk ./src/bin.ts"
-    },
-    "bin": "./src/bin.ts",
-    "main": "./src/bin.ts",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public",
-        "bin": "./lib/bin.js",
-        "main": "./lib/bin.js"
-    },
-    "files": [
-        "lib"
-    ],
-    "dependencies": {
-        "@types/debug": "^4.1.12",
-        "@yarnpkg/cli": "^4.12.0",
-        "@yarnpkg/core": "^4.5.0",
-        "@yarnpkg/fslib": "^3.1.4",
-        "@yarnpkg/plugin-essentials": "^4.4.4",
-        "@yarnpkg/plugin-git": "^3.1.4",
-        "clipanion": "^4.0.0-rc.4",
-        "debug": "^4.4.3",
-        "micromatch": "^4.0.8",
-        "semver": "^7.7.4",
-        "typanion": "^3.14.0"
-    },
-    "devDependencies": {
-        "@jest/globals": "^30.2.0",
-        "@noahnu/internal-test-utils": "workspace:*",
-        "@types/micromatch": "^4.0.10",
-        "@types/node": "^25.3.0",
-        "@types/semver": "^7.7.1",
-        "typescript": "^5.9.3"
-    }
+  "name": "@noahnu/yarn-semver-up",
+  "version": "0.0.6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahnu/nodejs-tools.git",
+    "directory": "packages/yarn-semver-up"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "noahnu",
+    "email": "noah@noahnu.com",
+    "url": "https://noahnu.com"
+  },
+  "scripts": {
+    "clean": "run workspace:clean \"$(pwd)\"",
+    "prepack": "run workspace:build \"$(pwd)\"",
+    "run-local": "run -T tsx ./src/bin.ts",
+    "run-local-debug": "run -T tsx --inspect-brk ./src/bin.ts"
+  },
+  "bin": "./src/bin.ts",
+  "main": "./src/bin.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "bin": "./lib/bin.js",
+    "main": "./lib/bin.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@types/debug": "^4.1.12",
+    "@yarnpkg/cli": "^4.12.0",
+    "@yarnpkg/core": "^4.5.0",
+    "@yarnpkg/fslib": "^3.1.4",
+    "@yarnpkg/plugin-essentials": "^4.4.4",
+    "@yarnpkg/plugin-git": "^3.1.4",
+    "clipanion": "^4.0.0-rc.4",
+    "debug": "^4.4.3",
+    "micromatch": "^4.0.8",
+    "semver": "^7.7.4",
+    "typanion": "^3.14.0"
+  },
+  "devDependencies": {
+    "@noahnu/internal-test-utils": "workspace:*",
+    "@types/micromatch": "^4.0.10",
+    "@types/node": "^25.3.0",
+    "@types/semver": "^7.7.1",
+    "typescript": "^6.0.3"
+  }
 }

@@ -1,70 +1,70 @@
 {
-    "name": "@noahnu/dependency-utils",
-    "version": "0.0.8",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/noahnu/nodejs-tools.git",
-        "directory": "packages/dependency-utils"
+  "name": "@noahnu/dependency-utils",
+  "version": "0.0.8",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahnu/nodejs-tools.git",
+    "directory": "packages/dependency-utils"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "noahnu",
+    "email": "noah@noahnu.com",
+    "url": "https://noahnu.com"
+  },
+  "scripts": {
+    "clean": "run workspace:clean \"$(pwd)\"",
+    "prepack": "run workspace:build \"$(pwd)\""
+  },
+  "main": "./src/index.mts",
+  "exports": {
+    ".": {
+      "default": "./src/index.mts"
     },
-    "license": "MIT",
-    "author": {
-        "name": "noahnu",
-        "email": "noah@noahnu.com",
-        "url": "https://noahnu.com"
+    "./types": {
+      "default": "./src/types.mts"
     },
-    "scripts": {
-        "clean": "run workspace:clean \"$(pwd)\"",
-        "prepack": "run workspace:build \"$(pwd)\""
-    },
-    "main": "./src/index.mts",
-    "exports": {
-        ".": {
-            "default": "./src/index.mts"
-        },
-        "./types": {
-            "default": "./src/types.mts"
-        },
-        "./structs": {
-            "default": "./src/structs/index.mts"
-        }
-    },
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public",
-        "main": "./lib/index.mjs",
-        "types": "./lib/index.d.mts",
-        "exports": {
-            ".": {
-                "types": "./lib/index.d.mts",
-                "default": "./lib/index.mjs"
-            },
-            "./types": {
-                "types": "./lib/types.d.mts",
-                "default": "./lib/types.mjs"
-            },
-            "./structs": {
-                "types": "./lib/structs/index.d.mts",
-                "default": "./lib/structs/index.mjs"
-            }
-        }
-    },
-    "files": [
-        "lib"
-    ],
-    "dependencies": {
-        "@types/debug": "^4.1.12",
-        "@typescript-eslint/typescript-estree": "^8.56.1",
-        "clipanion": "^4.0.0-rc.4",
-        "debug": "^4.4.3",
-        "fast-glob": "^3.3.3",
-        "micromatch": "^4.0.8",
-        "typanion": "^3.14.0"
-    },
-    "devDependencies": {
-        "@jest/globals": "^30.2.0",
-        "@noahnu/internal-test-utils": "workspace:*",
-        "@types/micromatch": "^4.0.10",
-        "@types/node": "^25.3.0",
-        "typescript": "^5.9.3"
+    "./structs": {
+      "default": "./src/structs/index.mts"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "main": "./lib/index.mjs",
+    "types": "./lib/index.d.mts",
+    "exports": {
+      ".": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      },
+      "./types": {
+        "types": "./lib/types.d.mts",
+        "default": "./lib/types.mjs"
+      },
+      "./structs": {
+        "types": "./lib/structs/index.d.mts",
+        "default": "./lib/structs/index.mjs"
+      }
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@types/debug": "^4.1.12",
+    "@typescript-eslint/typescript-estree": "^8.61.1",
+    "clipanion": "^4.0.0-rc.4",
+    "debug": "^4.4.3",
+    "fast-glob": "^3.3.3",
+    "micromatch": "^4.0.8",
+    "typanion": "^3.14.0"
+  },
+  "devDependencies": {
+    "@noahnu/internal-test-utils": "workspace:*",
+    "@types/micromatch": "^4.0.10",
+    "@types/node": "^25.3.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
 }

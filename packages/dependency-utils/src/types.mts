@@ -1,14 +1,14 @@
 export interface ResolverResult {
-    /** Resolved path. */
-    result: string
+  /** Resolved path. */
+  result: string
 }
 
 export interface ResolverParams {
-    /** The module/path being requested. */
-    request: string
+  /** The module/path being requested. */
+  request: string
 
-    /** The file or directory to resolve the request from. */
-    context: string
+  /** The file or directory to resolve the request from. */
+  context: string
 }
 
 /**
