@@ -12,20 +12,20 @@ Or use the Node API:
 import { findUnusedFiles } from '@noahnu/unused-files'
 
 const result = await findUnusedFiles({
-    entryFiles: ['src/index.ts'],
+  entryFiles: ['src/index.ts'],
 
-    // optional
-    sourceDirectories: [process.cwd()],
-    ignorePatterns: ['**/node_modules'],
-    resolvers: [
-        async ({ request, context }) => {
-            if (request === '@my/alias') {
-                return { result: 'path/to/file/index.ts' }
-            }
-            return null;
-        }
-    ],
-    depth: 10,
+  // optional
+  sourceDirectories: [process.cwd()],
+  ignorePatterns: ['**/node_modules'],
+  resolvers: [
+    async ({ request, context }) => {
+      if (request === '@my/alias') {
+        return { result: 'path/to/file/index.ts' }
+      }
+      return null
+    },
+  ],
+  depth: 10,
 })
 
 console.log(result.unusedFiles.join('\n'))

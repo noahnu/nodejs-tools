@@ -9,29 +9,40 @@ on:
 jobs:
   prepare:
     name: Prepare
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     if: (!contains(github.event.head_commit.message, '[skip ci]'))
     steps:
       - uses: noahnu/.github/.github/actions/setup-node@main
 
   lint:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [prepare]
     steps:
       - uses: noahnu/.github/.github/actions/setup-node@main
 
-      - name: Build Lint Plugins
+      - name: Run Format
         run: |
-          yarn workspace @noahnu/eslint-import-resolver-require prepack
+          yarn format:ci
 
       - name: Run Lint
         run: |
           yarn lint:ci
 
+  typecheck:
+    name: Typecheck
+    runs-on: ubuntu-24.04-arm
+    needs: [prepare]
+    steps:
+      - uses: noahnu/.github/.github/actions/setup-node@main
+
+      - name: Run Typecheck
+        run: |
+          yarn typecheck
+
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [prepare]
     steps:
       - uses: noahnu/.github/.github/actions/setup-node@main
@@ -42,18 +53,18 @@ jobs:
 
   test:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [prepare]
     steps:
       - uses: noahnu/.github/.github/actions/setup-node@main
 
       - name: Run Test
         run: |
-          yarn test
+          yarn test:ci
 
   preview:
     name: Preview
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [prepare]
     if: github.event_name == 'pull_request'
     permissions:
@@ -71,8 +82,9 @@ jobs:
       - prepare
       - build
       - lint
+      - typecheck
       - test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     if: always()
     steps:
       - name: Fail on error

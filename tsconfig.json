@@ -1,21 +1,30 @@
 {
-    "compilerOptions": {
-        "target": "ES2023",
-        "module": "NodeNext",
-        "strict": true,
-        "esModuleInterop": true,
-        "moduleResolution": "NodeNext",
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "noImplicitAny": true,
-        "resolveJsonModule": true,
-        "allowJs": true,
-        "lib": ["ESNext"],
-        "composite": true,
-        "rootDir": ".",
-        "emitDeclarationOnly": true,
-        "outDir": ".tmp/tsc/root"
-    },
-    "exclude": ["**/lib", "./.pnp.*"],
-    "include": ["./packages", "./*.js", "./*.cjs", "./*.ts", "./**/eslint.config.mjs"]
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "lib": ["ESNext"],
+    "composite": true,
+    "rootDir": ".",
+    "emitDeclarationOnly": true,
+    "outDir": ".tmp/tsc/root",
+    "typeRoots": ["./.yarn/types/@types"],
+    "types": ["node"]
+  },
+  "exclude": ["**/lib", "./.pnp.*"],
+  "include": [
+    "./packages",
+    "./*.js",
+    "./*.cjs",
+    "./*.ts",
+    "./**/eslint.config.mjs",
+    "./vitest.config.ts"
+  ]
 }

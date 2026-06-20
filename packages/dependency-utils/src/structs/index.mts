@@ -1,6 +1,6 @@
 export {
-    type ImportDescriptor,
-    ImportDescriptorKind,
-    ImportDescriptorMap,
-    ImportDescriptorSet,
+  type ImportDescriptor,
+  ImportDescriptorKind,
+  ImportDescriptorMap,
+  ImportDescriptorSet,
 } from './importDescriptorMap.mjs'
