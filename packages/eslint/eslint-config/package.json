@@ -1,6 +1,7 @@
 {
     "name": "@noahnu/eslint-config",
     "version": "4.0.4",
+    "deprecated": "This package will no longer receive updates. We recommend using oxlint and oxfmt instead.",
     "repository": {
         "type": "git",
         "url": "https://github.com/noahnu/nodejs-tools.git",
