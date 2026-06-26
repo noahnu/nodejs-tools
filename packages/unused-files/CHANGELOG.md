@@ -6,8 +6,6 @@
 
 Dependency updates.
 
-
-
 ## @noahnu/unused-files (v0.3.7) <a name="0.3.7"></a>
 
 Add option to include top level workspace in dependency checker.

@@ -6,8 +6,6 @@
 
 Dependency updates.
 
-
-
 ## @noahnu/validate-schema (v1.0.7) <a name="1.0.7"></a>
 
 Add option to include top level workspace in dependency checker.

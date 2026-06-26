@@ -6,8 +6,6 @@
 
 Dependency updates.
 
-
-
 ## @noahnu/yarn-semver-up (v0.0.6) <a name="0.0.6"></a>
 
 Add option to include top level workspace in dependency checker.

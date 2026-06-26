@@ -6,8 +6,6 @@
 
 Dependency updates.
 
-
-
 ## @noahnu/dependency-utils (v0.0.8) <a name="0.0.8"></a>
 
 Add option to include top level workspace in dependency checker.

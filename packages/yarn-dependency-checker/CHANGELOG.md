@@ -6,8 +6,6 @@
 
 Dependency updates.
 
-
-
 ## @noahnu/yarn-dependency-checker (v1.1.0) <a name="1.1.0"></a>
 
 Add option to include top level workspace in dependency checker.

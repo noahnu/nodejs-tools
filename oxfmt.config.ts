@@ -4,5 +4,12 @@ export default defineConfig({
   singleQuote: true,
   semi: false,
   sortPackageJson: false,
-  ignorePatterns: ['**/coverage', '**/reports', '**/.*', 'packages/**/*.js', '**/lib'],
+  ignorePatterns: [
+    '**/coverage',
+    '**/reports',
+    '**/.*',
+    'packages/**/*.js',
+    '**/lib',
+    '**/CHANGELOG.md',
+  ],
 })
