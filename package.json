@@ -34,7 +34,7 @@
     "@yarnpkg/types": "^4.0.1",
     "esbuild": "^0.28.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^17.0.7",
     "oxfmt": "^0.55.0",
     "oxlint": "^1.70.0",
     "oxlint-tsgolint": "^0.23.0",
