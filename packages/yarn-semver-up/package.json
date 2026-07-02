@@ -30,7 +30,7 @@
     "lib"
   ],
   "dependencies": {
-    "@types/debug": "^4.1.12",
+    "@types/debug": "^4.1.13",
     "@yarnpkg/cli": "^4.16.0",
     "@yarnpkg/core": "^4.8.0",
     "@yarnpkg/fslib": "^3.1.5",
@@ -39,13 +39,13 @@
     "clipanion": "^4.0.0-rc.4",
     "debug": "^4.4.3",
     "micromatch": "^4.0.8",
-    "semver": "^7.7.4",
+    "semver": "^7.8.4",
     "typanion": "^3.14.0"
   },
   "devDependencies": {
     "@noahnu/internal-test-utils": "workspace:*",
     "@types/micromatch": "^4.0.10",
-    "@types/node": "^25.3.0",
+    "@types/node": "^25.9.3",
     "@types/semver": "^7.7.1",
     "typescript": "^6.0.3"
   }
