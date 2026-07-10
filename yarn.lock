@@ -1126,7 +1126,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
     "@typescript-eslint/typescript-estree": "npm:^8.61.1"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.3"
@@ -1143,7 +1143,7 @@ __metadata:
   resolution: "@noahnu/inject-inline-html-webpack-plugin@workspace:packages/webpack-plugins/inject-inline-html-webpack-plugin"
   dependencies:
     "@noahnu/internal-test-utils": "workspace:*"
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
     html-webpack-plugin: "npm:^5.6.6"
     typescript: "npm:^6.0.3"
     vitest: "npm:^4.1.9"
@@ -1158,7 +1158,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noahnu/internal-test-utils@workspace:packages/internal-test-utils"
   dependencies:
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
   languageName: unknown
   linkType: soft
 
@@ -1168,7 +1168,7 @@ __metadata:
   dependencies:
     "@monoweave/cli": "npm:^2.7.0"
     "@monoweave/plugin-github": "npm:^3.7.0"
-    "@types/node": "npm:^25.9.3"
+    "@types/node": "npm:^26.0.0"
     "@vitest/coverage-v8": "npm:^4.1.9"
     "@yarnpkg/sdks": "npm:^3.3.0"
     "@yarnpkg/types": "npm:^4.0.1"
@@ -1195,7 +1195,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
     "@typescript-eslint/typescript-estree": "npm:^8.61.1"
     clipanion: "npm:^4.0.0-rc.4"
     debug: "npm:^4.4.3"
@@ -1216,7 +1216,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
     "@types/yaml": "npm:^1.9.7"
     ajv: "npm:^8.18.0"
     clipanion: "npm:^4.0.0-rc.4"
@@ -1240,7 +1240,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
     "@yarnpkg/cli": "npm:^4.17.0"
     "@yarnpkg/core": "npm:^4.9.0"
     "@yarnpkg/fslib": "npm:^3.1.5"
@@ -1263,7 +1263,7 @@ __metadata:
     "@noahnu/internal-test-utils": "workspace:*"
     "@types/debug": "npm:^4.1.12"
     "@types/micromatch": "npm:^4.0.10"
-    "@types/node": "npm:^25.3.0"
+    "@types/node": "npm:^26.0.0"
     "@types/semver": "npm:^7.7.1"
     "@yarnpkg/cli": "npm:^4.17.0"
     "@yarnpkg/core": "npm:^4.9.0"
@@ -2116,12 +2116,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^25.3.0, @types/node@npm:^25.9.3":
-  version: 25.9.3
-  resolution: "@types/node@npm:25.9.3"
+"@types/node@npm:*, @types/node@npm:^26.0.0":
+  version: 26.1.0
+  resolution: "@types/node@npm:26.1.0"
   dependencies:
-    undici-types: "npm:>=7.24.0 <7.24.7"
-  checksum: 10c0/72d3aece9d42c2c641bcd3f3cb2dc2828b4bd384dfcbd910c404b8859a68bd69d50c4769ce7defd4ff5e049768e23e615f09407ea2cbbb5f44b90d75a7c6b8ca
+    undici-types: "npm:~8.3.0"
+  checksum: 10c0/61c22ad1ef215e24138cb8b7368fb68bab9de4c123b3f23d411749b015ba1b7d22f878ad54add26a0b69068d7e07c04af665069d8571b6c6c3b9b2fb73b7bd91
   languageName: node
   linkType: hard
 
@@ -6933,17 +6933,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:>=7.24.0 <7.24.7":
-  version: 7.24.6
-  resolution: "undici-types@npm:7.24.6"
-  checksum: 10c0/d9cd8befb643ac904615c280a095ba4240531f6bb4a5e75a22a7483630ca8d3f1016d2ab6ace6ceda1f63b3a2db2fe037fafe121d6917a0187573aa548ff78ca
-  languageName: node
-  linkType: hard
-
 "undici-types@npm:~5.26.4":
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~8.3.0":
+  version: 8.3.0
+  resolution: "undici-types@npm:8.3.0"
+  checksum: 10c0/c8aa7e2fbebfce519654dafadc0ece59be888d2ccaf180fb4495da875e7b536d2456345c384069c7e6f3e9c9ab7435f074957da306f142343eee86ff8048855a
   languageName: node
   linkType: hard
 
