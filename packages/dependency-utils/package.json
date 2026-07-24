@@ -52,8 +52,8 @@
     "lib"
   ],
   "dependencies": {
-    "@types/debug": "^4.1.12",
-    "@typescript-eslint/typescript-estree": "^8.61.1",
+    "@types/debug": "^4.1.13",
+    "@typescript-eslint/typescript-estree": "^8.62.1",
     "clipanion": "^4.0.0-rc.4",
     "debug": "^4.4.3",
     "fast-glob": "^3.3.3",
@@ -63,7 +63,7 @@
   "devDependencies": {
     "@noahnu/internal-test-utils": "workspace:*",
     "@types/micromatch": "^4.0.10",
-    "@types/node": "^26.0.0",
+    "@types/node": "^26.1.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.9"
   }
