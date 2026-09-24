@@ -44,7 +44,7 @@
     "@noahnu/internal-test-utils": "workspace:*",
     "@types/micromatch": "^4.0.10",
     "@types/node": "^26.1.2",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "vitest": "^4.1.10"
   }
 }
