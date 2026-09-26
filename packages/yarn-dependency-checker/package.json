@@ -45,7 +45,7 @@
   "devDependencies": {
     "@noahnu/internal-test-utils": "workspace:*",
     "@types/micromatch": "^4.0.10",
-    "@types/node": "^26.1.2",
+    "@types/node": "^26.4.1",
     "typescript": "^6.0.3"
   }
 }
